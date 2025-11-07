@@ -49,6 +49,47 @@ const projects = [{
   image: '⚡'
 }];
 const techStack = ['Solidity', 'Rust', 'Move', 'Cairo', 'zkSNARKs', 'IPFS', 'GraphQL', 'Substrate'];
+const teamMembers = [{
+  name: 'Dr. Sarah Chen',
+  role: 'Chief Protocol Architect',
+  bio: 'Former Ethereum Foundation researcher. PhD in Distributed Systems from MIT.',
+  expertise: ['Zero-Knowledge Proofs', 'Consensus Algorithms', 'Cryptography'],
+  avatar: '👩‍💻',
+  socials: {
+    twitter: '@sarahchen',
+    github: 'schen'
+  }
+}, {
+  name: 'Marcus Rodriguez',
+  role: 'Head of Security',
+  bio: 'Lead auditor for 100+ smart contracts securing $10B+ in assets.',
+  expertise: ['Smart Contract Security', 'Formal Verification', 'Exploit Research'],
+  avatar: '👨‍🔬',
+  socials: {
+    twitter: '@marcusrod',
+    github: 'mrodriguez'
+  }
+}, {
+  name: 'Yuki Tanaka',
+  role: 'VP of Engineering',
+  bio: 'Ex-Google SRE. Built infrastructure systems handling 1M+ TPS.',
+  expertise: ['Scalability', 'Systems Design', 'Performance'],
+  avatar: '👨‍💼',
+  socials: {
+    twitter: '@yukitech',
+    github: 'ytanaka'
+  }
+}, {
+  name: 'Elena Volkov',
+  role: 'Research Lead',
+  bio: 'Published cryptography researcher with 50+ papers in top conferences.',
+  expertise: ['Applied Cryptography', 'MEV Research', 'Economic Modeling'],
+  avatar: '👩‍🔬',
+  socials: {
+    twitter: '@elenavolkov',
+    github: 'evolkov'
+  }
+}];
 
 // @component: ZenithPortfolio
 export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
@@ -321,9 +362,115 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Team Section */}
       <section className="relative py-32 px-6" data-magicpath-id="76" data-magicpath-path="ZenithPortfolio.tsx">
-        <div className="max-w-5xl mx-auto" data-magicpath-id="77" data-magicpath-path="ZenithPortfolio.tsx">
+        <div className="max-w-7xl mx-auto" data-magicpath-id="77" data-magicpath-path="ZenithPortfolio.tsx">
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} className="mb-20 text-center" data-magicpath-id="78" data-magicpath-path="ZenithPortfolio.tsx">
+            <h2 className="text-5xl md:text-7xl font-black mb-6" data-magicpath-id="79" data-magicpath-path="ZenithPortfolio.tsx">
+              WORLD-CLASS <span className="text-gray-600" data-magicpath-id="80" data-magicpath-path="ZenithPortfolio.tsx">TEAM</span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto" data-magicpath-id="81" data-magicpath-path="ZenithPortfolio.tsx">
+              Leading researchers and engineers from top institutions and blockchain projects
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8" data-magicpath-id="82" data-magicpath-path="ZenithPortfolio.tsx">
+            {teamMembers.map((member, index) => <motion.div key={member.name} initial={{
+            opacity: 0,
+            y: 30
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            delay: index * 0.1
+          }} whileHover={{
+            y: -8
+          }} className="group relative" data-magicpath-id="83" data-magicpath-path="ZenithPortfolio.tsx">
+                <div className="relative p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden" data-magicpath-id="84" data-magicpath-path="ZenithPortfolio.tsx">
+                  {/* Hover gradient effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/5 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-id="85" data-magicpath-path="ZenithPortfolio.tsx" />
+                  
+                  <div className="relative" data-magicpath-id="86" data-magicpath-path="ZenithPortfolio.tsx">
+                    {/* Avatar and Header */}
+                    <div className="flex items-start space-x-4 mb-6" data-magicpath-id="87" data-magicpath-path="ZenithPortfolio.tsx">
+                      <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center text-4xl shadow-2xl" data-magicpath-id="88" data-magicpath-path="ZenithPortfolio.tsx">
+                        {member.avatar}
+                      </div>
+                      <div className="flex-1" data-magicpath-id="89" data-magicpath-path="ZenithPortfolio.tsx">
+                        <h3 className="text-2xl font-bold mb-1" data-magicpath-id="90" data-magicpath-path="ZenithPortfolio.tsx">{member.name}</h3>
+                        <p className="text-sm font-mono text-violet-400" data-magicpath-id="91" data-magicpath-path="ZenithPortfolio.tsx">{member.role}</p>
+                      </div>
+                      
+                      {/* Social Links */}
+                      <div className="flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity" data-magicpath-id="92" data-magicpath-path="ZenithPortfolio.tsx">
+                        <a href={`https://twitter.com/${member.socials.twitter}`} className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors" aria-label={`Twitter: ${member.socials.twitter}`} data-magicpath-id="93" data-magicpath-path="ZenithPortfolio.tsx">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" data-magicpath-id="94" data-magicpath-path="ZenithPortfolio.tsx">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" data-magicpath-id="95" data-magicpath-path="ZenithPortfolio.tsx" />
+                          </svg>
+                        </a>
+                        <a href={`https://github.com/${member.socials.github}`} className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors" aria-label={`GitHub: ${member.socials.github}`} data-magicpath-id="96" data-magicpath-path="ZenithPortfolio.tsx">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" data-magicpath-id="97" data-magicpath-path="ZenithPortfolio.tsx">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" data-magicpath-id="98" data-magicpath-path="ZenithPortfolio.tsx" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Bio */}
+                    <p className="text-gray-400 mb-6 leading-relaxed" data-magicpath-id="99" data-magicpath-path="ZenithPortfolio.tsx">{member.bio}</p>
+
+                    {/* Expertise Tags */}
+                    <div className="flex flex-wrap gap-2" data-magicpath-id="100" data-magicpath-path="ZenithPortfolio.tsx">
+                      {member.expertise.map(skill => <span key={skill} className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs font-medium text-gray-300" data-magicpath-id="101" data-magicpath-path="ZenithPortfolio.tsx">
+                          {skill}
+                        </span>)}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>)}
+          </div>
+
+          {/* Join Team CTA */}
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          delay: 0.4
+        }} className="mt-16 text-center" data-magicpath-id="102" data-magicpath-path="ZenithPortfolio.tsx">
+            <div className="inline-block p-8 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 rounded-3xl" data-magicpath-id="103" data-magicpath-path="ZenithPortfolio.tsx">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6" data-magicpath-id="104" data-magicpath-path="ZenithPortfolio.tsx">
+                <div className="text-left" data-magicpath-id="105" data-magicpath-path="ZenithPortfolio.tsx">
+                  <h3 className="text-2xl font-bold mb-2" data-magicpath-id="106" data-magicpath-path="ZenithPortfolio.tsx">Join Our Mission</h3>
+                  <p className="text-gray-400" data-magicpath-id="107" data-magicpath-path="ZenithPortfolio.tsx">We're always looking for exceptional talent</p>
+                </div>
+                <button className="px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition-all flex items-center space-x-2 whitespace-nowrap" data-magicpath-id="108" data-magicpath-path="ZenithPortfolio.tsx">
+                  <span data-magicpath-id="109" data-magicpath-path="ZenithPortfolio.tsx">View Open Positions</span>
+                  <ArrowUpRight className="w-4 h-4" data-magicpath-id="110" data-magicpath-path="ZenithPortfolio.tsx" />
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative py-32 px-6" data-magicpath-id="111" data-magicpath-path="ZenithPortfolio.tsx">
+        <div className="max-w-5xl mx-auto" data-magicpath-id="112" data-magicpath-path="ZenithPortfolio.tsx">
           <motion.div initial={{
           opacity: 0,
           scale: 0.95
@@ -332,32 +479,32 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           scale: 1
         }} viewport={{
           once: true
-        }} className="relative p-12 md:p-20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 rounded-[3rem] overflow-hidden" data-magicpath-id="78" data-magicpath-path="ZenithPortfolio.tsx">
-            <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/10 to-cyan-500/10" data-magicpath-id="79" data-magicpath-path="ZenithPortfolio.tsx" />
+        }} className="relative p-12 md:p-20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 rounded-[3rem] overflow-hidden" data-magicpath-id="113" data-magicpath-path="ZenithPortfolio.tsx">
+            <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/10 to-cyan-500/10" data-magicpath-id="114" data-magicpath-path="ZenithPortfolio.tsx" />
             
-            <div className="relative text-center space-y-8" data-magicpath-id="80" data-magicpath-path="ZenithPortfolio.tsx">
-              <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full" data-magicpath-id="81" data-magicpath-path="ZenithPortfolio.tsx">
-                <Lock className="w-4 h-4" data-magicpath-id="82" data-magicpath-path="ZenithPortfolio.tsx" />
-                <span className="text-sm font-medium" data-magicpath-id="83" data-magicpath-path="ZenithPortfolio.tsx">Enterprise Solutions Available</span>
+            <div className="relative text-center space-y-8" data-magicpath-id="115" data-magicpath-path="ZenithPortfolio.tsx">
+              <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full" data-magicpath-id="116" data-magicpath-path="ZenithPortfolio.tsx">
+                <Lock className="w-4 h-4" data-magicpath-id="117" data-magicpath-path="ZenithPortfolio.tsx" />
+                <span className="text-sm font-medium" data-magicpath-id="118" data-magicpath-path="ZenithPortfolio.tsx">Enterprise Solutions Available</span>
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-black leading-tight" data-magicpath-id="84" data-magicpath-path="ZenithPortfolio.tsx">
-                Ready to Build the<br data-magicpath-id="85" data-magicpath-path="ZenithPortfolio.tsx" />
-                <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent" data-magicpath-id="86" data-magicpath-path="ZenithPortfolio.tsx">
+              <h2 className="text-5xl md:text-6xl font-black leading-tight" data-magicpath-id="119" data-magicpath-path="ZenithPortfolio.tsx">
+                Ready to Build the<br data-magicpath-id="120" data-magicpath-path="ZenithPortfolio.tsx" />
+                <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent" data-magicpath-id="121" data-magicpath-path="ZenithPortfolio.tsx">
                   Future of Finance?
                 </span>
               </h2>
               
-              <p className="text-xl text-gray-400 max-w-2xl mx-auto" data-magicpath-id="87" data-magicpath-path="ZenithPortfolio.tsx">
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto" data-magicpath-id="122" data-magicpath-path="ZenithPortfolio.tsx">
                 Partner with Zenith to architect your blockchain infrastructure with uncompromising security and performance
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4" data-magicpath-id="88" data-magicpath-path="ZenithPortfolio.tsx">
-                <button className="px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-all flex items-center space-x-2" data-magicpath-id="89" data-magicpath-path="ZenithPortfolio.tsx">
-                  <span data-magicpath-id="90" data-magicpath-path="ZenithPortfolio.tsx">Schedule Consultation</span>
-                  <ArrowUpRight className="w-5 h-5" data-magicpath-id="91" data-magicpath-path="ZenithPortfolio.tsx" />
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4" data-magicpath-id="123" data-magicpath-path="ZenithPortfolio.tsx">
+                <button className="px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-all flex items-center space-x-2" data-magicpath-id="124" data-magicpath-path="ZenithPortfolio.tsx">
+                  <span data-magicpath-id="125" data-magicpath-path="ZenithPortfolio.tsx">Schedule Consultation</span>
+                  <ArrowUpRight className="w-5 h-5" data-magicpath-id="126" data-magicpath-path="ZenithPortfolio.tsx" />
                 </button>
-                <button className="px-8 py-4 border border-white/20 rounded-full font-bold hover:bg-white/5 transition-all" data-magicpath-id="92" data-magicpath-path="ZenithPortfolio.tsx">
+                <button className="px-8 py-4 border border-white/20 rounded-full font-bold hover:bg-white/5 transition-all" data-magicpath-id="127" data-magicpath-path="ZenithPortfolio.tsx">
                   View Case Studies
                 </button>
               </div>
@@ -367,17 +514,17 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </section>
 
       {/* Footer */}
-      <footer className="relative py-20 px-6 border-t border-white/10" data-magicpath-id="93" data-magicpath-path="ZenithPortfolio.tsx">
-        <div className="max-w-7xl mx-auto" data-magicpath-id="94" data-magicpath-path="ZenithPortfolio.tsx">
-          <div className="grid md:grid-cols-4 gap-12 mb-12" data-magicpath-id="95" data-magicpath-path="ZenithPortfolio.tsx">
-            <div className="space-y-4" data-magicpath-id="96" data-magicpath-path="ZenithPortfolio.tsx">
-              <div className="flex items-center space-x-2" data-magicpath-id="97" data-magicpath-path="ZenithPortfolio.tsx">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center" data-magicpath-id="98" data-magicpath-path="ZenithPortfolio.tsx">
-                  <Zap className="w-5 h-5" data-magicpath-id="99" data-magicpath-path="ZenithPortfolio.tsx" />
+      <footer className="relative py-20 px-6 border-t border-white/10" data-magicpath-id="128" data-magicpath-path="ZenithPortfolio.tsx">
+        <div className="max-w-7xl mx-auto" data-magicpath-id="129" data-magicpath-path="ZenithPortfolio.tsx">
+          <div className="grid md:grid-cols-4 gap-12 mb-12" data-magicpath-id="130" data-magicpath-path="ZenithPortfolio.tsx">
+            <div className="space-y-4" data-magicpath-id="131" data-magicpath-path="ZenithPortfolio.tsx">
+              <div className="flex items-center space-x-2" data-magicpath-id="132" data-magicpath-path="ZenithPortfolio.tsx">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center" data-magicpath-id="133" data-magicpath-path="ZenithPortfolio.tsx">
+                  <Zap className="w-5 h-5" data-magicpath-id="134" data-magicpath-path="ZenithPortfolio.tsx" />
                 </div>
-                <span className="font-bold text-lg" data-magicpath-id="100" data-magicpath-path="ZenithPortfolio.tsx">ZENITH</span>
+                <span className="font-bold text-lg" data-magicpath-id="135" data-magicpath-path="ZenithPortfolio.tsx">ZENITH</span>
               </div>
-              <p className="text-sm text-gray-500" data-magicpath-id="101" data-magicpath-path="ZenithPortfolio.tsx">
+              <p className="text-sm text-gray-500" data-magicpath-id="136" data-magicpath-path="ZenithPortfolio.tsx">
                 Institutional-grade blockchain infrastructure for the decentralized web
               </p>
             </div>
@@ -391,11 +538,11 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           }, {
             title: 'Company',
             links: ['About', 'Careers', 'Contact', 'Press Kit']
-          }].map(column => <div key={column.title} data-magicpath-id="102" data-magicpath-path="ZenithPortfolio.tsx">
-                <h3 className="font-bold mb-4" data-magicpath-id="103" data-magicpath-path="ZenithPortfolio.tsx">{column.title}</h3>
-                <ul className="space-y-2" data-magicpath-id="104" data-magicpath-path="ZenithPortfolio.tsx">
-                  {column.links.map(link => <li key={link} data-magicpath-id="105" data-magicpath-path="ZenithPortfolio.tsx">
-                      <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="106" data-magicpath-path="ZenithPortfolio.tsx">
+          }].map(column => <div key={column.title} data-magicpath-id="137" data-magicpath-path="ZenithPortfolio.tsx">
+                <h3 className="font-bold mb-4" data-magicpath-id="138" data-magicpath-path="ZenithPortfolio.tsx">{column.title}</h3>
+                <ul className="space-y-2" data-magicpath-id="139" data-magicpath-path="ZenithPortfolio.tsx">
+                  {column.links.map(link => <li key={link} data-magicpath-id="140" data-magicpath-path="ZenithPortfolio.tsx">
+                      <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="141" data-magicpath-path="ZenithPortfolio.tsx">
                         {link}
                       </a>
                     </li>)}
@@ -403,18 +550,18 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               </div>)}
           </div>
           
-          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center" data-magicpath-id="107" data-magicpath-path="ZenithPortfolio.tsx">
-            <p className="text-sm text-gray-500" data-magicpath-id="108" data-magicpath-path="ZenithPortfolio.tsx">© 2024 Zenith Technologies. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0" data-magicpath-id="109" data-magicpath-path="ZenithPortfolio.tsx">
-              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="110" data-magicpath-path="ZenithPortfolio.tsx">Privacy</a>
-              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="111" data-magicpath-path="ZenithPortfolio.tsx">Terms</a>
-              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="112" data-magicpath-path="ZenithPortfolio.tsx">Security</a>
+          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center" data-magicpath-id="142" data-magicpath-path="ZenithPortfolio.tsx">
+            <p className="text-sm text-gray-500" data-magicpath-id="143" data-magicpath-path="ZenithPortfolio.tsx">© 2024 Zenith Technologies. All rights reserved.</p>
+            <div className="flex space-x-6 mt-4 md:mt-0" data-magicpath-id="144" data-magicpath-path="ZenithPortfolio.tsx">
+              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="145" data-magicpath-path="ZenithPortfolio.tsx">Privacy</a>
+              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="146" data-magicpath-path="ZenithPortfolio.tsx">Terms</a>
+              <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors" data-magicpath-id="147" data-magicpath-path="ZenithPortfolio.tsx">Security</a>
             </div>
           </div>
         </div>
       </footer>
 
-      <style data-magicpath-id="113" data-magicpath-path="ZenithPortfolio.tsx">{`
+      <style data-magicpath-id="148" data-magicpath-path="ZenithPortfolio.tsx">{`
         @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
