@@ -6,22 +6,22 @@ const services = [{
   icon: Terminal,
   title: 'Smart Contract Auditing',
   description: 'Military-grade security protocols for blockchain infrastructure',
-  color: 'from-violet-500 to-fuchsia-500'
+  color: 'from-teal-600 to-teal-800'
 }, {
   icon: Code2,
   title: 'Protocol Engineering',
   description: 'Zero-knowledge proofs and consensus mechanism design',
-  color: 'from-cyan-500 to-blue-500'
+  color: 'from-amber-600 to-yellow-700'
 }, {
   icon: CircuitBoard,
   title: 'Layer 2 Solutions',
   description: 'Scalable rollup architectures and state channel systems',
-  color: 'from-emerald-500 to-teal-500'
+  color: 'from-teal-500 to-cyan-700'
 }, {
   icon: Database,
   title: 'Tokenomics Design',
   description: 'Economic modeling and game theory for sustainable ecosystems',
-  color: 'from-orange-500 to-rose-500'
+  color: 'from-yellow-600 to-amber-700'
 }];
 const projects = [{
   title: 'Quantum Bridge',
@@ -118,16 +118,16 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       {/* Animated grid background */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" data-magicpath-id="1" data-magicpath-path="ZenithPortfolio.tsx" />
       
-      {/* Gradient orbs */}
+      {/* Gradient orbs - updated to teal and gold */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none" data-magicpath-id="2" data-magicpath-path="ZenithPortfolio.tsx">
         <motion.div className="absolute w-[600px] h-[600px] rounded-full opacity-20" style={{
-        background: 'radial-gradient(circle, rgba(139,92,246,0.4) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(74,124,126,0.4) 0%, transparent 70%)',
         left: cursorPosition.x - 300,
         top: cursorPosition.y - 300,
         transition: 'left 0.3s ease-out, top 0.3s ease-out'
       }} data-magicpath-id="3" data-magicpath-path="ZenithPortfolio.tsx" />
-        <div className="absolute top-20 right-20 w-[500px] h-[500px] bg-gradient-to-br from-cyan-500/20 to-transparent rounded-full blur-3xl" data-magicpath-id="4" data-magicpath-path="ZenithPortfolio.tsx" />
-        <div className="absolute bottom-40 left-40 w-[400px] h-[400px] bg-gradient-to-tr from-fuchsia-500/20 to-transparent rounded-full blur-3xl" data-magicpath-id="5" data-magicpath-path="ZenithPortfolio.tsx" />
+        <div className="absolute top-20 right-20 w-[500px] h-[500px] bg-gradient-to-br from-teal-600/20 to-transparent rounded-full blur-3xl" data-magicpath-id="4" data-magicpath-path="ZenithPortfolio.tsx" />
+        <div className="absolute bottom-40 left-40 w-[400px] h-[400px] bg-gradient-to-tr from-amber-600/20 to-transparent rounded-full blur-3xl" data-magicpath-id="5" data-magicpath-path="ZenithPortfolio.tsx" />
       </div>
 
       {/* Floating Navigation */}
@@ -138,7 +138,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
     }} className="fixed top-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl" data-magicpath-id="6" data-magicpath-path="ZenithPortfolio.tsx">
         <div className="flex items-center space-x-8" data-magicpath-id="7" data-magicpath-path="ZenithPortfolio.tsx">
           <div className="flex items-center space-x-2" data-magicpath-id="8" data-magicpath-path="ZenithPortfolio.tsx">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center" data-magicpath-id="9" data-magicpath-path="ZenithPortfolio.tsx">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-600 to-amber-600 flex items-center justify-center" data-magicpath-id="9" data-magicpath-path="ZenithPortfolio.tsx">
               <Zap className="w-4 h-4" data-magicpath-id="10" data-magicpath-path="ZenithPortfolio.tsx" />
             </div>
             <span className="font-bold text-sm" data-magicpath-id="11" data-magicpath-path="ZenithPortfolio.tsx">ZENITH</span>
@@ -169,9 +169,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           }} transition={{
             duration: 0.8
           }} data-magicpath-id="18" data-magicpath-path="ZenithPortfolio.tsx">
-              <div className="inline-flex items-center space-x-2 px-4 py-2 bg-violet-500/10 border border-violet-500/20 rounded-full mb-8" data-magicpath-id="19" data-magicpath-path="ZenithPortfolio.tsx">
-                <Sparkles className="w-4 h-4 text-violet-400" />
-                <span className="text-sm font-medium text-violet-300" data-magicpath-id="20" data-magicpath-path="ZenithPortfolio.tsx">Building the Decentralized Internet</span>
+              <div className="inline-flex items-center space-x-2 px-4 py-2 bg-teal-600/10 border border-teal-500/20 rounded-full mb-8" data-magicpath-id="19" data-magicpath-path="ZenithPortfolio.tsx">
+                <Sparkles className="w-4 h-4 text-teal-400" />
+                <span className="text-sm font-medium text-teal-300" data-magicpath-id="20" data-magicpath-path="ZenithPortfolio.tsx">Building the Decentralized Internet</span>
               </div>
             </motion.div>
 
@@ -187,7 +187,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           }} className="space-y-6" data-magicpath-id="21" data-magicpath-path="ZenithPortfolio.tsx">
               <h1 className="text-7xl md:text-9xl font-black tracking-tighter" data-magicpath-id="22" data-magicpath-path="ZenithPortfolio.tsx">
                 <span className="block" data-magicpath-id="23" data-magicpath-path="ZenithPortfolio.tsx">CRYPTO</span>
-                <span className="block bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent" data-magicpath-id="24" data-magicpath-path="ZenithPortfolio.tsx">
+                <span className="block bg-gradient-to-r from-teal-400 via-amber-500 to-yellow-500 bg-clip-text text-transparent" data-magicpath-id="24" data-magicpath-path="ZenithPortfolio.tsx">
                   INFRASTRUCTURE
                 </span>
               </h1>
@@ -260,14 +260,14 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         }} viewport={{
           once: true
         }} className="text-center mb-20" data-magicpath-id="41" data-magicpath-path="ZenithPortfolio.tsx">
-            <div className="inline-flex items-center space-x-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full mb-8" data-magicpath-id="42" data-magicpath-path="ZenithPortfolio.tsx">
-              <Target className="w-4 h-4 text-cyan-400" data-magicpath-id="43" data-magicpath-path="ZenithPortfolio.tsx" />
-              <span className="text-sm font-medium text-cyan-300" data-magicpath-id="44" data-magicpath-path="ZenithPortfolio.tsx">Our Mission</span>
+            <div className="inline-flex items-center space-x-2 px-4 py-2 bg-amber-600/10 border border-amber-500/20 rounded-full mb-8" data-magicpath-id="42" data-magicpath-path="ZenithPortfolio.tsx">
+              <Target className="w-4 h-4 text-amber-400" data-magicpath-id="43" data-magicpath-path="ZenithPortfolio.tsx" />
+              <span className="text-sm font-medium text-amber-300" data-magicpath-id="44" data-magicpath-path="ZenithPortfolio.tsx">Our Mission</span>
             </div>
             
             <h2 className="text-5xl md:text-7xl font-black mb-8" data-magicpath-id="45" data-magicpath-path="ZenithPortfolio.tsx">
               BUILDING THE <span className="text-gray-600" data-magicpath-id="46" data-magicpath-path="ZenithPortfolio.tsx">INFRASTRUCTURE</span><br data-magicpath-id="47" data-magicpath-path="ZenithPortfolio.tsx" />
-              <span className="bg-gradient-to-r from-cyan-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent" data-magicpath-id="48" data-magicpath-path="ZenithPortfolio.tsx">
+              <span className="bg-gradient-to-r from-teal-400 via-amber-500 to-yellow-500 bg-clip-text text-transparent" data-magicpath-id="48" data-magicpath-path="ZenithPortfolio.tsx">
                 FOR WEB3
               </span>
             </h2>
@@ -285,17 +285,17 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             icon: TrendingUp,
             value: '$10B+',
             label: 'Total Value Secured',
-            color: 'from-green-500 to-emerald-500'
+            color: 'from-green-600 to-teal-600'
           }, {
             icon: Users,
             value: '2M+',
             label: 'Active Users',
-            color: 'from-violet-500 to-purple-500'
+            color: 'from-teal-600 to-cyan-600'
           }, {
             icon: Rocket,
             value: '150+',
             label: 'Projects Deployed',
-            color: 'from-cyan-500 to-blue-500'
+            color: 'from-amber-600 to-yellow-600'
           }].map((stat, index) => <motion.div key={stat.label} initial={{
             opacity: 0,
             y: 30
@@ -331,8 +331,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             x: 0
           }} viewport={{
             once: true
-          }} className="p-10 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/5 to-transparent backdrop-blur-xl border border-violet-500/20 rounded-3xl" data-magicpath-id="59" data-magicpath-path="ZenithPortfolio.tsx">
-              <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-2xl flex items-center justify-center mb-6" data-magicpath-id="60" data-magicpath-path="ZenithPortfolio.tsx">
+          }} className="p-10 bg-gradient-to-br from-teal-600/10 via-teal-700/5 to-transparent backdrop-blur-xl border border-teal-500/20 rounded-3xl" data-magicpath-id="59" data-magicpath-path="ZenithPortfolio.tsx">
+              <div className="w-14 h-14 bg-gradient-to-br from-teal-600 to-teal-800 rounded-2xl flex items-center justify-center mb-6" data-magicpath-id="60" data-magicpath-path="ZenithPortfolio.tsx">
                 <Shield className="w-7 h-7" data-magicpath-id="61" data-magicpath-path="ZenithPortfolio.tsx" />
               </div>
               <h3 className="text-3xl font-bold mb-4" data-magicpath-id="62" data-magicpath-path="ZenithPortfolio.tsx">Security First</h3>
@@ -351,8 +351,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             x: 0
           }} viewport={{
             once: true
-          }} className="p-10 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-transparent backdrop-blur-xl border border-cyan-500/20 rounded-3xl" data-magicpath-id="64" data-magicpath-path="ZenithPortfolio.tsx">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6" data-magicpath-id="65" data-magicpath-path="ZenithPortfolio.tsx">
+          }} className="p-10 bg-gradient-to-br from-amber-600/10 via-yellow-600/5 to-transparent backdrop-blur-xl border border-amber-500/20 rounded-3xl" data-magicpath-id="64" data-magicpath-path="ZenithPortfolio.tsx">
+              <div className="w-14 h-14 bg-gradient-to-br from-amber-600 to-yellow-700 rounded-2xl flex items-center justify-center mb-6" data-magicpath-id="65" data-magicpath-path="ZenithPortfolio.tsx">
                 <Globe className="w-7 h-7" data-magicpath-id="66" data-magicpath-path="ZenithPortfolio.tsx" />
               </div>
               <h3 className="text-3xl font-bold mb-4" data-magicpath-id="67" data-magicpath-path="ZenithPortfolio.tsx">Global Scale</h3>
@@ -454,7 +454,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             delay: index * 0.15
           }} className="group relative aspect-square" data-magicpath-id="93" data-magicpath-path="ZenithPortfolio.tsx">
                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden" data-magicpath-id="94" data-magicpath-path="ZenithPortfolio.tsx">
-                  <div className="absolute inset-0 bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-id="95" data-magicpath-path="ZenithPortfolio.tsx" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 via-transparent to-amber-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-id="95" data-magicpath-path="ZenithPortfolio.tsx" />
                   
                   <div className="relative h-full p-8 flex flex-col" data-magicpath-id="96" data-magicpath-path="ZenithPortfolio.tsx">
                     <div className="text-6xl mb-auto" data-magicpath-id="97" data-magicpath-path="ZenithPortfolio.tsx">{project.image}</div>
@@ -517,17 +517,17 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           }} className="group relative" data-magicpath-id="113" data-magicpath-path="ZenithPortfolio.tsx">
                 <div className="relative p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden" data-magicpath-id="114" data-magicpath-path="ZenithPortfolio.tsx">
                   {/* Hover gradient effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/5 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-id="115" data-magicpath-path="ZenithPortfolio.tsx" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-600/10 via-amber-600/5 to-teal-700/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-id="115" data-magicpath-path="ZenithPortfolio.tsx" />
                   
                   <div className="relative" data-magicpath-id="116" data-magicpath-path="ZenithPortfolio.tsx">
                     {/* Avatar and Header */}
                     <div className="flex items-start space-x-4 mb-6" data-magicpath-id="117" data-magicpath-path="ZenithPortfolio.tsx">
-                      <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center text-4xl shadow-2xl" data-magicpath-id="118" data-magicpath-path="ZenithPortfolio.tsx">
+                      <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-teal-600 to-amber-600 flex items-center justify-center text-4xl shadow-2xl" data-magicpath-id="118" data-magicpath-path="ZenithPortfolio.tsx">
                         {member.avatar}
                       </div>
                       <div className="flex-1" data-magicpath-id="119" data-magicpath-path="ZenithPortfolio.tsx">
                         <h3 className="text-2xl font-bold mb-1" data-magicpath-id="120" data-magicpath-path="ZenithPortfolio.tsx">{member.name}</h3>
-                        <p className="text-sm font-mono text-violet-400" data-magicpath-id="121" data-magicpath-path="ZenithPortfolio.tsx">{member.role}</p>
+                        <p className="text-sm font-mono text-teal-400" data-magicpath-id="121" data-magicpath-path="ZenithPortfolio.tsx">{member.role}</p>
                       </div>
                       
                       {/* Social Links */}
@@ -599,7 +599,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         }} viewport={{
           once: true
         }} className="relative p-12 md:p-20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl border border-white/20 rounded-[3rem] overflow-hidden" data-magicpath-id="143" data-magicpath-path="ZenithPortfolio.tsx">
-            <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-fuchsia-500/10 to-cyan-500/10" data-magicpath-id="144" data-magicpath-path="ZenithPortfolio.tsx" />
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-600/10 via-amber-600/10 to-teal-700/10" data-magicpath-id="144" data-magicpath-path="ZenithPortfolio.tsx" />
             
             <div className="relative text-center space-y-8" data-magicpath-id="145" data-magicpath-path="ZenithPortfolio.tsx">
               <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full" data-magicpath-id="146" data-magicpath-path="ZenithPortfolio.tsx">
@@ -609,7 +609,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               
               <h2 className="text-5xl md:text-6xl font-black leading-tight" data-magicpath-id="149" data-magicpath-path="ZenithPortfolio.tsx">
                 Ready to Build the<br data-magicpath-id="150" data-magicpath-path="ZenithPortfolio.tsx" />
-                <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent" data-magicpath-id="151" data-magicpath-path="ZenithPortfolio.tsx">
+                <span className="bg-gradient-to-r from-teal-400 to-amber-500 bg-clip-text text-transparent" data-magicpath-id="151" data-magicpath-path="ZenithPortfolio.tsx">
                   Future of Finance?
                 </span>
               </h2>
@@ -638,7 +638,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           <div className="grid md:grid-cols-4 gap-12 mb-12" data-magicpath-id="160" data-magicpath-path="ZenithPortfolio.tsx">
             <div className="space-y-4" data-magicpath-id="161" data-magicpath-path="ZenithPortfolio.tsx">
               <div className="flex items-center space-x-2" data-magicpath-id="162" data-magicpath-path="ZenithPortfolio.tsx">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-cyan-500 flex items-center justify-center" data-magicpath-id="163" data-magicpath-path="ZenithPortfolio.tsx">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-600 to-amber-600 flex items-center justify-center" data-magicpath-id="163" data-magicpath-path="ZenithPortfolio.tsx">
                   <Zap className="w-5 h-5" data-magicpath-id="164" data-magicpath-path="ZenithPortfolio.tsx" />
                 </div>
                 <span className="font-bold text-lg" data-magicpath-id="165" data-magicpath-path="ZenithPortfolio.tsx">ZENITH</span>
