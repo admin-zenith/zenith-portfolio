@@ -782,7 +782,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         }} viewport={{
           once: true
         }} className="text-center mb-20" data-magicpath-id="91" data-magicpath-path="ZenithPortfolio.tsx">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6" data-magicpath-id="92" data-magicpath-path="ZenithPortfolio.tsx">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" data-magicpath-id="92" data-magicpath-path="ZenithPortfolio.tsx" style={{
+            color: "#252525"
+          }}>
               Meet the <span className="text-[#c2f12d]" data-magicpath-id="93" data-magicpath-path="ZenithPortfolio.tsx">team</span>
             </h2>
             <p className="text-xl text-slate-600" data-magicpath-id="94" data-magicpath-path="ZenithPortfolio.tsx">Experts in turning ideas into successful products</p>
@@ -947,7 +949,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         }} viewport={{
           once: true
         }} className="text-center mb-20" data-magicpath-id="120" data-magicpath-path="ZenithPortfolio.tsx">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6" data-magicpath-id="121" data-magicpath-path="ZenithPortfolio.tsx">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6" data-magicpath-id="121" data-magicpath-path="ZenithPortfolio.tsx" style={{
+            color: "#252525"
+          }}>
               Transparent <span className="text-[#c2f12d]" data-magicpath-id="122" data-magicpath-path="ZenithPortfolio.tsx">pricing</span>
             </h2>
             <p className="text-xl text-slate-600" data-magicpath-id="123" data-magicpath-path="ZenithPortfolio.tsx">Simple, predictable pricing with no hidden costs</p>
