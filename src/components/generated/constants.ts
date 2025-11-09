@@ -20,7 +20,17 @@ export const AI_STACK = [
   'Claude',
   'Gemini',
   'MagicPath',
-  'GitHub Copilot'
+  'GitHub Copilot',
+  'Cursor',
+  'v0 by Vercel',
+  'Anthropic',
+  'Midjourney',
+  'Stable Diffusion',
+  'Hugging Face',
+  'LangChain',
+  'Replit AI',
+  'Vercel AI SDK',
+  'Tabnine'
 ];
 
 export const FAILURE_REASONS: FailureReason[] = [
