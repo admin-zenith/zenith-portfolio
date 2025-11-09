@@ -1,38 +1,48 @@
 // Constants and static data for the Zenith Portfolio
-import { Target, XCircle, AlertCircle, RefreshCw, Palette, Code2, TrendingUp } from 'lucide-react';
+import { Target, XCircle, AlertCircle, RefreshCw, Palette, Code2, TrendingUp, Sparkles, Bot, Zap } from 'lucide-react';
 import type { TeamMember, Project, FailureReason, ApproachStep, FAQ } from './types';
 
+// Enhanced tech stack with AI tools
 export const TECH_STACK = [
-  'Laravel',
   'React',
   'Next.js',
+  'Laravel',
   'Node.js',
   'Tailwind',
+  'TypeScript',
   'MySQL',
-  'AWS',
-  'TypeScript'
+  'AWS'
+];
+
+export const AI_STACK = [
+  'OpenAI',
+  'GPT-4',
+  'LangChain',
+  'Hugging Face',
+  'TensorFlow',
+  'Pinecone'
 ];
 
 export const FAILURE_REASONS: FailureReason[] = [
   {
     icon: Target,
     title: 'No clear direction',
-    description: 'Building features without solving real problems.'
+    description: 'Building features without solving real problems—even AI-generated prototypes need human validation.'
   },
   {
     icon: XCircle,
     title: 'Poor experience',
-    description: "The MVP works but users don't want to use it."
+    description: "The MVP works but users don't want to use it. Technology alone isn't enough."
   },
   {
     icon: AlertCircle,
     title: 'Overcomplicated',
-    description: 'Too much, too soon drains resources.'
+    description: 'Too much, too soon drains resources. AI can accelerate, but simplicity wins.'
   },
   {
     icon: RefreshCw,
     title: 'No iteration',
-    description: 'Launched once and never improved.'
+    description: 'Launched once and never improved. Success requires continuous refinement.'
   }
 ];
 
@@ -51,12 +61,18 @@ export const APPROACH_STEPS: ApproachStep[] = [
   },
   {
     number: '03',
-    title: 'Develop',
-    description: 'Build using scalable frameworks and industry best practices.',
-    icon: Code2
+    title: 'AI-Powered Acceleration',
+    description: 'We leverage AI-assisted workflows for prototyping, testing, and development, while our team ensures quality and scalability.',
+    icon: Bot
   },
   {
     number: '04',
+    title: 'Develop',
+    description: 'Build using scalable frameworks and industry best practices, supercharged with AI tools.',
+    icon: Code2
+  },
+  {
+    number: '05',
     title: 'Iterate',
     description: 'Refine based on real feedback and user data.',
     icon: TrendingUp
@@ -89,40 +105,65 @@ export const TEAM_MEMBERS: TeamMember[] = [
 export const RECENT_PROJECTS: Project[] = [
   {
     title: 'Buy & Design AI',
-    description: 'AI-powered property search and renovation planning platform.',
-    tags: ['AI/ML', 'Real Estate'],
-    image: '🏡'
+    description: 'AI-powered platform for predictive pricing and data-driven property insights.',
+    tags: ['AI/ML', 'Real Estate', 'Predictive Analytics'],
+    image: '🏡',
+    aiEnhanced: true
   },
   {
     title: 'Cart & Tell',
-    description: 'Multi-vendor eCommerce with live selling features.',
-    tags: ['eCommerce', 'Live Streaming'],
-    image: '🛒'
+    description: 'Multi-vendor eCommerce with AI-driven recommendations and live selling features.',
+    tags: ['eCommerce', 'Live Streaming', 'AI'],
+    image: '🛒',
+    aiEnhanced: true
   },
   {
     title: 'ClinicPro',
-    description: 'Smart booking and patient management system.',
-    tags: ['Healthcare', 'SaaS'],
-    image: '🏥'
+    description: 'Smart booking with AI-powered patient scheduling and data-driven insights.',
+    tags: ['Healthcare', 'SaaS', 'AI-Enhanced'],
+    image: '🏥',
+    aiEnhanced: true
+  }
+];
+
+export const WHY_BUILD_WITH_US = [
+  {
+    icon: Bot,
+    title: 'AI + Human Expertise',
+    description: 'AI alone isn\'t enough—we provide architecture, integration, and human oversight for production-ready solutions.'
+  },
+  {
+    icon: Zap,
+    title: 'Faster & Smarter Builds',
+    description: 'AI-assisted workflows let us deliver faster, reducing time and cost while maintaining quality.'
+  },
+  {
+    icon: Sparkles,
+    title: 'Validated by Real Engineers',
+    description: 'Every AI-generated component is reviewed, tested, and refined by experienced developers.'
   }
 ];
 
 export const FAQS: FAQ[] = [
   {
-    question: 'How long does it take to build an MVP?',
-    answer: 'Most projects take 4-8 weeks depending on scope. We work in 2-week sprints for rapid, iterative delivery.'
+    question: 'How does AI accelerate your development process?',
+    answer: 'We use AI tools for rapid prototyping, code generation, and testing automation. However, every output is reviewed and refined by our engineering team to ensure production-quality code and scalable architecture.'
+  },
+  {
+    question: 'How long does it take to build an AI-ready MVP?',
+    answer: 'Most AI-enhanced projects take 30-60 days depending on scope. Our AI-assisted workflow lets us work in 2-week sprints for rapid, iterative delivery.'
   },
   {
     question: "What's included in the MVP package?",
-    answer: 'Full project management, UI/UX design, development, testing, deployment, and 2 weeks of post-launch support.'
+    answer: 'Full project management, UI/UX design, AI-assisted development, testing, deployment, and 2 weeks of post-launch support. We also provide architecture documentation for future scaling.'
   },
   {
-    question: 'Can I scale the MVP later?',
-    answer: 'Absolutely. We build with scalability in mind using modern, maintainable architecture that grows with you.'
+    question: 'Can you integrate AI features into my MVP?',
+    answer: 'Absolutely. We specialize in integrating AI capabilities like natural language processing, predictive analytics, recommendation systems, and more using platforms like OpenAI, LangChain, and Hugging Face.'
   },
   {
     question: 'Do you work with international clients?',
-    answer: 'Yes. We collaborate remotely using modern tools and have successfully delivered projects globally.'
+    answer: 'Yes. We collaborate remotely using modern tools and have successfully delivered AI-enhanced projects globally.'
   }
 ];
 

@@ -10,6 +10,7 @@ export interface Project {
   description: string;
   tags: string[];
   image: string;
+  aiEnhanced?: boolean;
 }
 
 export interface FailureReason {
@@ -35,4 +36,10 @@ export interface PricingCalculation {
   sprints: number;
   totalPrice: string;
   duration: number;
+}
+
+export interface WhyBuildWithUs {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
 }
