@@ -6,9 +6,9 @@ import { Sparkles } from 'lucide-react';
 import { TEAM_MEMBERS } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const TeamSection = () => {
-  return <SortableContainer dndKitId="6fb8543d-9196-42e7-8d67-3e31e985977f" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-slate-50" data-magicpath-id="0" data-magicpath-path="TeamSection.tsx">
-      <SortableContainer dndKitId="1cbf538d-8c2b-461a-baf1-85c9162a130c" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="TeamSection.tsx">
-        <SortableContainer dndKitId="4f7ab790-4aa0-472c-a69e-4362d566a0b4" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="43a3888f-be4e-4f56-8599-c3191ddd1c4d" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-slate-50" data-magicpath-id="0" data-magicpath-path="TeamSection.tsx">
+      <SortableContainer dndKitId="c5fb3fdf-18a3-4e94-a15f-dce5b8f32135" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="TeamSection.tsx">
+        <SortableContainer dndKitId="2bd06e76-d738-4ab6-8494-d4d8ea044791" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -18,7 +18,7 @@ export const TeamSection = () => {
         once: true
       }} className="text-center mb-20" data-magicpath-id="2" data-magicpath-path="TeamSection.tsx">
           {/* AI Empowerment Badge */}
-          <SortableContainer dndKitId="371628eb-01bf-4491-9dcf-eac21f7f6201" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="d4ef2368-bfed-4298-8eb6-428fbd27c46f" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           scale: 0.9
         }} whileInView={{
@@ -32,7 +32,7 @@ export const TeamSection = () => {
         }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" style={{
           display: "none"
         }} data-magicpath-id="3" data-magicpath-path="TeamSection.tsx">
-            <SortableContainer dndKitId="ba2864b2-583a-46c2-a63b-40feb9889636" containerType="regular" prevTag="motion.div" animate={{
+            <SortableContainer dndKitId="7419733e-6160-4484-b22d-ae5cbfa43e62" containerType="regular" prevTag="motion.div" animate={{
             rotate: [0, 360]
           }} transition={{
             duration: 3,
@@ -54,7 +54,7 @@ export const TeamSection = () => {
           <p className="text-xl text-slate-600" data-magicpath-id="8" data-magicpath-path="TeamSection.tsx">Experts in turning ideas into successful products</p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="dc4b9c62-3d1c-4f5d-8aa0-d44e6bc679a1" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="97733272-1876-4678-95aa-ed5a3e073a0b" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="9" data-magicpath-path="TeamSection.tsx">
@@ -83,14 +83,14 @@ export const TeamSection = () => {
               type: 'spring',
               stiffness: 300
             }} data-magicpath-uuid={(member as any)["mpid"] ?? "unsafe"} data-magicpath-id="14" data-magicpath-path="TeamSection.tsx">
-                  <motion.h3 data-magicpath-motion-tag="motion.h3" className="text-xl font-bold mb-1 text-white" initial={{
+                  <motion.h3 data-magicpath-motion-tag="motion.h3" className="text-xl font-bold mb-1 text-white group-hover:text-[#c2f12d] transition-colors duration-500" initial={{
                 opacity: 0.9
               }} whileHover={{
                 opacity: 1
               }} data-magicpath-uuid={(member as any)["mpid"] ?? "unsafe"} data-magicpath-field="name:unknown" data-magicpath-id="15" data-magicpath-path="TeamSection.tsx">
                     {member.name}
                   </motion.h3>
-                  <motion.p data-magicpath-motion-tag="motion.p" className="text-sm text-slate-200 font-medium" initial={{
+                  <motion.p data-magicpath-motion-tag="motion.p" className="text-sm text-slate-200 font-medium group-hover:text-[#c2f12d] transition-colors duration-500" initial={{
                 opacity: 0.8
               }} whileHover={{
                 opacity: 1
