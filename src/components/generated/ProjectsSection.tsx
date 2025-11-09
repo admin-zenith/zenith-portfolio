@@ -6,9 +6,9 @@ import { Sparkles } from 'lucide-react';
 import { RECENT_PROJECTS } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const ProjectsSection = () => {
-  return <SortableContainer dndKitId="3765bf91-9773-463c-9868-cf4e87ad153f" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="0" data-magicpath-path="ProjectsSection.tsx">
-      <SortableContainer dndKitId="fdb0ab78-47bb-45d8-afe1-97e8f6bb55bf" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsSection.tsx">
-        <SortableContainer dndKitId="366636a8-8ba8-41d7-8ab8-a1d0966d4acf" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="fa83eaca-df30-478e-8e4d-9989df0ab9e6" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="0" data-magicpath-path="ProjectsSection.tsx">
+      <SortableContainer dndKitId="4c341b95-6ee5-42db-b749-633ff231196d" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsSection.tsx">
+        <SortableContainer dndKitId="bbc12ccc-3493-4881-af10-d0dac58a741d" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -21,7 +21,7 @@ export const ProjectsSection = () => {
           <p className="text-xl text-slate-400" data-magicpath-id="4" data-magicpath-path="ProjectsSection.tsx">Products we've built for startups and businesses</p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="76c297aa-6ff8-4a53-8911-310aec6b1364" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="9fe8e445-7bdd-40bf-8236-184e16746183" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="5" data-magicpath-path="ProjectsSection.tsx">
