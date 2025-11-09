@@ -3,7 +3,7 @@
 import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { motion } from 'framer-motion';
 export const AINetworkBackground = () => {
-  return <SortableContainer dndKitId="af7eea80-1236-4572-980b-ba417a9185e1" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
+  return <SortableContainer dndKitId="13de36d4-537b-4a15-b0dc-f8d8e2cf2987" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
       {/* Gradient Orbs */}
       <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2f12d]/20 rounded-full blur-3xl" animate={{
       x: [0, 50, 0],
