@@ -6,9 +6,9 @@ import { Users } from 'lucide-react';
 import { WHY_BUILD_WITH_US } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const WhyBuildWithUsSection = () => {
-  return <SortableContainer dndKitId="13d5a77b-4a61-4981-9178-e17acd26f56a" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="0" data-magicpath-path="WhyBuildWithUsSection.tsx">
-      <SortableContainer dndKitId="97288d69-82cf-4867-94cb-5bbf51db5766" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="WhyBuildWithUsSection.tsx">
-        <SortableContainer dndKitId="9c4b94b5-77ec-4c9a-b6ba-04501dd62a49" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="aa54fd42-9536-48fc-aa2e-432a5b02ffd2" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="0" data-magicpath-path="WhyBuildWithUsSection.tsx">
+      <SortableContainer dndKitId="612d2b8e-94ac-475e-a431-d44e527549b5" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="WhyBuildWithUsSection.tsx">
+        <SortableContainer dndKitId="f992f9f2-a041-4064-acf5-11812ecf477f" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -45,7 +45,7 @@ export const WhyBuildWithUsSection = () => {
           </motion.p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="4fadac54-ba42-4b1d-b33a-52d6973450ed" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="18c3e437-76bc-4f4c-8d1a-31f34914cbf7" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="7" data-magicpath-path="WhyBuildWithUsSection.tsx">
@@ -106,7 +106,7 @@ export const WhyBuildWithUsSection = () => {
         </SortableContainer>
 
         {/* Collaboration Card with Example Image */}
-        <SortableContainer dndKitId="560c9e09-4a2a-4e30-b8af-df7c74c8f4ca" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="92c85466-c098-4820-818f-6d0ca9743e29" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -117,24 +117,24 @@ export const WhyBuildWithUsSection = () => {
       }} transition={{
         delay: 0.3
       }} className="mt-16" data-magicpath-id="15" data-magicpath-path="WhyBuildWithUsSection.tsx">
-          <SortableContainer dndKitId="6b4dd673-c404-4ffa-a9a3-74eb712fe19c" containerType="regular" prevTag="motion.div" whileHover={{
+          <SortableContainer dndKitId="fd39c0e0-abf5-4c89-815c-093506fa2562" containerType="regular" prevTag="motion.div" whileHover={{
           scale: 1.02,
           y: -5
         }} transition={{
           duration: 0.3
         }} className="relative p-8 md:p-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden" data-magicpath-id="16" data-magicpath-path="WhyBuildWithUsSection.tsx">
             {/* Background Pattern */}
-            <SortableContainer dndKitId="7661fb28-b16a-4e52-a91e-aa1a4932e821" containerType="regular" prevTag="div" className="absolute inset-0 opacity-5" data-magicpath-id="17" data-magicpath-path="WhyBuildWithUsSection.tsx">
+            <SortableContainer dndKitId="072a72c4-88d6-4959-9145-352c5c79c263" containerType="regular" prevTag="div" className="absolute inset-0 opacity-5" data-magicpath-id="17" data-magicpath-path="WhyBuildWithUsSection.tsx">
               <div className="absolute inset-0" style={{
               backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
               backgroundSize: '40px 40px'
             }} data-magicpath-id="18" data-magicpath-path="WhyBuildWithUsSection.tsx" />
             </SortableContainer>
 
-            <SortableContainer dndKitId="b225ea91-8872-434a-b695-83f99fcf71c9" containerType="regular" prevTag="div" className="relative grid md:grid-cols-2 gap-8 items-center" data-magicpath-id="19" data-magicpath-path="WhyBuildWithUsSection.tsx">
+            <SortableContainer dndKitId="45f0d7d5-4fff-4421-963c-0b4393bd6a27" containerType="regular" prevTag="div" className="relative grid md:grid-cols-2 gap-8 items-center" data-magicpath-id="19" data-magicpath-path="WhyBuildWithUsSection.tsx">
               {/* Left Side - Text Content */}
-              <SortableContainer dndKitId="501bcd1b-2828-481b-b412-1680b8cb849f" containerType="regular" prevTag="div" data-magicpath-id="20" data-magicpath-path="WhyBuildWithUsSection.tsx">
-                <SortableContainer dndKitId="12962fde-0414-49a3-859e-f9ab717a6ac7" containerType="regular" prevTag="motion.div" initial={{
+              <SortableContainer dndKitId="fbbdae77-b8fc-4c46-8902-147216afb17a" containerType="regular" prevTag="div" data-magicpath-id="20" data-magicpath-path="WhyBuildWithUsSection.tsx">
+                <SortableContainer dndKitId="4f416921-79cc-46d4-9bd8-993e9a1b00c7" containerType="regular" prevTag="motion.div" initial={{
                 opacity: 0,
                 x: -20
               }} whileInView={{
@@ -179,7 +179,7 @@ export const WhyBuildWithUsSection = () => {
               </SortableContainer>
 
               {/* Right Side - Example Image */}
-              <SortableContainer dndKitId="da4088f4-deab-4e3e-a756-acec0568df2d" containerType="regular" prevTag="motion.div" initial={{
+              <SortableContainer dndKitId="64834742-d529-47fe-ad84-c2cb0ab057a8" containerType="regular" prevTag="motion.div" initial={{
               opacity: 0,
               scale: 0.95
             }} whileInView={{
@@ -191,7 +191,7 @@ export const WhyBuildWithUsSection = () => {
               delay: 0.3,
               duration: 0.5
             }} className="relative" data-magicpath-id="26" data-magicpath-path="WhyBuildWithUsSection.tsx">
-                <SortableContainer dndKitId="3fc7df97-a94f-4bda-9f05-e3c46b7451a8" containerType="regular" prevTag="div" className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl" data-magicpath-id="27" data-magicpath-path="WhyBuildWithUsSection.tsx">
+                <SortableContainer dndKitId="02cc0fc3-d369-4a65-9a6c-c39975967a5b" containerType="regular" prevTag="div" className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl" data-magicpath-id="27" data-magicpath-path="WhyBuildWithUsSection.tsx">
                   <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&q=80" alt="Team collaboration" className="w-full h-full object-cover" data-magicpath-id="28" data-magicpath-path="WhyBuildWithUsSection.tsx" />
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" data-magicpath-id="29" data-magicpath-path="WhyBuildWithUsSection.tsx" />
@@ -217,7 +217,7 @@ export const WhyBuildWithUsSection = () => {
         </SortableContainer>
 
         {/* Additional Message */}
-        <SortableContainer dndKitId="aae426f7-c84d-405c-8c27-84bab6b31784" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="01f2c748-062d-4501-99a6-0c2c5e1245aa" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 20
       }} whileInView={{

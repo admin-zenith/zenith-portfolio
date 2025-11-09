@@ -13,7 +13,7 @@ const NAV_ITEMS = ['How We Work', 'Projects', 'Pricing', 'FAQs'];
 export const Navigation = ({
   onGetStarted
 }: NavigationProps) => {
-  return <SortableContainer dndKitId="87b8392d-9fab-4d93-b5d1-39d7b5e250ef" containerType="regular" prevTag="motion.nav" initial={{
+  return <SortableContainer dndKitId="5ec21813-161f-4ec8-832c-b9b23bf3e21e" containerType="regular" prevTag="motion.nav" initial={{
     y: -100,
     opacity: 0
   }} animate={{
@@ -24,16 +24,16 @@ export const Navigation = ({
     stiffness: 100,
     damping: 20
   }} className="fixed top-6 left-1/2 -translate-x-1/2 z-50" data-magicpath-id="0" data-magicpath-path="Navigation.tsx">
-      <SortableContainer dndKitId="8ffec41c-6674-4a96-a5b2-2ffbb74fc054" containerType="regular" prevTag="div" className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3" data-magicpath-id="1" data-magicpath-path="Navigation.tsx">
-        <SortableContainer dndKitId="a679fcad-4417-464f-94eb-4b2bb09e8eae" containerType="regular" prevTag="div" className="flex items-center justify-between gap-8" data-magicpath-id="2" data-magicpath-path="Navigation.tsx">
+      <SortableContainer dndKitId="6ffce69a-e01c-4125-89a0-e06a6198e8ef" containerType="regular" prevTag="div" className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3" data-magicpath-id="1" data-magicpath-path="Navigation.tsx">
+        <SortableContainer dndKitId="ed7cabfb-88a0-4502-af82-a413788d7b49" containerType="regular" prevTag="div" className="flex items-center justify-between gap-8" data-magicpath-id="2" data-magicpath-path="Navigation.tsx">
           {/* Logo */}
-          <SortableContainer dndKitId="ff66cb42-2989-4ecc-88d9-4a76066c7693" containerType="regular" prevTag="motion.div" whileHover={{
+          <SortableContainer dndKitId="c4c98fc9-fa97-4389-854c-969d4350838a" containerType="regular" prevTag="motion.div" whileHover={{
           scale: 1.05
         }} whileTap={{
           scale: 0.95
         }} className="flex items-center space-x-2" data-magicpath-id="3" data-magicpath-path="Navigation.tsx">
             <Logo size={36} data-magicpath-id="4" data-magicpath-path="Navigation.tsx" />
-            <SortableContainer dndKitId="b319960d-eb9e-461c-9573-6c92e95ee738" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="5" data-magicpath-path="Navigation.tsx">
+            <SortableContainer dndKitId="ad6a1fc3-7e60-4a2e-ac99-0985c2fe4e9a" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="5" data-magicpath-path="Navigation.tsx">
               <span className="text-xl font-bold text-white tracking-tight" data-magicpath-id="6" data-magicpath-path="Navigation.tsx">zenith</span>
               <motion.span data-magicpath-motion-tag="motion.span" className="text-xl font-bold text-[#c2f12d]" animate={{
               scale: [1, 1.2, 1]
@@ -47,7 +47,7 @@ export const Navigation = ({
           </SortableContainer>
 
           {/* Nav Links */}
-          <SortableContainer dndKitId="ecbdce18-77bf-40b2-8620-688f20a33d06" containerType="collection" prevTag="motion.div" className="hidden md:flex items-center space-x-1" variants={containerVariants} initial="hidden" animate="visible" data-magicpath-id="8" data-magicpath-path="Navigation.tsx">
+          <SortableContainer dndKitId="3a19529d-76b0-44c7-920c-b4ce815cae44" containerType="collection" prevTag="motion.div" className="hidden md:flex items-center space-x-1" variants={containerVariants} initial="hidden" animate="visible" data-magicpath-id="8" data-magicpath-path="Navigation.tsx">
             {NAV_ITEMS.map(item => <motion.a data-magicpath-motion-tag="motion.a" key={item} href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} variants={itemVariants} whileHover={{
             scale: 1.05,
             y: -2
