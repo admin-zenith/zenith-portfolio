@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MagneticButton } from './MagneticButton';
-import { Logo } from './Logo';
+import Logo  from '../img/LOGO.svg';
 import { containerVariants, itemVariants } from './animations';
 interface NavigationProps {
   onGetStarted: () => void;
@@ -25,24 +25,7 @@ export const Navigation = ({
       <div className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3">
         <div className="flex items-center justify-between gap-8">
           {/* Logo */}
-          <motion.div whileHover={{
-          scale: 1.05
-        }} whileTap={{
-          scale: 0.95
-        }} className="flex items-center space-x-2">
-            <Logo size={36} />
-            <div className="flex items-baseline">
-              <span className="text-xl font-bold text-white tracking-tight">zenith</span>
-              <motion.span className="text-xl font-bold text-[#c2f12d]" animate={{
-              scale: [1, 1.2, 1]
-            }} transition={{
-              duration: 2,
-              repeat: Infinity
-            }}>
-                .
-              </motion.span>
-            </div>
-          </motion.div>
+         <img src={Logo}  alt="" />
 
           {/* Nav Links */}
           <motion.div className="hidden md:flex items-center space-x-1" variants={containerVariants} initial="hidden" animate="visible">
