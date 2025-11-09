@@ -74,18 +74,14 @@ export const HeroSection = ({
 
           {/* Headline */}
           <motion.h1 data-magicpath-motion-tag="motion.h1" className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight mb-8 leading-[0.9]" initial="hidden" animate="visible" variants={containerVariants} data-magicpath-id="8" data-magicpath-path="HeroSection.tsx">
-            <motion.span data-magicpath-motion-tag="motion.span" variants={itemVariants} className="inline-block bg-gradient-to-br from-white via-white to-slate-400 bg-clip-text text-transparent" data-magicpath-id="9" data-magicpath-path="HeroSection.tsx">
-              Ship your AI-ready MVP in
-            </motion.span>
+            <motion.span data-magicpath-motion-tag="motion.span" variants={itemVariants} className="inline-block bg-gradient-to-br from-white via-white to-slate-400 bg-clip-text text-transparent" data-magicpath-id="9" data-magicpath-path="HeroSection.tsx">Ship your  MVP in</motion.span>
             <br data-magicpath-id="10" data-magicpath-path="HeroSection.tsx" />
             <span className="relative inline-block" data-magicpath-id="11" data-magicpath-path="HeroSection.tsx">
               <motion.span data-magicpath-motion-tag="motion.span" className="text-[#c2f12d]" variants={itemVariants} whileHover={{
               scale: 1.05
             }} transition={{
               type: 'spring'
-            }} data-magicpath-id="12" data-magicpath-path="HeroSection.tsx">
-                30–60 days
-              </motion.span>
+            }} data-magicpath-id="12" data-magicpath-path="HeroSection.tsx">30 days</motion.span>
               <motion.div data-magicpath-motion-tag="motion.div" className="absolute -inset-2 bg-[#c2f12d]/20 blur-2xl -z-10" animate={{
               opacity: [0.3, 0.6, 0.3],
               scale: [1, 1.1, 1]
