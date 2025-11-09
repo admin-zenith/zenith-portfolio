@@ -50,7 +50,7 @@ export const AINetworkBackground = () => {
     }
     return lines;
   }, [nodes]);
-  return <SortableContainer dndKitId="4138693a-f85f-4cc6-8075-fe5969ff0aa5" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none opacity-20" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
+  return <SortableContainer dndKitId="9bdffcb9-348f-47d7-b4b3-5e7125851668" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none opacity-20" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
       <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" data-magicpath-id="1" data-magicpath-path="AINetworkBackground.tsx">
         <defs data-magicpath-id="2" data-magicpath-path="AINetworkBackground.tsx">
           <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%" data-magicpath-id="3" data-magicpath-path="AINetworkBackground.tsx">
