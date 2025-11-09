@@ -14,22 +14,22 @@ const failureReasons = [{
   icon: Target,
   title: 'No clear direction',
   description: 'Building features without solving real problems.',
-  mpid: "f4ae6279-251f-4b93-8020-86ef79c1652e"
+  mpid: "f0f850ad-f089-42cf-93d1-d2a30bb3097b"
 }, {
   icon: XCircle,
   title: 'Poor experience',
   description: 'The MVP works but users don\'t want to use it.',
-  mpid: "c263fe27-0007-4c68-8aad-8b881c65c01f"
+  mpid: "e8d39bad-b040-49f3-9e42-69c627e5f597"
 }, {
   icon: AlertCircle,
   title: 'Overcomplicated',
   description: 'Too much, too soon drains resources.',
-  mpid: "a88d3a8d-f22e-4cdd-b660-9e8154f8d7e3"
+  mpid: "4ad6dce8-c38e-4fdf-a8c4-b3f39b8fec16"
 }, {
   icon: RefreshCw,
   title: 'No iteration',
   description: 'Launched once and never improved.',
-  mpid: "aab4d9dd-fa27-4eda-8b63-de9aa3bac590"
+  mpid: "ed91a2f1-7e63-49e1-9658-fc270dcddc43"
 }] as any[];
 
 // Approach Steps
@@ -38,25 +38,25 @@ const approachSteps = [{
   title: 'Discover',
   description: 'Define target users, goals, and key features through collaborative workshops.',
   icon: Target,
-  mpid: "cdca44fa-e98c-4275-8ea4-a104c2ab77f2"
+  mpid: "c269751f-1ddf-43b7-b3b9-93d62fd5383b"
 }, {
   number: '02',
   title: 'Design',
   description: 'Create clean, functional interfaces validated by user research.',
   icon: Palette,
-  mpid: "e024d0c4-cad1-4780-a5d7-132c4885a9aa"
+  mpid: "ebcd66d7-e764-4b55-b93e-f05e8c012488"
 }, {
   number: '03',
   title: 'Develop',
   description: 'Build using scalable frameworks and industry best practices.',
   icon: Code2,
-  mpid: "05d2d498-fba9-468a-9465-f5ad934330f4"
+  mpid: "60e3a1f5-d3f0-4a6e-9415-131ddb23fd17"
 }, {
   number: '04',
   title: 'Iterate',
   description: 'Refine based on real feedback and user data.',
   icon: TrendingUp,
-  mpid: "628aad75-e164-453c-b8b8-e2d504cb92fe"
+  mpid: "da47651c-341a-4e12-b992-b06d28cd1569"
 }] as any[];
 
 // Team Members
@@ -64,22 +64,22 @@ const teamMembers = [{
   name: 'Glenn Zaballero',
   role: 'Founder & Project Manager',
   image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80',
-  mpid: "f578ab78-fcb2-42fa-b165-8ef828ff4a98"
+  mpid: "b2b3ba1a-60f4-42f9-9bde-c042d6d28286"
 }, {
   name: 'Alex Chen',
   role: 'Senior Engineer',
   image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&q=80',
-  mpid: "ed83a940-2b9b-4d5a-9790-f478bbf873f3"
+  mpid: "d6b5eb0a-26c9-41be-b569-aa6482613f79"
 }, {
   name: 'Sarah Martinez',
   role: 'Lead Designer',
   image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&q=80',
-  mpid: "ed84dc50-1cd4-4ecf-a35f-46a01216ae22"
+  mpid: "e99492e4-5fd0-40ee-9bab-71ebd60ecc04"
 }, {
   name: 'Michael Kumar',
   role: 'Quality Engineer',
   image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&q=80',
-  mpid: "529da14e-9972-4ea5-b75c-ffbdf728f752"
+  mpid: "d809431b-195d-4147-b36d-2867d70b0844"
 }] as any[];
 
 // Projects
@@ -88,38 +88,38 @@ const recentProjects = [{
   description: 'AI-powered property search and renovation planning platform.',
   tags: ['AI/ML', 'Real Estate'],
   image: '🏡',
-  mpid: "a7093cc9-dce4-454a-82bb-f88d71005037"
+  mpid: "98a7ede8-1dfc-4118-a4db-a0ec9264881c"
 }, {
   title: 'Cart & Tell',
   description: 'Multi-vendor eCommerce with live selling features.',
   tags: ['eCommerce', 'Live Streaming'],
   image: '🛒',
-  mpid: "369b72aa-acb9-4e70-a1a6-3c16bcc95283"
+  mpid: "1b6d2b8f-b135-4809-a264-9aa0b5184a7f"
 }, {
   title: 'ClinicPro',
   description: 'Smart booking and patient management system.',
   tags: ['Healthcare', 'SaaS'],
   image: '🏥',
-  mpid: "cabc104c-da48-44f8-8f75-19ac68973e75"
+  mpid: "6cdd347c-9749-46af-9cda-56527fceddfc"
 }] as any[];
 
 // FAQs
 const faqs = [{
   question: 'How long does it take to build an MVP?',
   answer: 'Most projects take 4-8 weeks depending on scope. We work in 2-week sprints for rapid, iterative delivery.',
-  mpid: "c7fe3d36-fd9e-4f39-80b5-74cba16dba5e"
+  mpid: "710fe779-8e2b-4f2b-9cad-b83cf8cb6a8a"
 }, {
   question: 'What\'s included in the MVP package?',
   answer: 'Full project management, UI/UX design, development, testing, deployment, and 2 weeks of post-launch support.',
-  mpid: "789071c3-e9f1-411c-8d4b-00cfb5569979"
+  mpid: "20265488-dc14-43d7-979a-fc487845d3ab"
 }, {
   question: 'Can I scale the MVP later?',
   answer: 'Absolutely. We build with scalability in mind using modern, maintainable architecture that grows with you.',
-  mpid: "931a6a9e-dd0b-492d-af98-7df6c5a2b762"
+  mpid: "81f4890f-0bad-4b98-a95a-38ad40c4f843"
 }, {
   question: 'Do you work with international clients?',
   answer: 'Yes. We collaborate remotely using modern tools and have successfully delivered projects globally.',
-  mpid: "ac9fa2d9-d392-4d74-8f4d-6af7fdc32e1c"
+  mpid: "ea28764b-c529-4b4a-895e-fff7e8f29f3c"
 }] as any[];
 
 // Animated Counter Component
@@ -301,19 +301,19 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       }
     }
   };
-  return <SortableContainer dndKitId="e416f9a0-28a8-444d-ac5c-53b3c40c6d19" containerType="regular" prevTag="div" className="min-h-screen bg-[#252525] text-white overflow-x-hidden" data-magicpath-id="4" data-magicpath-path="ZenithPortfolio.tsx">
+  return <SortableContainer dndKitId="66cd1ae6-bbc3-4315-bffb-80a1e6af525d" containerType="regular" prevTag="div" className="min-h-screen bg-[#252525] text-white overflow-x-hidden" data-magicpath-id="4" data-magicpath-path="ZenithPortfolio.tsx">
       {/* Floating Particles */}
       <FloatingParticles data-magicpath-id="5" data-magicpath-path="ZenithPortfolio.tsx" />
 
       {/* Animated Grid Background */}
-      <SortableContainer dndKitId="bfa8b736-98e2-40ae-a7b8-32debca1b9e7" containerType="regular" prevTag="motion.div" className="fixed inset-0 z-0" style={{
+      <SortableContainer dndKitId="1aacf9cf-239d-498d-b7a6-0e3599e7a038" containerType="regular" prevTag="motion.div" className="fixed inset-0 z-0" style={{
       opacity: useTransform(smoothProgress, [0, 0.5], [1, 0.3])
     }} data-magicpath-id="6" data-magicpath-path="ZenithPortfolio.tsx">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#c2f12d10_1px,transparent_1px),linear-gradient(to_bottom,#c2f12d10_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" data-magicpath-id="7" data-magicpath-path="ZenithPortfolio.tsx" />
       </SortableContainer>
 
       {/* Floating Orbs with Enhanced Animation */}
-      <SortableContainer dndKitId="9b05b73d-7401-4f09-aad6-0c67396ce243" containerType="regular" prevTag="div" className="fixed inset-0 z-0 overflow-hidden pointer-events-none" data-magicpath-id="8" data-magicpath-path="ZenithPortfolio.tsx">
+      <SortableContainer dndKitId="a5694d0e-8d67-4a80-ba35-1aaf55173004" containerType="regular" prevTag="div" className="fixed inset-0 z-0 overflow-hidden pointer-events-none" data-magicpath-id="8" data-magicpath-path="ZenithPortfolio.tsx">
         <motion.div data-magicpath-motion-tag="motion.div" animate={{
         scale: [1, 1.2, 1],
         opacity: [0.15, 0.25, 0.15],
@@ -338,7 +338,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Navigation with slide-down animation */}
-      <SortableContainer dndKitId="10261aac-26cd-4100-aab4-d313cdbedaaf" containerType="regular" prevTag="motion.nav" initial={{
+      <SortableContainer dndKitId="88c651aa-c97f-4300-832d-9987350bd2e0" containerType="regular" prevTag="motion.nav" initial={{
       y: -100,
       opacity: 0
     }} animate={{
@@ -349,10 +349,10 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       stiffness: 100,
       damping: 20
     }} className="fixed top-6 left-1/2 -translate-x-1/2 z-50" data-magicpath-id="11" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="60497ce2-a772-426b-91d9-53dbbbdde64f" containerType="regular" prevTag="div" className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3" data-magicpath-id="12" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="9b859067-03cf-40cb-a2fc-c7332e10a232" containerType="regular" prevTag="div" className="flex items-center justify-between gap-8" data-magicpath-id="13" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="6e6fb324-3a8c-4681-9159-6a911996f610" containerType="regular" prevTag="div" className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3" data-magicpath-id="12" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="50b24e32-6a11-4be2-b20f-b895e068ab74" containerType="regular" prevTag="div" className="flex items-center justify-between gap-8" data-magicpath-id="13" data-magicpath-path="ZenithPortfolio.tsx">
             {/* Logo with bounce */}
-            <SortableContainer dndKitId="f70b72ce-cd18-446b-90bf-8c5f474660be" containerType="regular" prevTag="motion.div" whileHover={{
+            <SortableContainer dndKitId="bd0fe3ee-26eb-43ad-b2d7-0c2140e0950d" containerType="regular" prevTag="motion.div" whileHover={{
             scale: 1.05
           }} whileTap={{
             scale: 0.95
@@ -398,7 +398,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                   <circle cx="60" cy="38" r="1.5" fill="#c2f12d" opacity="0.8" data-magicpath-id="33" data-magicpath-path="ZenithPortfolio.tsx" />
                 </g>
               </motion.svg>
-              <SortableContainer dndKitId="faf06933-9d2a-49a1-b7c0-8dad9dc9f3de" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="34" data-magicpath-path="ZenithPortfolio.tsx">
+              <SortableContainer dndKitId="a07c9b0b-728e-430d-8f61-b5da28685b73" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="34" data-magicpath-path="ZenithPortfolio.tsx">
                 <span className="text-xl font-bold text-white tracking-tight" data-magicpath-id="35" data-magicpath-path="ZenithPortfolio.tsx">zenith</span>
                 <motion.span data-magicpath-motion-tag="motion.span" className="text-xl font-bold text-[#c2f12d]" animate={{
                 scale: [1, 1.2, 1]
@@ -441,13 +441,13 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Hero Section with Parallax */}
-      <SortableContainer dndKitId="102da817-cc53-4368-9704-4045f34a21a4" containerType="regular" prevTag="section" className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20" data-magicpath-id="42" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="81864f17-5a4f-4cd5-a59b-3948b53572d7" containerType="regular" prevTag="motion.div" style={{
+      <SortableContainer dndKitId="c25b66ef-9ca3-45b5-99f8-4ea32d6c5312" containerType="regular" prevTag="section" className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20" data-magicpath-id="42" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="e7df73b9-53dd-4583-aad5-cb13f08bf5b3" containerType="regular" prevTag="motion.div" style={{
         opacity: heroOpacity,
         scale: heroScale,
         y: heroY
       }} className="relative z-10 max-w-6xl mx-auto text-center" data-magicpath-id="43" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="d8365941-d3c8-4f70-ad18-8073ac58250f" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="f6b6b5ad-9128-4c0d-b49f-fbd156549e30" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} animate={{
@@ -458,7 +458,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           ease: "easeOut"
         }} data-magicpath-id="44" data-magicpath-path="ZenithPortfolio.tsx">
             {/* Badge with shimmer effect */}
-            <SortableContainer dndKitId="ec1ab93d-7882-4a36-8adc-715febec77f0" containerType="regular" prevTag="motion.div" initial={{
+            <SortableContainer dndKitId="bad07c6a-2828-4c00-8934-2a171bc15946" containerType="regular" prevTag="motion.div" initial={{
             opacity: 0,
             scale: 0.9
           }} animate={{
@@ -475,7 +475,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             }} transition={{
               duration: 0.6
             }} data-magicpath-id="46" data-magicpath-path="ZenithPortfolio.tsx" />
-              <SortableContainer dndKitId="9633def7-8e2b-48f1-bbfe-33f92e5a2de6" containerType="regular" prevTag="motion.div" animate={{
+              <SortableContainer dndKitId="67fafda8-ec77-4bc6-83e1-b9d332559c3d" containerType="regular" prevTag="motion.div" animate={{
               rotate: [0, 360]
             }} transition={{
               duration: 3,
@@ -528,7 +528,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             </motion.p>
 
             {/* CTA Buttons with enhanced hover */}
-            <SortableContainer dndKitId="230d803c-b23e-4b21-b1cf-4a32f6088dde" containerType="regular" prevTag="motion.div" initial={{
+            <SortableContainer dndKitId="f264629b-a6a8-4c7e-97e5-d19176ca3aed" containerType="regular" prevTag="motion.div" initial={{
             opacity: 0,
             y: 20
           }} animate={{
@@ -547,7 +547,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               }} data-magicpath-id="59" data-magicpath-path="ZenithPortfolio.tsx" />
                 <span className="relative flex items-center space-x-2" data-magicpath-id="60" data-magicpath-path="ZenithPortfolio.tsx">
                   <span data-magicpath-id="61" data-magicpath-path="ZenithPortfolio.tsx">Get a Quote</span>
-                  <SortableContainer dndKitId="0586524f-00b6-4b10-bda3-6ac88107b0ca" containerType="regular" prevTag="motion.div" animate={{
+                  <SortableContainer dndKitId="5778ccef-0fee-4b58-8df8-eed9d3fac8e5" containerType="regular" prevTag="motion.div" animate={{
                   x: [0, 5, 0]
                 }} transition={{
                   duration: 1.5,
@@ -560,7 +560,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
 
               <MagneticButton className="px-8 py-4 bg-white/5 backdrop-blur-xl border-2 border-white/10 hover:border-[#c2f12d]/50 text-white rounded-xl font-semibold transition-all duration-300 group" onClick={handleBookCall} data-magicpath-id="64" data-magicpath-path="ZenithPortfolio.tsx">
                 <span className="flex items-center space-x-2" data-magicpath-id="65" data-magicpath-path="ZenithPortfolio.tsx">
-                  <SortableContainer dndKitId="84149511-3062-4e64-80ab-03d1a7bd08e0" containerType="regular" prevTag="motion.div" animate={{
+                  <SortableContainer dndKitId="f4b23b1b-3cb0-4778-9383-4f04b2f40982" containerType="regular" prevTag="motion.div" animate={{
                   rotate: [0, 360]
                 }} transition={{
                   duration: 20,
@@ -575,11 +575,11 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             </SortableContainer>
 
             {/* Tech Stack with stagger animation */}
-            <SortableContainer dndKitId="fbb3d575-ae8d-4c07-8248-9d27245fc155" containerType="regular" prevTag="motion.div" initial="hidden" animate="visible" variants={containerVariants} className="space-y-4" data-magicpath-id="69" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="4f58ef0b-83f5-4ad9-b048-25e2f6e17b63" containerType="regular" prevTag="motion.div" initial="hidden" animate="visible" variants={containerVariants} className="space-y-4" data-magicpath-id="69" data-magicpath-path="ZenithPortfolio.tsx">
               <motion.p data-magicpath-motion-tag="motion.p" variants={itemVariants} className="text-xs text-slate-500 uppercase tracking-wider font-medium" data-magicpath-id="70" data-magicpath-path="ZenithPortfolio.tsx">
                 Built With
               </motion.p>
-              <SortableContainer dndKitId="d0ed5f9e-e986-47e1-bf99-20bd17674640" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="71" data-magicpath-path="ZenithPortfolio.tsx">
+              <SortableContainer dndKitId="3d2f74bd-73b0-4d5f-ab65-da44acb431c2" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="71" data-magicpath-path="ZenithPortfolio.tsx">
                 {techStack.map((tech, i) => <motion.div data-magicpath-motion-tag="motion.div" key={tech} variants={itemVariants} whileHover={{
                 scale: 1.1,
                 y: -2,
@@ -596,7 +596,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
         </SortableContainer>
 
         {/* Scroll Indicator with bounce */}
-        <SortableContainer dndKitId="ae8c4ba5-e300-4e3f-81da-3f1cfe86ab51" containerType="regular" prevTag="motion.div" className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
+        <SortableContainer dndKitId="52dd600d-d350-4c8f-9229-54b50b9b9a23" containerType="regular" prevTag="motion.div" className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
         y: [0, 15, 0],
         opacity: [1, 0.5, 1]
       }} transition={{
@@ -609,9 +609,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Why MVPs Fail - Light Section with Reveal Animation */}
-      <SortableContainer dndKitId="db99aa1c-9dd2-43c2-afdf-79c38510e040" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="75" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="dd662409-5649-4341-8a3c-a157ec5ce594" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="76" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="b3b3d83b-a61a-40b9-bb29-782541e1c591" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="95fdccbb-5f8c-4ccf-8fb8-8e28f2bb20cd" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="75" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="0e4df9b7-e203-4b2f-8933-e4a22eb87b04" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="76" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="336263d6-9a7e-4ae1-8a6e-417741068192" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -651,7 +651,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             </motion.p>
           </SortableContainer>
 
-          <SortableContainer dndKitId="cb882617-9104-4dbf-9aa0-c6d968a84aa1" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+          <SortableContainer dndKitId="1a1d5f50-666f-4896-895a-91a1c36e6f81" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true,
           margin: "-100px"
         }} data-magicpath-id="82" data-magicpath-path="ZenithPortfolio.tsx">
@@ -689,9 +689,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Our Approach - Dark Section with Card Flip Effect */}
-      <SortableContainer dndKitId="6692460c-016f-4ffa-8766-6c760c7c2d91" containerType="regular" prevTag="section" id="how-we-work" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="90" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="0cd7720b-7b15-499c-b752-2e9dc4baaca5" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="91" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="32847a36-396c-4af0-a51b-17670ebe5739" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="2c03b316-e222-41e5-b938-4d3acd0275a3" containerType="regular" prevTag="section" id="how-we-work" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="90" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="365046c3-2265-4f90-9498-6b00a7dfc1b5" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="91" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="96e7324f-0487-491a-9ee7-dc55a38b358c" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -721,7 +721,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             </p>
           </SortableContainer>
 
-          <SortableContainer dndKitId="7c8ead89-50c2-41a0-835f-4c66ce02e310" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+          <SortableContainer dndKitId="9cf6a64a-2e0c-45c5-b7f0-6e206e5c6714" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true,
           margin: "-100px"
         }} data-magicpath-id="96" data-magicpath-path="ZenithPortfolio.tsx">
@@ -796,7 +796,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           </SortableContainer>
 
           {/* Team Photo */}
-          <SortableContainer dndKitId="4143397b-ca21-4a61-9350-62a85cbd8f00" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="c2615278-c198-4bfc-89d3-07c39836aa23" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 40
         }} whileInView={{
@@ -809,7 +809,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           duration: 0.8,
           delay: 0.3
         }} className="mt-20" data-magicpath-id="106" data-magicpath-path="ZenithPortfolio.tsx">
-            <SortableContainer dndKitId="8931c3c8-799d-4456-9197-ab7544f1d49a" containerType="regular" prevTag="div" className="relative rounded-3xl overflow-hidden group" data-magicpath-id="107" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="6e3bcacc-56d8-497e-9555-e0038f00abef" containerType="regular" prevTag="div" className="relative rounded-3xl overflow-hidden group" data-magicpath-id="107" data-magicpath-path="ZenithPortfolio.tsx">
               {/* Gradient Overlay */}
               <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-gradient-to-t from-[#252525] via-[#252525]/40 to-transparent z-10" initial={{
               opacity: 0.7
@@ -837,7 +837,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             }} data-magicpath-id="110" data-magicpath-path="ZenithPortfolio.tsx" />
 
               {/* Text Overlay */}
-              <SortableContainer dndKitId="63b4ba75-c2c3-4b8b-9a5d-1b2b3791e2c8" containerType="regular" prevTag="motion.div" className="absolute bottom-0 left-0 right-0 p-10 z-20" initial={{
+              <SortableContainer dndKitId="1bd26326-a1ad-407a-bcf7-a6ac5fc0d30a" containerType="regular" prevTag="motion.div" className="absolute bottom-0 left-0 right-0 p-10 z-20" initial={{
               y: 20,
               opacity: 0
             }} whileInView={{
@@ -848,7 +848,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             }} transition={{
               delay: 0.5
             }} data-magicpath-id="111" data-magicpath-path="ZenithPortfolio.tsx">
-                <SortableContainer dndKitId="a7c0e91b-5e4d-4ff6-b8ed-0615296f766b" containerType="regular" prevTag="motion.div" className="flex items-center space-x-3 mb-3" initial={{
+                <SortableContainer dndKitId="af430d86-0ad5-4328-9472-cf5a592c80f4" containerType="regular" prevTag="motion.div" className="flex items-center space-x-3 mb-3" initial={{
                 x: -20,
                 opacity: 0
               }} whileInView={{
@@ -897,9 +897,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Team - Light Section with Image Reveal */}
-      <SortableContainer dndKitId="263364a0-3e7c-41cd-8c6f-942f140acf1d" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="117" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="70c91622-7d84-4bc7-b674-6ef2d698e121" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="118" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="01893b44-fe44-4ad0-adfe-ecfa5cded5f1" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="bfda350a-a07f-4552-8821-cb8dbc2d4c98" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="117" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="139849cd-14d8-467b-ac86-ddba1598f5b6" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="118" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="6e2ad3e4-2cbc-4212-b634-02a240d27834" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -916,7 +916,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             <p className="text-xl text-slate-600" data-magicpath-id="122" data-magicpath-path="ZenithPortfolio.tsx">Experts in turning ideas into successful products</p>
           </SortableContainer>
 
-          <SortableContainer dndKitId="8cf90735-8d89-4539-8e35-a2252b4a9f8b" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+          <SortableContainer dndKitId="5c0d7a5c-48cb-462d-a853-e728824c916b" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true,
           margin: "-100px"
         }} data-magicpath-id="123" data-magicpath-path="ZenithPortfolio.tsx">
@@ -974,9 +974,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Projects - Dark Section with 3D Tilt */}
-      <SortableContainer dndKitId="4756f86a-5c57-485a-a7a0-507ee3eb5743" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="131" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="2bca05de-d657-4404-9165-b6086fbf7deb" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="132" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="2bcb6ea1-4501-4671-a931-5fcc02c13ca9" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="97615e3f-93b8-43b0-aedd-1fded15c179b" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="131" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="39c27d54-b382-4fa4-9397-e4e1c6a3c202" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="132" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="f107dfa9-9d19-4186-adc3-40c2fa3db338" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -989,7 +989,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             <p className="text-xl text-slate-400" data-magicpath-id="135" data-magicpath-path="ZenithPortfolio.tsx">Products we've built for startups and businesses</p>
           </SortableContainer>
 
-          <SortableContainer dndKitId="f1df62a3-a4ca-4284-92ae-6dc3b1ecd437" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+          <SortableContainer dndKitId="5e420b0d-87a6-4606-b0e4-f57178310b0f" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true,
           margin: "-100px"
         }} data-magicpath-id="136" data-magicpath-path="ZenithPortfolio.tsx">
@@ -1064,9 +1064,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Pricing - Light Section with Animated Counter */}
-      <SortableContainer dndKitId="88cddc05-0975-459b-b3ee-2518236ee1f2" containerType="regular" prevTag="section" id="pricing" className="relative py-32 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="146" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="3cacbfd6-5482-48ac-9c98-b9bb647f13a0" containerType="regular" prevTag="div" className="max-w-5xl mx-auto" data-magicpath-id="147" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="187c2e5d-e502-4846-84e6-8b6ad6d51601" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="9e3d5dc6-9583-4e4e-aac1-014a1d0e7b1c" containerType="regular" prevTag="section" id="pricing" className="relative py-24 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="146" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="07f755b2-1c19-455e-92b8-945c25a40a28" containerType="regular" prevTag="div" className="max-w-5xl mx-auto" data-magicpath-id="147" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="2f9157f6-4e77-4f97-bf0b-4c46750790c8" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -1074,16 +1074,16 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           y: 0
         }} viewport={{
           once: true
-        }} className="text-center mb-20" data-magicpath-id="148" data-magicpath-path="ZenithPortfolio.tsx">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6" style={{
+        }} className="text-center mb-12" data-magicpath-id="148" data-magicpath-path="ZenithPortfolio.tsx">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{
             color: "#252525"
           }} data-magicpath-id="149" data-magicpath-path="ZenithPortfolio.tsx">
               Transparent <span className="text-[#c2f12d]" data-magicpath-id="150" data-magicpath-path="ZenithPortfolio.tsx">pricing</span>
             </h2>
-            <p className="text-xl text-slate-600" data-magicpath-id="151" data-magicpath-path="ZenithPortfolio.tsx">Simple, predictable pricing with no hidden costs</p>
+            <p className="text-lg text-slate-600" data-magicpath-id="151" data-magicpath-path="ZenithPortfolio.tsx">Simple, predictable pricing with no hidden costs</p>
           </SortableContainer>
 
-          <SortableContainer dndKitId="f5730c96-24fa-4b55-8403-25aea31e5a4b" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="cc1827fa-f07d-4ac9-bcd3-4a834ab0a84b" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -1091,9 +1091,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           y: 0
         }} viewport={{
           once: true
-        }} className="relative p-12 bg-white/80 backdrop-blur-2xl rounded-[2rem] border-2 border-slate-200 shadow-2xl overflow-hidden" data-magicpath-id="152" data-magicpath-path="ZenithPortfolio.tsx">
+        }} className="relative p-8 bg-white/80 backdrop-blur-2xl rounded-3xl border-2 border-slate-200 shadow-2xl overflow-hidden" data-magicpath-id="152" data-magicpath-path="ZenithPortfolio.tsx">
             {/* Gradient Top Bar with animation */}
-            <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-0 left-0 right-0 h-2 bg-[#c2f12d]" initial={{
+            <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-0 left-0 right-0 h-1.5 bg-[#c2f12d]" initial={{
             scaleX: 0
           }} whileInView={{
             scaleX: 1
@@ -1106,13 +1106,13 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             transformOrigin: "left"
           }} data-magicpath-id="153" data-magicpath-path="ZenithPortfolio.tsx" />
 
-            <h3 className="text-3xl font-bold mb-12 text-slate-900" data-magicpath-id="154" data-magicpath-path="ZenithPortfolio.tsx">Quick Estimator</h3>
+            <h3 className="text-2xl font-bold mb-8 text-slate-900" data-magicpath-id="154" data-magicpath-path="ZenithPortfolio.tsx">Quick Estimator</h3>
 
-            <SortableContainer dndKitId="b41b510a-6a06-4eac-9e89-6ae5d2733795" containerType="regular" prevTag="div" className="space-y-10 mb-12" data-magicpath-id="155" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="beb83e3c-32c0-4539-9e91-cb9f01eb42b3" containerType="regular" prevTag="div" className="space-y-6 mb-8" data-magicpath-id="155" data-magicpath-path="ZenithPortfolio.tsx">
               {/* Team Size with spring animation */}
-              <SortableContainer dndKitId="982f5cad-21bb-4430-884b-bcd775c17c6b" containerType="regular" prevTag="div" data-magicpath-id="156" data-magicpath-path="ZenithPortfolio.tsx">
-                <SortableContainer dndKitId="eb84e963-0afe-4f86-a77b-c58edb4d1c89" containerType="regular" prevTag="div" className="flex justify-between mb-6" data-magicpath-id="157" data-magicpath-path="ZenithPortfolio.tsx">
-                  <label className="text-lg font-semibold text-slate-700" data-magicpath-id="158" data-magicpath-path="ZenithPortfolio.tsx">Developers</label>
+              <SortableContainer dndKitId="c3229d44-e481-4762-9c37-bdab2b7b2810" containerType="regular" prevTag="div" data-magicpath-id="156" data-magicpath-path="ZenithPortfolio.tsx">
+                <SortableContainer dndKitId="d4c976ad-fc8d-4c86-87f8-00a017cc6fd3" containerType="regular" prevTag="div" className="flex justify-between mb-4" data-magicpath-id="157" data-magicpath-path="ZenithPortfolio.tsx">
+                  <label className="text-base font-semibold text-slate-700" data-magicpath-id="158" data-magicpath-path="ZenithPortfolio.tsx">Developers</label>
                   <AnimatePresence mode="wait" data-magicpath-id="159" data-magicpath-path="ZenithPortfolio.tsx">
                     <motion.span data-magicpath-motion-tag="motion.span" key={teamSize} initial={{
                     scale: 1.5,
@@ -1129,18 +1129,18 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                     type: "spring",
                     stiffness: 300,
                     damping: 20
-                  }} className="text-3xl font-bold" data-magicpath-id="160" data-magicpath-path="ZenithPortfolio.tsx">
+                  }} className="text-2xl font-bold" data-magicpath-id="160" data-magicpath-path="ZenithPortfolio.tsx">
                       {teamSize}
                     </motion.span>
                   </AnimatePresence>
                 </SortableContainer>
-                <div className="grid grid-cols-5 gap-4" data-magicpath-id="161" data-magicpath-path="ZenithPortfolio.tsx">
-                  {[1, 2, 3, 4, 5].map(size => <SortableContainer dndKitId="2acfd8bd-4f47-405d-b9f3-2ca32f19bc10" containerType="regular" prevTag="motion.button" key={size} onClick={() => setTeamSize(size)} whileHover={{
+                <div className="grid grid-cols-5 gap-3" data-magicpath-id="161" data-magicpath-path="ZenithPortfolio.tsx">
+                  {[1, 2, 3, 4, 5].map(size => <SortableContainer dndKitId="c802694e-0984-4842-9ff6-97784f3e4f5d" containerType="regular" prevTag="motion.button" key={size} onClick={() => setTeamSize(size)} whileHover={{
                   scale: 1.08,
                   y: -4
                 }} whileTap={{
                   scale: 0.95
-                }} className={`py-5 rounded-2xl font-bold text-2xl transition-all duration-300 ${teamSize === size ? 'bg-[#c2f12d] text-[#252525] shadow-xl shadow-[#c2f12d]/30' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}`} data-magicpath-id="162" data-magicpath-path="ZenithPortfolio.tsx">
+                }} className={`py-3 rounded-xl font-bold text-lg transition-all duration-300 ${teamSize === size ? 'bg-[#c2f12d] text-[#252525] shadow-xl shadow-[#c2f12d]/30' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}`} data-magicpath-id="162" data-magicpath-path="ZenithPortfolio.tsx">
                       <motion.span data-magicpath-motion-tag="motion.span" animate={teamSize === size ? {
                     scale: [1, 1.2, 1]
                   } : {}} transition={{
@@ -1153,36 +1153,36 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               </SortableContainer>
 
               {/* Sprints with slide animation */}
-              <SortableContainer dndKitId="720c2d49-4a22-4aa9-940e-de254858fe37" containerType="regular" prevTag="div" data-magicpath-id="164" data-magicpath-path="ZenithPortfolio.tsx">
-                <label className="text-lg font-semibold text-slate-700 mb-6 block" data-magicpath-id="165" data-magicpath-path="ZenithPortfolio.tsx">Duration</label>
-                <SortableContainer dndKitId="a5ccd366-b958-453e-9dc9-5d25242c0223" containerType="collection" prevTag="div" className="grid grid-cols-3 gap-4" data-magicpath-id="166" data-magicpath-path="ZenithPortfolio.tsx">
+              <SortableContainer dndKitId="a3c7f9ab-7b1f-4295-b832-23ae8fc0338a" containerType="regular" prevTag="div" data-magicpath-id="164" data-magicpath-path="ZenithPortfolio.tsx">
+                <label className="text-base font-semibold text-slate-700 mb-4 block" data-magicpath-id="165" data-magicpath-path="ZenithPortfolio.tsx">Duration</label>
+                <SortableContainer dndKitId="d5caa364-2f4a-4d80-96a6-55ef1f440d96" containerType="collection" prevTag="div" className="grid grid-cols-3 gap-3" data-magicpath-id="166" data-magicpath-path="ZenithPortfolio.tsx">
                   {[{
                   value: 1,
                   label: '2 weeks',
                   desc: '1 sprint',
-                  mpid: "adf6ba63-0d6a-4272-82e9-6eff534f8882"
+                  mpid: "33b08c72-9e59-444d-a610-721778085457"
                 }, {
                   value: 2,
                   label: '4 weeks',
                   desc: '2 sprints',
-                  mpid: "f97ad61e-f941-4678-8d82-6ee109837998"
+                  mpid: "ad4fe9fe-9370-475d-ad8b-1e969f730648"
                 }, {
                   value: 4,
                   label: '8 weeks',
                   desc: '4 sprints',
-                  mpid: "12a48222-2e82-4013-bdba-800b008dd744"
+                  mpid: "d7127d98-3662-4dc1-8172-c0465807ad04"
                 }].map(option => <motion.button data-magicpath-motion-tag="motion.button" key={option.value} onClick={() => setSprints(option.value)} whileHover={{
                   scale: 1.05,
                   y: -4
                 }} whileTap={{
                   scale: 0.95
-                }} className={`py-6 px-4 rounded-2xl font-semibold transition-all duration-300 ${sprints === option.value ? 'bg-[#c2f12d] text-[#252525] shadow-xl shadow-[#c2f12d]/30' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}`} data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-id="167" data-magicpath-path="ZenithPortfolio.tsx">
+                }} className={`py-4 px-3 rounded-xl font-semibold transition-all duration-300 ${sprints === option.value ? 'bg-[#c2f12d] text-[#252525] shadow-xl shadow-[#c2f12d]/30' : 'bg-slate-100 hover:bg-slate-200 text-slate-700'}`} data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-id="167" data-magicpath-path="ZenithPortfolio.tsx">
                       <motion.div data-magicpath-motion-tag="motion.div" animate={sprints === option.value ? {
                     scale: [1, 1.1, 1]
                   } : {}} transition={{
                     duration: 0.3
                   }} data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-id="168" data-magicpath-path="ZenithPortfolio.tsx">
-                        <div className="text-lg mb-1" data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-field="label:unknown" data-magicpath-id="169" data-magicpath-path="ZenithPortfolio.tsx">{option.label}</div>
+                        <div className="text-base mb-0.5" data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-field="label:unknown" data-magicpath-id="169" data-magicpath-path="ZenithPortfolio.tsx">{option.label}</div>
                         <div className={`text-xs ${sprints === option.value ? 'text-[#252525]/80' : 'text-slate-500'}`} data-magicpath-uuid={(option as any)["mpid"] ?? "unsafe"} data-magicpath-field="desc:unknown" data-magicpath-id="170" data-magicpath-path="ZenithPortfolio.tsx">
                           {option.desc}
                         </div>
@@ -1194,7 +1194,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
 
             {/* Price Display with pulse animation */}
             <AnimatePresence mode="wait" data-magicpath-id="171" data-magicpath-path="ZenithPortfolio.tsx">
-              <SortableContainer dndKitId="3fb7d3de-ab1c-4bb5-9ef1-b031d2e1ef15" containerType="regular" prevTag="motion.div" key={`${teamSize}-${sprints}`} initial={{
+              <SortableContainer dndKitId="e6904afe-7305-4e01-94a0-e53f2f74183a" containerType="regular" prevTag="motion.div" key={`${teamSize}-${sprints}`} initial={{
               scale: 0.9,
               opacity: 0,
               y: 20
@@ -1210,7 +1210,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               type: "spring",
               stiffness: 300,
               damping: 25
-            }} className="relative text-center p-10 bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl mb-8 border border-slate-200 overflow-hidden" data-magicpath-id="172" data-magicpath-path="ZenithPortfolio.tsx">
+            }} className="relative text-center p-6 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl mb-6 border border-slate-200 overflow-hidden" data-magicpath-id="172" data-magicpath-path="ZenithPortfolio.tsx">
                 <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-gradient-to-br from-[#c2f12d]/10 via-transparent to-[#c2f12d]/10" animate={{
                 opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.05, 1]
@@ -1218,8 +1218,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                 duration: 2,
                 repeat: Infinity
               }} data-magicpath-id="173" data-magicpath-path="ZenithPortfolio.tsx" />
-                <p className="relative text-sm text-slate-600 uppercase tracking-wider mb-3" data-magicpath-id="174" data-magicpath-path="ZenithPortfolio.tsx">Total Investment</p>
-                <motion.p data-magicpath-motion-tag="motion.p" className="relative text-6xl font-bold text-[#c2f12d] mb-6" initial={{
+                <p className="relative text-xs text-slate-600 uppercase tracking-wider mb-2" data-magicpath-id="174" data-magicpath-path="ZenithPortfolio.tsx">Total Investment</p>
+                <motion.p data-magicpath-motion-tag="motion.p" className="relative text-4xl font-bold text-[#c2f12d] mb-4" initial={{
                 scale: 1.2
               }} animate={{
                 scale: 1
@@ -1230,8 +1230,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               }} data-magicpath-id="175" data-magicpath-path="ZenithPortfolio.tsx">
                   ₱{calculatePrice()}
                 </motion.p>
-                <SortableContainer dndKitId="cf9c3e38-e436-420b-b9b6-60d8912a94fe" containerType="regular" prevTag="div" className="relative flex items-center justify-center gap-6 text-sm text-slate-600" data-magicpath-id="176" data-magicpath-path="ZenithPortfolio.tsx">
-                  <SortableContainer dndKitId="6b6a170a-bc04-4c66-9f57-5c3c0d2f841f" containerType="regular" prevTag="motion.div" className="flex items-center gap-2" initial={{
+                <SortableContainer dndKitId="27c4268c-e670-49b4-9dac-a128e454a89c" containerType="regular" prevTag="div" className="relative flex items-center justify-center gap-4 text-sm text-slate-600" data-magicpath-id="176" data-magicpath-path="ZenithPortfolio.tsx">
+                  <SortableContainer dndKitId="796ce9d4-0544-4766-b136-1a7a0d946740" containerType="regular" prevTag="motion.div" className="flex items-center gap-2" initial={{
                   x: -20,
                   opacity: 0
                 }} animate={{
@@ -1240,13 +1240,13 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                 }} transition={{
                   delay: 0.1
                 }} data-magicpath-id="177" data-magicpath-path="ZenithPortfolio.tsx">
-                    <Users className="w-5 h-5 text-[#c2f12d]" data-magicpath-id="178" data-magicpath-path="ZenithPortfolio.tsx" />
+                    <Users className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="178" data-magicpath-path="ZenithPortfolio.tsx" />
                     <span className="font-medium" data-magicpath-id="179" data-magicpath-path="ZenithPortfolio.tsx">
                       {teamSize} Developer{teamSize > 1 ? 's' : ''}
                     </span>
                   </SortableContainer>
-                  <div className="w-1.5 h-1.5 rounded-full bg-slate-400" data-magicpath-id="180" data-magicpath-path="ZenithPortfolio.tsx" />
-                  <SortableContainer dndKitId="1c852b4c-5fa3-4268-8401-7c6139decba1" containerType="regular" prevTag="motion.div" className="flex items-center gap-2" initial={{
+                  <div className="w-1 h-1 rounded-full bg-slate-400" data-magicpath-id="180" data-magicpath-path="ZenithPortfolio.tsx" />
+                  <SortableContainer dndKitId="91714e7c-7b04-49fa-99a5-96ca975ac964" containerType="regular" prevTag="motion.div" className="flex items-center gap-2" initial={{
                   x: 20,
                   opacity: 0
                 }} animate={{
@@ -1255,11 +1255,11 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                 }} transition={{
                   delay: 0.2
                 }} data-magicpath-id="181" data-magicpath-path="ZenithPortfolio.tsx">
-                    <Clock className="w-5 h-5 text-[#c2f12d]" data-magicpath-id="182" data-magicpath-path="ZenithPortfolio.tsx" />
+                    <Clock className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="182" data-magicpath-path="ZenithPortfolio.tsx" />
                     <span className="font-medium" data-magicpath-id="183" data-magicpath-path="ZenithPortfolio.tsx">{getDuration()} weeks</span>
                   </SortableContainer>
                 </SortableContainer>
-                <motion.p data-magicpath-motion-tag="motion.p" className="relative text-xs text-slate-500 mt-5" initial={{
+                <motion.p data-magicpath-motion-tag="motion.p" className="relative text-xs text-slate-500 mt-3" initial={{
                 opacity: 0
               }} animate={{
                 opacity: 1
@@ -1272,11 +1272,11 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             </AnimatePresence>
 
             {/* Features with stagger */}
-            <motion.div data-magicpath-motion-tag="motion.div" className="space-y-4 mb-10" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+            <motion.div data-magicpath-motion-tag="motion.div" className="space-y-3 mb-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
             once: true
           }} data-magicpath-id="185" data-magicpath-path="ZenithPortfolio.tsx">
-              {['Free consultation to define scope', 'Full project management included', 'No extra charges for revisions'].map((feature, i) => <SortableContainer dndKitId="c0a22a7f-4f3a-4f62-a895-a2e27d674456" containerType="regular" prevTag="motion.div" key={feature} variants={itemVariants} className="flex items-start space-x-3" data-magicpath-id="186" data-magicpath-path="ZenithPortfolio.tsx">
-                    <SortableContainer dndKitId="538aebce-cb35-421e-8ba2-c2a950d33525" containerType="regular" prevTag="motion.div" animate={{
+              {['Free consultation to define scope', 'Full project management included', 'No extra charges for revisions'].map((feature, i) => <SortableContainer dndKitId="aea8cd2e-0887-4e0a-a74f-d460e1f8357e" containerType="regular" prevTag="motion.div" key={feature} variants={itemVariants} className="flex items-start space-x-2" data-magicpath-id="186" data-magicpath-path="ZenithPortfolio.tsx">
+                    <SortableContainer dndKitId="235f937f-824e-41f9-b948-84b753b370c7" containerType="regular" prevTag="motion.div" animate={{
                 rotate: [0, 360]
               }} transition={{
                 duration: 2,
@@ -1284,18 +1284,18 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                 ease: "linear",
                 delay: i * 0.3
               }} data-magicpath-id="187" data-magicpath-path="ZenithPortfolio.tsx">
-                      <CheckCircle2 className="w-6 h-6 text-[#c2f12d] flex-shrink-0 mt-0.5" data-magicpath-id="188" data-magicpath-path="ZenithPortfolio.tsx" />
+                      <CheckCircle2 className="w-5 h-5 text-[#c2f12d] flex-shrink-0 mt-0.5" data-magicpath-id="188" data-magicpath-path="ZenithPortfolio.tsx" />
                     </SortableContainer>
-                    <p className="text-slate-700" data-magicpath-id="189" data-magicpath-path="ZenithPortfolio.tsx">{feature}</p>
+                    <p className="text-sm text-slate-700" data-magicpath-id="189" data-magicpath-path="ZenithPortfolio.tsx">{feature}</p>
                   </SortableContainer>)}
             </motion.div>
 
             {/* CTA Buttons */}
-            <SortableContainer dndKitId="fb2c3820-ec0e-429b-8e43-6fe2b62bb103" containerType="regular" prevTag="div" className="flex flex-col sm:flex-row gap-4" data-magicpath-id="190" data-magicpath-path="ZenithPortfolio.tsx">
-              <MagneticButton className="flex-1 px-8 py-5 bg-[#c2f12d] hover:bg-[#b0dc28] text-[#252525] rounded-2xl font-bold transition-all duration-300 shadow-xl shadow-[#c2f12d]/30" onClick={handleGetQuote} data-magicpath-id="191" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="718ba6c9-56f7-456a-8377-5affeca14a95" containerType="regular" prevTag="div" className="flex flex-col sm:flex-row gap-3" data-magicpath-id="190" data-magicpath-path="ZenithPortfolio.tsx">
+              <MagneticButton className="flex-1 px-6 py-3.5 bg-[#c2f12d] hover:bg-[#b0dc28] text-[#252525] rounded-xl font-bold transition-all duration-300 shadow-xl shadow-[#c2f12d]/30" onClick={handleGetQuote} data-magicpath-id="191" data-magicpath-path="ZenithPortfolio.tsx">
                 Get Detailed Quote
               </MagneticButton>
-              <MagneticButton className="flex-1 px-8 py-5 border-2 border-[#c2f12d] hover:bg-[#c2f12d]/10 text-slate-900 rounded-2xl font-bold transition-all duration-300" onClick={handleBookCall} data-magicpath-id="192" data-magicpath-path="ZenithPortfolio.tsx">
+              <MagneticButton className="flex-1 px-6 py-3.5 border-2 border-[#c2f12d] hover:bg-[#c2f12d]/10 text-slate-900 rounded-xl font-bold transition-all duration-300" onClick={handleBookCall} data-magicpath-id="192" data-magicpath-path="ZenithPortfolio.tsx">
                 Book Consultation
               </MagneticButton>
             </SortableContainer>
@@ -1304,9 +1304,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* FAQs - Dark Section with Accordion Animation */}
-      <SortableContainer dndKitId="bf861d13-fee9-470d-bd35-829bddb029d5" containerType="regular" prevTag="section" id="faqs" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="193" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="8260f7ba-fa22-4ccd-b42b-50660a1a1913" containerType="regular" prevTag="div" className="max-w-4xl mx-auto" data-magicpath-id="194" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="53106a06-b262-43cf-bb4d-09d3ec013c5b" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="3d909aee-b0f3-42f5-ac7e-3ae888867616" containerType="regular" prevTag="section" id="faqs" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="193" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="af080f98-35f7-42bf-944f-f42b7dee2001" containerType="regular" prevTag="div" className="max-w-4xl mx-auto" data-magicpath-id="194" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="eb6014e6-98a9-4eb6-95b2-afaa8ada1e10" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -1318,7 +1318,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             <h2 className="text-5xl md:text-6xl font-bold mb-6" data-magicpath-id="196" data-magicpath-path="ZenithPortfolio.tsx">Frequently asked questions</h2>
           </SortableContainer>
 
-          <SortableContainer dndKitId="f677abbe-8094-45a2-abcc-9f07329db2b7" containerType="collection" prevTag="motion.div" className="space-y-4" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+          <SortableContainer dndKitId="e2d3fad9-5b1b-4350-89d4-72200ac48dbf" containerType="collection" prevTag="motion.div" className="space-y-4" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true,
           margin: "-100px"
         }} data-magicpath-id="197" data-magicpath-path="ZenithPortfolio.tsx">
@@ -1368,9 +1368,9 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Final CTA - Light Section with Glow Effect */}
-      <SortableContainer dndKitId="23336db6-b19c-4874-8480-c5cf3cc9a898" containerType="regular" prevTag="section" id="cta" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="207" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="de84a9b0-ec74-4647-8372-119ae71e979a" containerType="regular" prevTag="div" className="max-w-5xl mx-auto" data-magicpath-id="208" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="d1bafcda-beea-49af-8148-baa6756be4ee" containerType="regular" prevTag="motion.div" initial={{
+      <SortableContainer dndKitId="71bb7722-27a5-4296-a04d-67001cd5c8f8" containerType="regular" prevTag="section" id="cta" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="207" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="c2b2f084-4c26-4bfe-bffb-2a197218a663" containerType="regular" prevTag="div" className="max-w-5xl mx-auto" data-magicpath-id="208" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="dec466ca-9949-47a0-9a44-d46a80e70bb9" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           scale: 0.95
         }} whileInView={{
@@ -1382,7 +1382,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           duration: 0.6
         }} className="relative text-center p-16 md:p-20 bg-gradient-to-br from-[#252525] via-[#3a3a3a] to-[#252525] rounded-[3rem] shadow-2xl overflow-hidden" data-magicpath-id="209" data-magicpath-path="ZenithPortfolio.tsx">
             {/* Animated Background */}
-            <SortableContainer dndKitId="98404ca1-47c8-47fc-84b2-21b0d0f488fc" containerType="regular" prevTag="div" className="absolute inset-0" data-magicpath-id="210" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="fd4204aa-c7bf-494e-95ef-96b6a9c1a15e" containerType="regular" prevTag="div" className="absolute inset-0" data-magicpath-id="210" data-magicpath-path="ZenithPortfolio.tsx">
               <motion.div data-magicpath-motion-tag="motion.div" animate={{
               scale: [1, 1.3, 1],
               opacity: [0.15, 0.35, 0.15],
@@ -1404,8 +1404,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             }} className="absolute bottom-0 right-0 w-96 h-96 bg-[#c2f12d]/30 rounded-full blur-3xl" data-magicpath-id="212" data-magicpath-path="ZenithPortfolio.tsx" />
             </SortableContainer>
 
-            <SortableContainer dndKitId="0981297e-709d-41de-97b7-2ac7f0d23b8e" containerType="regular" prevTag="div" className="relative" data-magicpath-id="213" data-magicpath-path="ZenithPortfolio.tsx">
-              <SortableContainer dndKitId="f02dd59a-f157-4739-b88b-415f356e6183" containerType="regular" prevTag="motion.div" initial={{
+            <SortableContainer dndKitId="3aa3882c-31c3-484f-bc16-5e851cde5a72" containerType="regular" prevTag="div" className="relative" data-magicpath-id="213" data-magicpath-path="ZenithPortfolio.tsx">
+              <SortableContainer dndKitId="4ea999cb-d79b-4cd3-8930-e3cd2f196e4d" containerType="regular" prevTag="motion.div" initial={{
               opacity: 0,
               scale: 0.9
             }} whileInView={{
@@ -1414,7 +1414,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             }} viewport={{
               once: true
             }} className="inline-flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full mb-8" data-magicpath-id="214" data-magicpath-path="ZenithPortfolio.tsx">
-                <SortableContainer dndKitId="652d28bb-5e82-4eac-9615-d0ff91a00392" containerType="regular" prevTag="motion.div" animate={{
+                <SortableContainer dndKitId="cda5ccf9-f4f6-44e0-9f0b-2d0e0b01e368" containerType="regular" prevTag="motion.div" animate={{
                 y: [0, -5, 0]
               }} transition={{
                 duration: 2,
@@ -1453,7 +1453,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                 Let's turn your idea into a real, testable product.
               </motion.p>
 
-              <SortableContainer dndKitId="c679a3ab-1f27-4803-b9f7-bc3395031291" containerType="regular" prevTag="motion.div" className="flex flex-col sm:flex-row items-center justify-center gap-5" initial={{
+              <SortableContainer dndKitId="e31700f4-b13c-40ee-b855-a48e5fbaf694" containerType="regular" prevTag="motion.div" className="flex flex-col sm:flex-row items-center justify-center gap-5" initial={{
               opacity: 0,
               y: 20
             }} whileInView={{
@@ -1480,14 +1480,14 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       </SortableContainer>
 
       {/* Footer - Dark with Fade-in */}
-      <SortableContainer dndKitId="81a53630-f91b-4f61-8496-b79d3612d3fb" containerType="regular" prevTag="footer" className="relative py-20 px-6 bg-[#1a1a1a] border-t border-white/5" data-magicpath-id="226" data-magicpath-path="ZenithPortfolio.tsx">
-        <SortableContainer dndKitId="0b16ded8-7d0e-4d1b-a74e-75cdb87caca9" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="227" data-magicpath-path="ZenithPortfolio.tsx">
-          <SortableContainer dndKitId="77674c3e-2242-4f7a-98a6-66f13669e40c" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-4 gap-12 mb-16" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+      <SortableContainer dndKitId="7dc0513e-0517-461d-9c00-a7cbdec73ded" containerType="regular" prevTag="footer" className="relative py-20 px-6 bg-[#1a1a1a] border-t border-white/5" data-magicpath-id="226" data-magicpath-path="ZenithPortfolio.tsx">
+        <SortableContainer dndKitId="8c895435-99ba-4666-9719-f0a760a84e36" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="227" data-magicpath-path="ZenithPortfolio.tsx">
+          <SortableContainer dndKitId="d9915c83-a825-4037-b3e1-01c367b5fb82" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-4 gap-12 mb-16" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
           once: true
         }} data-magicpath-id="228" data-magicpath-path="ZenithPortfolio.tsx">
             {/* Brand */}
-            <SortableContainer dndKitId="dd438cc7-206f-4fa1-bc66-3011ae6be4ff" containerType="regular" prevTag="motion.div" variants={itemVariants} data-magicpath-id="229" data-magicpath-path="ZenithPortfolio.tsx">
-              <SortableContainer dndKitId="086b30d4-041e-4ae7-b7fa-0c35c727b539" containerType="regular" prevTag="div" className="flex items-center space-x-3 mb-4" data-magicpath-id="230" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="6044d93c-8f93-43f5-9bdd-26315d01a5e2" containerType="regular" prevTag="motion.div" variants={itemVariants} data-magicpath-id="229" data-magicpath-path="ZenithPortfolio.tsx">
+              <SortableContainer dndKitId="3fe72021-c1da-4259-a914-13372214e961" containerType="regular" prevTag="div" className="flex items-center space-x-3 mb-4" data-magicpath-id="230" data-magicpath-path="ZenithPortfolio.tsx">
                 <motion.svg data-magicpath-motion-tag="motion.svg" width="48" height="48" viewBox="0 0 100 100" whileHover={{
                 rotate: [0, -10, 10, 0]
               }} transition={{
@@ -1529,7 +1529,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
                     <circle cx="60" cy="38" r="1.5" fill="#c2f12d" opacity="0.8" data-magicpath-id="249" data-magicpath-path="ZenithPortfolio.tsx" />
                   </g>
                 </motion.svg>
-                <SortableContainer dndKitId="c93a250b-f1b6-4567-a9e0-5a75cd57fce4" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="250" data-magicpath-path="ZenithPortfolio.tsx">
+                <SortableContainer dndKitId="e7dd4d63-615c-4a10-a1e5-1a18dee1eed9" containerType="regular" prevTag="div" className="flex items-baseline" data-magicpath-id="250" data-magicpath-path="ZenithPortfolio.tsx">
                   <span className="text-2xl font-bold text-white tracking-tight" data-magicpath-id="251" data-magicpath-path="ZenithPortfolio.tsx">zenith</span>
                   <span className="text-2xl font-bold text-[#c2f12d]" data-magicpath-id="252" data-magicpath-path="ZenithPortfolio.tsx">.</span>
                 </SortableContainer>
@@ -1541,15 +1541,15 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
             {[{
             title: 'Services',
             links: ['MVP Development', 'UI/UX Design', 'Consulting'],
-            mpid: "68bb2c18-2480-483c-8ce0-096afca3ff58"
+            mpid: "16441286-a669-4fd9-8ea4-4da57e23b95b"
           }, {
             title: 'Company',
             links: ['About', 'Team', 'Contact'],
-            mpid: "1774925d-a014-4105-ab79-6332a7f48677"
+            mpid: "d9b4676f-c883-4554-aa13-640a00076af5"
           }, {
             title: 'Resources',
             links: ['Blog', 'Case Studies', 'Support'],
-            mpid: "8a79a508-9c1c-4299-9a29-9d65d35e7d45"
+            mpid: "ca505ec7-590b-4b51-8f10-2766a132a0ec"
           }].map(column => <motion.div data-magicpath-motion-tag="motion.div" key={column.title} variants={itemVariants} data-magicpath-uuid={(column as any)["mpid"] ?? "unsafe"} data-magicpath-id="254" data-magicpath-path="ZenithPortfolio.tsx">
                 <h3 className="font-semibold mb-5 text-white text-lg" data-magicpath-uuid={(column as any)["mpid"] ?? "unsafe"} data-magicpath-field="title:unknown" data-magicpath-id="255" data-magicpath-path="ZenithPortfolio.tsx">{column.title}</h3>
                 <ul className="space-y-3" data-magicpath-uuid={(column as any)["mpid"] ?? "unsafe"} data-magicpath-id="256" data-magicpath-path="ZenithPortfolio.tsx">
@@ -1565,7 +1565,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
               </motion.div>)}
           </SortableContainer>
 
-          <SortableContainer dndKitId="f8a0601f-f760-45eb-8c8f-0d0dd569b854" containerType="regular" prevTag="motion.div" className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4" initial={{
+          <SortableContainer dndKitId="4c28a8c1-45c3-4f6a-96f5-c03e8c6a0411" containerType="regular" prevTag="motion.div" className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4" initial={{
           opacity: 0
         }} whileInView={{
           opacity: 1
@@ -1575,7 +1575,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           delay: 0.3
         }} data-magicpath-id="259" data-magicpath-path="ZenithPortfolio.tsx">
             <p className="text-sm text-slate-400" data-magicpath-id="260" data-magicpath-path="ZenithPortfolio.tsx">© 2024 Zenith Technologies. All rights reserved.</p>
-            <SortableContainer dndKitId="19c026f8-31c5-40e8-92b1-9ce6ab1c66b3" containerType="regular" prevTag="div" className="flex space-x-8" data-magicpath-id="261" data-magicpath-path="ZenithPortfolio.tsx">
+            <SortableContainer dndKitId="a8ad89a3-f64f-4a3b-a155-0242b5e82c17" containerType="regular" prevTag="div" className="flex space-x-8" data-magicpath-id="261" data-magicpath-path="ZenithPortfolio.tsx">
               <motion.a data-magicpath-motion-tag="motion.a" href="#" whileHover={{
               scale: 1.05,
               color: "#c2f12d"
