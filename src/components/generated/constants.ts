@@ -15,12 +15,12 @@ export const TECH_STACK = [
 ];
 
 export const AI_STACK = [
+  'ChatGPT',
   'OpenAI',
-  'GPT-4',
-  'LangChain',
-  'Hugging Face',
-  'TensorFlow',
-  'Pinecone'
+  'Claude',
+  'Gemini',
+  'MagicPath',
+  'GitHub Copilot'
 ];
 
 export const FAILURE_REASONS: FailureReason[] = [
