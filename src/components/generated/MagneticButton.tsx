@@ -1,6 +1,5 @@
 "use client";
 
-import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { useRef } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { springConfig } from './animations';
@@ -8,7 +7,6 @@ interface MagneticButtonProps {
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
-  mpid?: string;
 }
 export const MagneticButton = ({
   children,
@@ -32,10 +30,10 @@ export const MagneticButton = ({
     x.set(0);
     y.set(0);
   };
-  return <motion.button data-magicpath-motion-tag="motion.button" ref={ref} style={{
+  return <motion.button ref={ref} style={{
     x: xSpring,
     y: ySpring
-  }} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className={className} onClick={onClick} data-magicpath-id="0" data-magicpath-path="MagneticButton.tsx">
+  }} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className={className} onClick={onClick}>
       {children}
     </motion.button>;
 };

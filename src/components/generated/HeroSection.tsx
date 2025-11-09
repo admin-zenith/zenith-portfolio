@@ -1,6 +1,5 @@
 "use client";
 
-import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { motion, useTransform, MotionValue } from 'framer-motion';
 import { Shield, ArrowRight, Calendar, ChevronDown, Sparkles } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
@@ -11,7 +10,6 @@ interface HeroSectionProps {
   scrollProgress: MotionValue<number>;
   onGetQuote: () => void;
   onBookCall: () => void;
-  mpid?: string;
 }
 export const HeroSection = ({
   scrollProgress,
@@ -21,16 +19,16 @@ export const HeroSection = ({
   const heroOpacity = useTransform(scrollProgress, [0, 0.15], [1, 0]);
   const heroScale = useTransform(scrollProgress, [0, 0.15], [1, 0.98]);
   const heroY = useTransform(scrollProgress, [0, 0.15], [0, -50]);
-  return <SortableContainer dndKitId="d0ab546e-6c81-4159-b17c-5d1fa8ed8d2b" containerType="regular" prevTag="section" className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20" data-magicpath-id="0" data-magicpath-path="HeroSection.tsx">
+  return <section className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20">
       {/* AI Network Background */}
-      <AINetworkBackground data-magicpath-id="1" data-magicpath-path="HeroSection.tsx" />
+      <AINetworkBackground />
       
-      <SortableContainer dndKitId="e2189576-7775-4615-b2c6-7b0afdc02a67" containerType="regular" prevTag="motion.div" style={{
+      <motion.div style={{
       opacity: heroOpacity,
       scale: heroScale,
       y: heroY
-    }} className="relative z-10 max-w-6xl mx-auto text-center" data-magicpath-id="2" data-magicpath-path="HeroSection.tsx">
-        <SortableContainer dndKitId="3987cb7e-e537-4085-a75c-5813d41ad190" containerType="regular" prevTag="motion.div" initial={{
+    }} className="relative z-10 max-w-6xl mx-auto text-center">
+        <motion.div initial={{
         opacity: 0,
         y: 30
       }} animate={{
@@ -39,9 +37,9 @@ export const HeroSection = ({
       }} transition={{
         duration: 0.8,
         ease: 'easeOut'
-      }} data-magicpath-id="3" data-magicpath-path="HeroSection.tsx">
+      }}>
           {/* Badge */}
-          <SortableContainer dndKitId="512247f8-499f-4a89-ab5d-7a48ca42f99b" containerType="regular" prevTag="motion.div" initial={{
+          <motion.div initial={{
           opacity: 0,
           scale: 0.9
         }} animate={{
@@ -50,50 +48,50 @@ export const HeroSection = ({
         }} transition={{
           delay: 0.2,
           type: 'spring'
-        }} className="inline-flex items-center space-x-2 px-5 py-2.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full mb-8 hover:bg-white/10 transition-all duration-300 relative overflow-hidden group" data-magicpath-id="4" data-magicpath-path="HeroSection.tsx">
-            <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-white/10" initial={{
+        }} className="inline-flex items-center space-x-2 px-5 py-2.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full mb-8 hover:bg-white/10 transition-all duration-300 relative overflow-hidden group">
+            <motion.div className="absolute inset-0 bg-white/10" initial={{
             x: '-100%'
           }} whileHover={{
             x: '100%'
           }} transition={{
             duration: 0.6
-          }} data-magicpath-id="5" data-magicpath-path="HeroSection.tsx" />
-            <SortableContainer dndKitId="f50260ee-ff20-45d5-89a6-0d9e34e61de9" containerType="regular" prevTag="motion.div" animate={{
+          }} />
+            <motion.div animate={{
             rotate: [0, 360]
           }} transition={{
             duration: 3,
             repeat: Infinity,
             ease: 'linear'
-          }} data-magicpath-id="6" data-magicpath-path="HeroSection.tsx">
+          }}>
               <Sparkles className="w-4 h-4 text-[#c2f12d]" />
-            </SortableContainer>
-            <span className="text-sm font-medium text-white relative" data-magicpath-id="7" data-magicpath-path="HeroSection.tsx">
+            </motion.div>
+            <span className="text-sm font-medium text-white relative">
               AI-Supercharged Development
             </span>
-          </SortableContainer>
+          </motion.div>
 
           {/* Headline */}
-          <motion.h1 data-magicpath-motion-tag="motion.h1" className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight mb-8 leading-[0.9]" initial="hidden" animate="visible" variants={containerVariants} data-magicpath-id="8" data-magicpath-path="HeroSection.tsx">
-            <motion.span data-magicpath-motion-tag="motion.span" variants={itemVariants} className="inline-block text-white" data-magicpath-id="9" data-magicpath-path="HeroSection.tsx">Ship your  MVP in</motion.span>
-            <br data-magicpath-id="10" data-magicpath-path="HeroSection.tsx" />
-            <span className="relative inline-block" data-magicpath-id="11" data-magicpath-path="HeroSection.tsx">
-              <motion.span data-magicpath-motion-tag="motion.span" className="text-[#c2f12d]" variants={itemVariants} whileHover={{
+          <motion.h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight mb-8 leading-[0.9]" initial="hidden" animate="visible" variants={containerVariants}>
+            <motion.span variants={itemVariants} className="inline-block text-white">Ship your  MVP in</motion.span>
+            <br />
+            <span className="relative inline-block">
+              <motion.span className="text-[#c2f12d]" variants={itemVariants} whileHover={{
               scale: 1.05
             }} transition={{
               type: 'spring'
-            }} data-magicpath-id="12" data-magicpath-path="HeroSection.tsx">30 days</motion.span>
-              <motion.div data-magicpath-motion-tag="motion.div" className="absolute -inset-2 bg-[#c2f12d]/20 blur-2xl -z-10" animate={{
+            }}>30 days</motion.span>
+              <motion.div className="absolute -inset-2 bg-[#c2f12d]/20 blur-2xl -z-10" animate={{
               opacity: [0.3, 0.6, 0.3],
               scale: [1, 1.1, 1]
             }} transition={{
               duration: 3,
               repeat: Infinity
-            }} data-magicpath-id="13" data-magicpath-path="HeroSection.tsx" />
+            }} />
             </span>
           </motion.h1>
 
           {/* Subheadline */}
-          <motion.p data-magicpath-motion-tag="motion.p" initial={{
+          <motion.p initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -102,12 +100,12 @@ export const HeroSection = ({
         }} transition={{
           delay: 0.4,
           duration: 0.6
-        }} className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed" data-magicpath-id="14" data-magicpath-path="HeroSection.tsx">
+        }} className="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
             From idea to launch — supercharged with AI and human expertise.
           </motion.p>
 
           {/* CTA Buttons */}
-          <SortableContainer dndKitId="4690848b-b37c-4064-8c8b-c9c39c3ec1c5" containerType="regular" prevTag="motion.div" initial={{
+          <motion.div initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -115,112 +113,112 @@ export const HeroSection = ({
           y: 0
         }} transition={{
           delay: 0.6
-        }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20" data-magicpath-id="15" data-magicpath-path="HeroSection.tsx">
-            <MagneticButton className="group relative px-8 py-4 rounded-xl bg-[#c2f12d] hover:bg-[#b0dc28] text-[#252525] font-bold overflow-hidden transition-all duration-300" onClick={onGetQuote} data-magicpath-id="16" data-magicpath-path="HeroSection.tsx">
-              <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-[#b0dc28]" initial={{
+        }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+            <MagneticButton className="group relative px-8 py-4 rounded-xl bg-[#c2f12d] hover:bg-[#b0dc28] text-[#252525] font-bold overflow-hidden transition-all duration-300" onClick={onGetQuote}>
+              <motion.div className="absolute inset-0 bg-[#b0dc28]" initial={{
               x: '-100%'
             }} whileHover={{
               x: '0%'
             }} transition={{
               duration: 0.3
-            }} data-magicpath-id="17" data-magicpath-path="HeroSection.tsx" />
-              <span className="relative flex items-center space-x-2" data-magicpath-id="18" data-magicpath-path="HeroSection.tsx">
-                <span data-magicpath-id="19" data-magicpath-path="HeroSection.tsx">Get a Quote</span>
-                <SortableContainer dndKitId="9442839d-5cd2-4166-94b7-5882587e0ca5" containerType="regular" prevTag="motion.div" animate={{
+            }} />
+              <span className="relative flex items-center space-x-2">
+                <span>Get a Quote</span>
+                <motion.div animate={{
                 x: [0, 5, 0]
               }} transition={{
                 duration: 1.5,
                 repeat: Infinity
-              }} data-magicpath-id="20" data-magicpath-path="HeroSection.tsx">
-                  <ArrowRight className="w-5 h-5" data-magicpath-id="21" data-magicpath-path="HeroSection.tsx" />
-                </SortableContainer>
+              }}>
+                  <ArrowRight className="w-5 h-5" />
+                </motion.div>
               </span>
             </MagneticButton>
 
-            <MagneticButton className="px-8 py-4 bg-white/5 backdrop-blur-xl border-2 border-white/10 hover:border-[#c2f12d]/50 text-white rounded-xl font-semibold transition-all duration-300 group" onClick={onBookCall} data-magicpath-id="22" data-magicpath-path="HeroSection.tsx">
-              <span className="flex items-center space-x-2" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">
-                <SortableContainer dndKitId="c268d493-839a-4440-aba2-32e9af31bcd0" containerType="regular" prevTag="motion.div" animate={{
+            <MagneticButton className="px-8 py-4 bg-white/5 backdrop-blur-xl border-2 border-white/10 hover:border-[#c2f12d]/50 text-white rounded-xl font-semibold transition-all duration-300 group" onClick={onBookCall}>
+              <span className="flex items-center space-x-2">
+                <motion.div animate={{
                 rotate: [0, 360]
               }} transition={{
                 duration: 20,
                 repeat: Infinity,
                 ease: 'linear'
-              }} data-magicpath-id="24" data-magicpath-path="HeroSection.tsx">
-                  <Calendar className="w-5 h-5 text-[#c2f12d]" data-magicpath-id="25" data-magicpath-path="HeroSection.tsx" />
-                </SortableContainer>
-                <span data-magicpath-id="26" data-magicpath-path="HeroSection.tsx">Schedule Consultation</span>
+              }}>
+                  <Calendar className="w-5 h-5 text-[#c2f12d]" />
+                </motion.div>
+                <span>Schedule Consultation</span>
               </span>
             </MagneticButton>
-          </SortableContainer>
+          </motion.div>
 
           {/* Tech Stack */}
-          <SortableContainer dndKitId="a7aa4e07-f035-48e2-bb39-6d8cf5868e81" containerType="regular" prevTag="motion.div" initial="hidden" animate="visible" variants={containerVariants} className="space-y-6" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
+          <motion.div initial="hidden" animate="visible" variants={containerVariants} className="space-y-6">
             {/* Regular Tech Stack */}
-            <SortableContainer dndKitId="1b30978e-bf8d-43d3-abd5-079fbd49987b" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="28" data-magicpath-path="HeroSection.tsx">
-              <motion.p data-magicpath-motion-tag="motion.p" variants={itemVariants} className="text-xs text-slate-500 uppercase tracking-wider font-medium" data-magicpath-id="29" data-magicpath-path="HeroSection.tsx">
+            <div className="space-y-4">
+              <motion.p variants={itemVariants} className="text-xs text-slate-500 uppercase tracking-wider font-medium">
                 Built With
               </motion.p>
-              <SortableContainer dndKitId="5c9d9912-ae37-4b9b-acdc-eb87b882ae0d" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="30" data-magicpath-path="HeroSection.tsx">
-                {TECH_STACK.map(tech => <motion.div data-magicpath-motion-tag="motion.div" key={tech} variants={itemVariants} whileHover={{
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                {TECH_STACK.map(tech => <motion.div key={tech} variants={itemVariants} whileHover={{
                 scale: 1.1,
                 y: -2,
                 rotate: [0, -5, 5, 0],
                 transition: {
                   duration: 0.3
                 }
-              }} className="px-5 py-2.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl text-sm font-medium text-slate-300 hover:border-[#c2f12d]/50 hover:bg-white/10 transition-all duration-300 cursor-default" data-magicpath-uuid={(tech as any)["mpid"] ?? "unsafe"} data-magicpath-id="31" data-magicpath-path="HeroSection.tsx">
+              }} className="px-5 py-2.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl text-sm font-medium text-slate-300 hover:border-[#c2f12d]/50 hover:bg-white/10 transition-all duration-300 cursor-default">
                     {tech}
                   </motion.div>)}
-              </SortableContainer>
-            </SortableContainer>
+              </div>
+            </div>
 
             {/* AI Tech Stack */}
-            <SortableContainer dndKitId="9bc0b385-a84e-4490-b303-cf8696e10b50" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="32" data-magicpath-path="HeroSection.tsx">
-              <motion.p data-magicpath-motion-tag="motion.p" variants={itemVariants} className="text-xs text-[#c2f12d] uppercase tracking-wider font-medium flex items-center justify-center gap-2" data-magicpath-id="33" data-magicpath-path="HeroSection.tsx">
+            <div className="space-y-4">
+              <motion.p variants={itemVariants} className="text-xs text-[#c2f12d] uppercase tracking-wider font-medium flex items-center justify-center gap-2">
                 <Sparkles className="w-3 h-3" />
                 Supercharged with AI frameworks
               </motion.p>
-              <SortableContainer dndKitId="b54d6024-8f20-43be-a613-fe72dd861c24" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="34" data-magicpath-path="HeroSection.tsx">
-                {AI_STACK.slice(0, 5).map(tech => <motion.div data-magicpath-motion-tag="motion.div" key={tech} variants={itemVariants} whileHover={{
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                {AI_STACK.slice(0, 5).map(tech => <motion.div key={tech} variants={itemVariants} whileHover={{
                 scale: 1.1,
                 y: -2,
                 transition: {
                   duration: 0.3
                 }
-              }} className="relative px-5 py-2.5 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-xl text-sm font-medium text-[#c2f12d] hover:bg-[#c2f12d]/20 transition-all duration-300 cursor-default overflow-hidden group" data-magicpath-uuid={(tech as any)["mpid"] ?? "unsafe"} data-magicpath-id="35" data-magicpath-path="HeroSection.tsx">
-                    <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-gradient-to-r from-transparent via-[#c2f12d]/20 to-transparent" initial={{
+              }} className="relative px-5 py-2.5 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-xl text-sm font-medium text-[#c2f12d] hover:bg-[#c2f12d]/20 transition-all duration-300 cursor-default overflow-hidden group">
+                    <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#c2f12d]/20 to-transparent" initial={{
                   x: '-100%'
                 }} whileHover={{
                   x: '100%'
                 }} transition={{
                   duration: 0.6
-                }} data-magicpath-uuid={(tech as any)["mpid"] ?? "unsafe"} data-magicpath-id="36" data-magicpath-path="HeroSection.tsx" />
-                    <span className="relative" data-magicpath-uuid={(tech as any)["mpid"] ?? "unsafe"} data-magicpath-id="37" data-magicpath-path="HeroSection.tsx">{tech}</span>
+                }} />
+                    <span className="relative">{tech}</span>
                   </motion.div>)}
-                <motion.div data-magicpath-motion-tag="motion.div" variants={itemVariants} whileHover={{
+                <motion.div variants={itemVariants} whileHover={{
                 scale: 1.05,
                 transition: {
                   duration: 0.3
                 }
-              }} className="px-5 py-2.5 bg-[#c2f12d]/5 backdrop-blur-xl border-2 border-dashed border-[#c2f12d]/20 rounded-xl text-sm font-medium text-[#c2f12d]/70 hover:text-[#c2f12d] hover:bg-[#c2f12d]/10 hover:border-[#c2f12d]/40 transition-all duration-300 cursor-default" data-magicpath-id="38" data-magicpath-path="HeroSection.tsx">
+              }} className="px-5 py-2.5 bg-[#c2f12d]/5 backdrop-blur-xl border-2 border-dashed border-[#c2f12d]/20 rounded-xl text-sm font-medium text-[#c2f12d]/70 hover:text-[#c2f12d] hover:bg-[#c2f12d]/10 hover:border-[#c2f12d]/40 transition-all duration-300 cursor-default">
                   + more
                 </motion.div>
-              </SortableContainer>
-            </SortableContainer>
-          </SortableContainer>
-        </SortableContainer>
-      </SortableContainer>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
       {/* Scroll Indicator */}
-      <SortableContainer dndKitId="63b96c18-8d74-4b42-a1a5-f92da79bc0ab" containerType="regular" prevTag="motion.div" className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
+      <motion.div className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
       y: [0, 15, 0],
       opacity: [1, 0.5, 1]
     }} transition={{
       duration: 2,
       repeat: Infinity,
       ease: 'easeInOut'
-    }} data-magicpath-id="39" data-magicpath-path="HeroSection.tsx">
-        <ChevronDown className="w-6 h-6 text-[#c2f12d]" data-magicpath-id="40" data-magicpath-path="HeroSection.tsx" />
-      </SortableContainer>
-    </SortableContainer>;
+    }}>
+        <ChevronDown className="w-6 h-6 text-[#c2f12d]" />
+      </motion.div>
+    </section>;
 };

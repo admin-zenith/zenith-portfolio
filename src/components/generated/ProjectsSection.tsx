@@ -1,14 +1,13 @@
 "use client";
 
-import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowUpRight } from 'lucide-react';
 import { RECENT_PROJECTS } from './constants';
 import { containerVariants } from './animations';
 export const ProjectsSection = () => {
-  return <SortableContainer dndKitId="ee74f12d-4c90-4fdb-9cf4-9a8b8732a123" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-gradient-to-b from-[#252525] to-[#1a1a1a]" data-magicpath-id="0" data-magicpath-path="ProjectsSection.tsx">
-      <SortableContainer dndKitId="2ffe96fa-e798-40d3-8ea8-dcf4459ee784" containerType="regular" prevTag="div" className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsSection.tsx">
-        <SortableContainer dndKitId="58bd5adb-f522-47ed-a3be-eb1ff09e356e" containerType="regular" prevTag="motion.div" initial={{
+  return <section id="projects" className="relative py-32 px-6 bg-gradient-to-b from-[#252525] to-[#1a1a1a]">
+      <div className="max-w-7xl mx-auto">
+        <motion.div initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -16,8 +15,8 @@ export const ProjectsSection = () => {
         y: 0
       }} viewport={{
         once: true
-      }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="ProjectsSection.tsx">
-          <SortableContainer dndKitId="c832ce2e-9b0a-4d28-859d-d2ee1b7455c5" containerType="regular" prevTag="motion.div" initial={{
+      }} className="text-center mb-16">
+          <motion.div initial={{
           opacity: 0,
           scale: 0.9
         }} whileInView={{
@@ -25,23 +24,23 @@ export const ProjectsSection = () => {
           scale: 1
         }} viewport={{
           once: true
-        }} className="inline-flex items-center gap-2 px-4 py-2 bg-[#c2f12d]/10 border border-[#c2f12d]/20 rounded-full mb-6" data-magicpath-id="3" data-magicpath-path="ProjectsSection.tsx">
+        }} className="inline-flex items-center gap-2 px-4 py-2 bg-[#c2f12d]/10 border border-[#c2f12d]/20 rounded-full mb-6">
             <Sparkles className="w-4 h-4 text-[#c2f12d]" />
-            <span className="text-sm font-semibold text-[#c2f12d]" data-magicpath-id="4" data-magicpath-path="ProjectsSection.tsx">Recent Work</span>
-          </SortableContainer>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent" data-magicpath-id="5" data-magicpath-path="ProjectsSection.tsx">
+            <span className="text-sm font-semibold text-[#c2f12d]">Recent Work</span>
+          </motion.div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
             Products we've built
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto" data-magicpath-id="6" data-magicpath-path="ProjectsSection.tsx">
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
             AI-enhanced solutions for startups and businesses
           </p>
-        </SortableContainer>
+        </motion.div>
 
-        <SortableContainer dndKitId="b68835b3-883e-4541-be79-04147c0a3684" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <motion.div className="grid md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
-      }} data-magicpath-id="7" data-magicpath-path="ProjectsSection.tsx">
-          {RECENT_PROJECTS.map((project, index) => <motion.div data-magicpath-motion-tag="motion.div" key={project.title} initial={{
+      }}>
+          {RECENT_PROJECTS.map((project, index) => <motion.div key={project.title} initial={{
           opacity: 0,
           y: 40
         }} whileInView={{
@@ -53,13 +52,13 @@ export const ProjectsSection = () => {
           delay: index * 0.1
         }} whileHover={{
           y: -8
-        }} className="group relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-xl rounded-2xl border border-white/10 hover:border-[#c2f12d]/40 overflow-hidden transition-all duration-500 cursor-pointer" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="8" data-magicpath-path="ProjectsSection.tsx">
+        }} className="group relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-xl rounded-2xl border border-white/10 hover:border-[#c2f12d]/40 overflow-hidden transition-all duration-500 cursor-pointer">
               {/* Gradient overlay on hover */}
-              <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-gradient-to-br from-[#c2f12d]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="9" data-magicpath-path="ProjectsSection.tsx" />
+              <motion.div className="absolute inset-0 bg-gradient-to-br from-[#c2f12d]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* AI Badge */}
-              {project.aiEnhanced && <div className="absolute top-4 right-4 z-10" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="10" data-magicpath-path="ProjectsSection.tsx">
-                  <motion.div data-magicpath-motion-tag="motion.div" initial={{
+              {project.aiEnhanced && <div className="absolute top-4 right-4 z-10">
+                  <motion.div initial={{
               opacity: 0,
               scale: 0.8
             }} whileInView={{
@@ -69,46 +68,46 @@ export const ProjectsSection = () => {
               once: true
             }} transition={{
               delay: index * 0.1 + 0.2
-            }} className="px-3 py-1.5 bg-[#c2f12d] rounded-full flex items-center gap-1.5" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="ProjectsSection.tsx">
-                    <motion.div data-magicpath-motion-tag="motion.div" animate={{
+            }} className="px-3 py-1.5 bg-[#c2f12d] rounded-full flex items-center gap-1.5">
+                    <motion.div animate={{
                 rotate: 360
               }} transition={{
                 duration: 3,
                 repeat: Infinity,
                 ease: 'linear'
-              }} data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="ProjectsSection.tsx">
+              }}>
                       <Sparkles className="w-3 h-3 text-[#252525]" />
                     </motion.div>
-                    <span className="text-xs font-bold text-[#252525]" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="ProjectsSection.tsx">AI</span>
+                    <span className="text-xs font-bold text-[#252525]">AI</span>
                   </motion.div>
                 </div>}
 
               {/* Content */}
-              <div className="relative p-8 flex flex-col h-full" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="14" data-magicpath-path="ProjectsSection.tsx">
+              <div className="relative p-8 flex flex-col h-full">
                 {/* Project Image */}
-                <div className="mb-6" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="15" data-magicpath-path="ProjectsSection.tsx">
-                  <motion.div data-magicpath-motion-tag="motion.div" className="w-full h-48 rounded-2xl overflow-hidden border border-[#c2f12d]/20" whileHover={{
+                <div className="mb-6">
+                  <motion.div className="w-full h-48 rounded-2xl overflow-hidden border border-[#c2f12d]/20" whileHover={{
                 scale: 1.02
               }} transition={{
                 duration: 0.5
-              }} data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="16" data-magicpath-path="ProjectsSection.tsx">
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-field="image:unknown" data-magicpath-id="17" data-magicpath-path="ProjectsSection.tsx" />
+              }}>
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                   </motion.div>
                 </div>
 
                 {/* Project Info */}
-                <div className="flex-1" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="18" data-magicpath-path="ProjectsSection.tsx">
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-[#c2f12d] transition-colors" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-field="title:unknown" data-magicpath-id="19" data-magicpath-path="ProjectsSection.tsx">
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-[#c2f12d] transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-slate-400 leading-relaxed mb-6" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-field="description:unknown" data-magicpath-id="20" data-magicpath-path="ProjectsSection.tsx">
+                  <p className="text-sm text-slate-400 leading-relaxed mb-6">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="21" data-magicpath-path="ProjectsSection.tsx">
-                  {project.tags.map((tag, i) => <motion.span data-magicpath-motion-tag="motion.span" key={tag} initial={{
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, i) => <motion.span key={tag} initial={{
                 opacity: 0,
                 scale: 0.8
               }} whileInView={{
@@ -118,24 +117,24 @@ export const ProjectsSection = () => {
                 once: true
               }} transition={{
                 delay: index * 0.1 + i * 0.05
-              }} className="px-3 py-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-xs font-medium text-slate-300" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="22" data-magicpath-path="ProjectsSection.tsx">
+              }} className="px-3 py-1 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg text-xs font-medium text-slate-300">
                       {tag}
                     </motion.span>)}
                 </div>
 
                 {/* View Project Link */}
-                <motion.div data-magicpath-motion-tag="motion.div" className="flex items-center gap-2 text-sm font-semibold text-[#c2f12d] opacity-0 group-hover:opacity-100 transition-opacity duration-300" whileHover={{
+                <motion.div className="flex items-center gap-2 text-sm font-semibold text-[#c2f12d] opacity-0 group-hover:opacity-100 transition-opacity duration-300" whileHover={{
               x: 4
-            }} data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="23" data-magicpath-path="ProjectsSection.tsx">
-                  <span data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="24" data-magicpath-path="ProjectsSection.tsx">View Project</span>
-                  <ArrowUpRight className="w-4 h-4" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="25" data-magicpath-path="ProjectsSection.tsx" />
+            }}>
+                  <span>View Project</span>
+                  <ArrowUpRight className="w-4 h-4" />
                 </motion.div>
               </div>
 
               {/* Bottom shine effect */}
-              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c2f12d]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-magicpath-uuid={(project as any)["mpid"] ?? "unsafe"} data-magicpath-id="26" data-magicpath-path="ProjectsSection.tsx" />
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c2f12d]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>)}
-        </SortableContainer>
-      </SortableContainer>
-    </SortableContainer>;
+        </motion.div>
+      </div>
+    </section>;
 };

@@ -1,12 +1,10 @@
 "use client";
 
-import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { useState, useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
 interface AnimatedCounterProps {
   value: number;
   duration?: number;
-  mpid?: string;
 }
 export const AnimatedCounter = ({
   value,
@@ -32,5 +30,5 @@ export const AnimatedCounter = ({
       return () => clearInterval(timer);
     }
   }, [isInView, value, duration]);
-  return <span ref={nodeRef} data-magicpath-id="0" data-magicpath-path="AnimatedCounter.tsx">{count}</span>;
+  return <span ref={nodeRef}>{count}</span>;
 };

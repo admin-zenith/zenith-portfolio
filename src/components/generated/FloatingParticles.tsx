@@ -1,13 +1,12 @@
 "use client";
 
-import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { motion } from 'framer-motion';
 export const FloatingParticles = () => {
   const particles = Array.from({
     length: 20
   });
-  return <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" data-magicpath-id="0" data-magicpath-path="FloatingParticles.tsx">
-      {particles.map((_, i) => <motion.div data-magicpath-motion-tag="motion.div" key={i} className="absolute w-1 h-1 bg-[#c2f12d]/30 rounded-full" initial={{
+  return <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      {particles.map((_, i) => <motion.div key={i} className="absolute w-1 h-1 bg-[#c2f12d]/30 rounded-full" initial={{
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
       scale: Math.random() * 0.5 + 0.5
@@ -20,6 +19,6 @@ export const FloatingParticles = () => {
       repeat: Infinity,
       ease: 'linear',
       delay: Math.random() * 5
-    }} data-magicpath-id="1" data-magicpath-path="FloatingParticles.tsx" />)}
+    }} />)}
     </div>;
 };
