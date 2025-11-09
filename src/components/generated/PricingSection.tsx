@@ -24,9 +24,9 @@ export const PricingSection = ({
   };
   const getDuration = () => sprints * 2;
   const fullStackIncludes = ['Full-Stack Development', 'Project Management', 'Quality Assurance (QA)', 'UI/UX Design', 'AI-Assisted Workflow', 'Architecture & Scalability'];
-  return <SortableContainer dndKitId="3b76d215-74ec-4120-92e2-279829fb7210" containerType="regular" prevTag="section" id="pricing" className="relative py-24 px-6 bg-slate-50 overflow-hidden" data-magicpath-id="0" data-magicpath-path="PricingSection.tsx">
+  return <SortableContainer dndKitId="0e5e286a-6c19-494c-8b02-909803da4a7b" containerType="regular" prevTag="section" id="pricing" className="relative py-24 px-6 bg-slate-50 overflow-hidden" data-magicpath-id="0" data-magicpath-path="PricingSection.tsx">
       {/* Animated Background Elements */}
-      <SortableContainer dndKitId="09c4991b-788b-49a7-802d-6668f5a1e03e" containerType="regular" prevTag="div" className="absolute inset-0 opacity-30" data-magicpath-id="1" data-magicpath-path="PricingSection.tsx">
+      <SortableContainer dndKitId="7c5ac5b6-f6d1-47c1-adac-77d5e7291c60" containerType="regular" prevTag="div" className="absolute inset-0 opacity-30" data-magicpath-id="1" data-magicpath-path="PricingSection.tsx">
         <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2f12d]/20 rounded-full blur-3xl" animate={{
         scale: [1, 1.2, 1],
         opacity: [0.3, 0.5, 0.3]
@@ -46,9 +46,9 @@ export const PricingSection = ({
       }} data-magicpath-id="3" data-magicpath-path="PricingSection.tsx" />
       </SortableContainer>
 
-      <SortableContainer dndKitId="7591f5cd-db95-4e3f-b463-d0f859a36b34" containerType="regular" prevTag="div" className="max-w-7xl mx-auto relative z-10" data-magicpath-id="4" data-magicpath-path="PricingSection.tsx">
+      <SortableContainer dndKitId="7dcfd543-0ae3-4565-b820-a0c3a5075e9f" containerType="regular" prevTag="div" className="max-w-7xl mx-auto relative z-10" data-magicpath-id="4" data-magicpath-path="PricingSection.tsx">
         {/* Section Header */}
-        <SortableContainer dndKitId="af74f47f-4c3f-4bf5-8692-c6a55ff6dbe5" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="c752b451-c7f9-4d87-a979-7dd65dc20a7b" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -57,7 +57,7 @@ export const PricingSection = ({
       }} viewport={{
         once: true
       }} className="text-center mb-20" data-magicpath-id="5" data-magicpath-path="PricingSection.tsx">
-          <SortableContainer dndKitId="21a67378-d6b8-4ef2-bf3b-15623fa67d19" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="74ac2531-a361-427e-94d5-61f30abd4b0b" containerType="regular" prevTag="motion.div" initial={{
           scale: 0.9,
           opacity: 0
         }} whileInView={{
@@ -85,7 +85,7 @@ export const PricingSection = ({
           </p>
 
           {/* AI Workflow Tooltip */}
-          <SortableContainer dndKitId="a7752bea-3b64-4a7c-aac1-6f311d160407" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="63b5005c-835f-4280-92e9-b70805223df4" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 10
         }} whileInView={{
@@ -103,7 +103,7 @@ export const PricingSection = ({
           </SortableContainer>
         </SortableContainer>
 
-        <SortableContainer dndKitId="01513e74-62bc-473e-8dd2-7b298e9d90f7" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="5ddc50ba-5982-4210-b660-a4af8314a5f9" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 40
       }} whileInView={{
@@ -112,28 +112,28 @@ export const PricingSection = ({
       }} viewport={{
         once: true
       }} className="max-w-4xl mx-auto" data-magicpath-id="14" data-magicpath-path="PricingSection.tsx">
-          <SortableContainer dndKitId="ca0e5f73-696d-4b9b-aa7c-fcc6282c4755" containerType="regular" prevTag="div" className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden" data-magicpath-id="15" data-magicpath-path="PricingSection.tsx">
+          <SortableContainer dndKitId="03914f67-11e7-4e0a-af66-2eba6f307306" containerType="regular" prevTag="div" className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden" data-magicpath-id="15" data-magicpath-path="PricingSection.tsx">
             {/* Header */}
-            <SortableContainer dndKitId="6e45d63c-5bff-4039-837b-57a9b7c95dd3" containerType="regular" prevTag="div" className="bg-slate-900 px-8 py-6 flex items-center justify-between" data-magicpath-id="16" data-magicpath-path="PricingSection.tsx">
+            <SortableContainer dndKitId="a19b6be2-af6a-445a-b2fd-71b024962047" containerType="regular" prevTag="div" className="bg-slate-900 px-8 py-6 flex items-center justify-between" data-magicpath-id="16" data-magicpath-path="PricingSection.tsx">
               <h3 className="text-2xl font-bold text-white" data-magicpath-id="17" data-magicpath-path="PricingSection.tsx">
                 Interactive Estimator
               </h3>
-              <SortableContainer dndKitId="7fd35454-dffe-4247-a86b-d0d61cd63940" containerType="regular" prevTag="div" className="flex items-center space-x-2 px-4 py-2 bg-[#c2f12d] rounded-xl" data-magicpath-id="18" data-magicpath-path="PricingSection.tsx">
+              <SortableContainer dndKitId="98464f03-3f50-4211-a82b-d5947b145ae7" containerType="regular" prevTag="div" className="flex items-center space-x-2 px-4 py-2 bg-[#c2f12d] rounded-xl" data-magicpath-id="18" data-magicpath-path="PricingSection.tsx">
                 <Sparkles className="w-4 h-4 text-slate-900" />
                 <span className="text-sm font-bold text-slate-900" data-magicpath-id="19" data-magicpath-path="PricingSection.tsx">AI-Powered</span>
               </SortableContainer>
             </SortableContainer>
 
-            <SortableContainer dndKitId="80d8448a-b2d0-4fd3-86f4-3fcc2a50be6b" containerType="regular" prevTag="div" className="p-8 space-y-6" data-magicpath-id="20" data-magicpath-path="PricingSection.tsx">
+            <SortableContainer dndKitId="64b6a1ba-a329-4bc9-9392-9649134972c6" containerType="regular" prevTag="div" className="p-8 space-y-6" data-magicpath-id="20" data-magicpath-path="PricingSection.tsx">
               {/* Team Size - Compact */}
-              <SortableContainer dndKitId="f6a8a6ec-a25f-4ba2-8662-915572cef7b6" containerType="regular" prevTag="div" data-magicpath-id="21" data-magicpath-path="PricingSection.tsx">
-                <SortableContainer dndKitId="fa7ad2eb-0217-45ad-86e8-e1b5e377ad14" containerType="regular" prevTag="div" className="flex items-center justify-between mb-3" data-magicpath-id="22" data-magicpath-path="PricingSection.tsx">
+              <SortableContainer dndKitId="38b6ffe6-e40c-4fbd-86b5-5a63113656b6" containerType="regular" prevTag="div" data-magicpath-id="21" data-magicpath-path="PricingSection.tsx">
+                <SortableContainer dndKitId="bd646c5b-0fdc-48bd-9fbf-dee546a93512" containerType="regular" prevTag="div" className="flex items-center justify-between mb-3" data-magicpath-id="22" data-magicpath-path="PricingSection.tsx">
                   <label className="text-sm font-bold text-slate-700 flex items-center gap-2" data-magicpath-id="23" data-magicpath-path="PricingSection.tsx">
                     <Users className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="24" data-magicpath-path="PricingSection.tsx" />
                     Team Size
                   </label>
                   <AnimatePresence mode="wait" data-magicpath-id="25" data-magicpath-path="PricingSection.tsx">
-                    <SortableContainer dndKitId="b1d63953-9029-4ee0-82b2-a4e75e8bb124" containerType="regular" prevTag="motion.div" key={teamSize} initial={{
+                    <SortableContainer dndKitId="3b717725-8827-475f-b97c-6d5ef8e789ed" containerType="regular" prevTag="motion.div" key={teamSize} initial={{
                     scale: 1.3,
                     opacity: 0
                   }} animate={{
@@ -163,8 +163,8 @@ export const PricingSection = ({
               </SortableContainer>
 
               {/* Duration - Compact */}
-              <SortableContainer dndKitId="066bd56a-a351-471a-9754-908d7e3525e8" containerType="regular" prevTag="div" data-magicpath-id="31" data-magicpath-path="PricingSection.tsx">
-                <SortableContainer dndKitId="fe0218a8-56a6-4ecc-ad98-067b1e6ba507" containerType="regular" prevTag="div" className="flex items-center justify-between mb-3" data-magicpath-id="32" data-magicpath-path="PricingSection.tsx">
+              <SortableContainer dndKitId="60d9d9d0-7c43-4c41-aec3-5b7a86c69500" containerType="regular" prevTag="div" data-magicpath-id="31" data-magicpath-path="PricingSection.tsx">
+                <SortableContainer dndKitId="b3cc4301-def4-482e-8034-9f5311d2c5f4" containerType="regular" prevTag="div" className="flex items-center justify-between mb-3" data-magicpath-id="32" data-magicpath-path="PricingSection.tsx">
                   <label className="text-sm font-bold text-slate-700 flex items-center gap-2" data-magicpath-id="33" data-magicpath-path="PricingSection.tsx">
                     <Clock className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="34" data-magicpath-path="PricingSection.tsx" />
                     Duration
@@ -173,7 +173,7 @@ export const PricingSection = ({
                 </SortableContainer>
 
                 <div className="grid grid-cols-3 gap-2" data-magicpath-id="36" data-magicpath-path="PricingSection.tsx">
-                  {PRICING_CONFIG.SPRINT_OPTIONS.map(option => <SortableContainer dndKitId="6e3e4a74-c695-4158-8bd4-2e73d3ddc82a" containerType="regular" prevTag="motion.button" key={option.value} onClick={() => setSprints(option.value)} whileHover={{
+                  {PRICING_CONFIG.SPRINT_OPTIONS.map(option => <SortableContainer dndKitId="2b8c82f9-6182-475b-a46a-0745d9a28ed6" containerType="regular" prevTag="motion.button" key={option.value} onClick={() => setSprints(option.value)} whileHover={{
                   scale: 1.05
                 }} whileTap={{
                   scale: 0.95
@@ -186,7 +186,7 @@ export const PricingSection = ({
 
               {/* Price Display - Compact */}
               <AnimatePresence mode="wait" data-magicpath-id="40" data-magicpath-path="PricingSection.tsx">
-                <SortableContainer dndKitId="9752219c-fec4-4415-b8d8-7a5b52a07fc6" containerType="regular" prevTag="motion.div" key={`${teamSize}-${sprints}`} initial={{
+                <SortableContainer dndKitId="60e8c2e2-86d5-40d5-bcda-412e367a3981" containerType="regular" prevTag="motion.div" key={`${teamSize}-${sprints}`} initial={{
                 scale: 0.95,
                 opacity: 0
               }} animate={{
@@ -209,12 +209,12 @@ export const PricingSection = ({
               </AnimatePresence>
 
               {/* What's Included - Compact */}
-              <SortableContainer dndKitId="c2bdff07-4a24-448a-b5be-90ef3176e0ff" containerType="regular" prevTag="div" className="bg-slate-50 rounded-xl p-5" data-magicpath-id="45" data-magicpath-path="PricingSection.tsx">
+              <SortableContainer dndKitId="e17f69ed-2728-4189-9e16-9f66604542d6" containerType="regular" prevTag="div" className="bg-slate-50 rounded-xl p-5" data-magicpath-id="45" data-magicpath-path="PricingSection.tsx">
                 <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3 flex items-center gap-2" data-magicpath-id="46" data-magicpath-path="PricingSection.tsx">
                   <CheckCircle2 className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="47" data-magicpath-path="PricingSection.tsx" />
                   Full-Stack Package Includes:
                 </h4>
-                <SortableContainer dndKitId="71c25922-5f3a-49f8-85db-36b42237ceb3" containerType="collection" prevTag="div" className="grid grid-cols-2 gap-2" data-magicpath-id="48" data-magicpath-path="PricingSection.tsx">
+                <SortableContainer dndKitId="48da5c3e-d912-449c-b6ac-a69e12132222" containerType="collection" prevTag="div" className="grid grid-cols-2 gap-2" data-magicpath-id="48" data-magicpath-path="PricingSection.tsx">
                   {fullStackIncludes.map(feature => <div key={feature} className="flex items-start gap-2" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="49" data-magicpath-path="PricingSection.tsx">
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#c2f12d] flex-shrink-0 mt-0.5" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="50" data-magicpath-path="PricingSection.tsx" />
                       <span className="text-xs text-slate-700 font-medium" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="51" data-magicpath-path="PricingSection.tsx">{feature}</span>
@@ -223,7 +223,7 @@ export const PricingSection = ({
               </SortableContainer>
 
               {/* CTA Buttons - Compact */}
-              <SortableContainer dndKitId="f58cc6c9-5659-45d4-b72a-ae3857e0dfa5" containerType="regular" prevTag="div" className="flex gap-3 pt-2" data-magicpath-id="52" data-magicpath-path="PricingSection.tsx">
+              <SortableContainer dndKitId="5b4d29fe-c40d-40d5-8c3e-48ddacf5059a" containerType="regular" prevTag="div" className="flex gap-3 pt-2" data-magicpath-id="52" data-magicpath-path="PricingSection.tsx">
                 <MagneticButton className="flex-1 px-6 py-3 bg-[#c2f12d] hover:bg-[#b0dc28] text-slate-900 rounded-xl font-bold text-sm transition-all duration-300 shadow-lg flex items-center justify-center gap-2" onClick={onGetQuote} data-magicpath-id="53" data-magicpath-path="PricingSection.tsx">
                   Get Quote
                   <ArrowRight className="w-4 h-4" data-magicpath-id="54" data-magicpath-path="PricingSection.tsx" />

@@ -21,16 +21,16 @@ export const HeroSection = ({
   const heroOpacity = useTransform(scrollProgress, [0, 0.15], [1, 0]);
   const heroScale = useTransform(scrollProgress, [0, 0.15], [1, 0.98]);
   const heroY = useTransform(scrollProgress, [0, 0.15], [0, -50]);
-  return <SortableContainer dndKitId="3887bf6e-ce5c-40d7-b9f2-e8eabb4388fc" containerType="regular" prevTag="section" className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20" data-magicpath-id="0" data-magicpath-path="HeroSection.tsx">
+  return <SortableContainer dndKitId="3a98fba5-27e6-4ea9-b3e5-085fda308742" containerType="regular" prevTag="section" className="relative min-h-screen flex items-center justify-center px-6 pt-32 pb-20" data-magicpath-id="0" data-magicpath-path="HeroSection.tsx">
       {/* AI Network Background */}
       <AINetworkBackground data-magicpath-id="1" data-magicpath-path="HeroSection.tsx" />
       
-      <SortableContainer dndKitId="252bb986-79d2-4f4d-bb47-b9c16064dd92" containerType="regular" prevTag="motion.div" style={{
+      <SortableContainer dndKitId="0141eecd-c52e-46c1-8714-1783ceb5d6b0" containerType="regular" prevTag="motion.div" style={{
       opacity: heroOpacity,
       scale: heroScale,
       y: heroY
     }} className="relative z-10 max-w-6xl mx-auto text-center" data-magicpath-id="2" data-magicpath-path="HeroSection.tsx">
-        <SortableContainer dndKitId="70800839-e063-4c4c-bb8a-823f3ec15dec" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="5bce8ca8-d032-4164-a90b-f8f4ff61334f" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} animate={{
@@ -41,7 +41,7 @@ export const HeroSection = ({
         ease: 'easeOut'
       }} data-magicpath-id="3" data-magicpath-path="HeroSection.tsx">
           {/* Badge */}
-          <SortableContainer dndKitId="15ee0b91-5a6f-47d0-a654-f43803f3b384" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="1b3b4880-f825-4bec-bffa-2bd0709c1bde" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           scale: 0.9
         }} animate={{
@@ -58,7 +58,7 @@ export const HeroSection = ({
           }} transition={{
             duration: 0.6
           }} data-magicpath-id="5" data-magicpath-path="HeroSection.tsx" />
-            <SortableContainer dndKitId="a824a62f-ace2-44fd-a071-04cb4850b8c3" containerType="regular" prevTag="motion.div" animate={{
+            <SortableContainer dndKitId="fe1a83eb-a291-47f3-8ee7-615d86b30bba" containerType="regular" prevTag="motion.div" animate={{
             rotate: [0, 360]
           }} transition={{
             duration: 3,
@@ -107,7 +107,7 @@ export const HeroSection = ({
           </motion.p>
 
           {/* CTA Buttons */}
-          <SortableContainer dndKitId="7a039cdc-12a6-4805-a9c8-a9f2965c390c" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="b1346610-cd0f-4f4b-ab55-c9a338dfdb00" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           y: 20
         }} animate={{
@@ -126,7 +126,7 @@ export const HeroSection = ({
             }} data-magicpath-id="17" data-magicpath-path="HeroSection.tsx" />
               <span className="relative flex items-center space-x-2" data-magicpath-id="18" data-magicpath-path="HeroSection.tsx">
                 <span data-magicpath-id="19" data-magicpath-path="HeroSection.tsx">Get a Quote</span>
-                <SortableContainer dndKitId="a5cea85d-6114-429d-8fbe-da1c50b61277" containerType="regular" prevTag="motion.div" animate={{
+                <SortableContainer dndKitId="d3f0721e-4df1-4e79-995f-4b406f14c60f" containerType="regular" prevTag="motion.div" animate={{
                 x: [0, 5, 0]
               }} transition={{
                 duration: 1.5,
@@ -139,7 +139,7 @@ export const HeroSection = ({
 
             <MagneticButton className="px-8 py-4 bg-white/5 backdrop-blur-xl border-2 border-white/10 hover:border-[#c2f12d]/50 text-white rounded-xl font-semibold transition-all duration-300 group" onClick={onBookCall} data-magicpath-id="22" data-magicpath-path="HeroSection.tsx">
               <span className="flex items-center space-x-2" data-magicpath-id="23" data-magicpath-path="HeroSection.tsx">
-                <SortableContainer dndKitId="6ac6c870-0adf-4557-bef8-35f2f4e74275" containerType="regular" prevTag="motion.div" animate={{
+                <SortableContainer dndKitId="91c30434-a632-42ad-be5f-06636f7680a5" containerType="regular" prevTag="motion.div" animate={{
                 rotate: [0, 360]
               }} transition={{
                 duration: 20,
@@ -154,13 +154,13 @@ export const HeroSection = ({
           </SortableContainer>
 
           {/* Tech Stack */}
-          <SortableContainer dndKitId="761188e5-7fc8-4963-b445-70ca0e8b0bc6" containerType="regular" prevTag="motion.div" initial="hidden" animate="visible" variants={containerVariants} className="space-y-6" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
+          <SortableContainer dndKitId="9b4ee41e-4f83-4497-a7c0-91839b258746" containerType="regular" prevTag="motion.div" initial="hidden" animate="visible" variants={containerVariants} className="space-y-6" data-magicpath-id="27" data-magicpath-path="HeroSection.tsx">
             {/* Regular Tech Stack */}
-            <SortableContainer dndKitId="69b85f85-8f82-463a-9ac9-5315e1550099" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="28" data-magicpath-path="HeroSection.tsx">
+            <SortableContainer dndKitId="8670ff42-0a72-43ce-a659-902c9bd0fe1e" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="28" data-magicpath-path="HeroSection.tsx">
               <motion.p data-magicpath-motion-tag="motion.p" variants={itemVariants} className="text-xs text-slate-500 uppercase tracking-wider font-medium" data-magicpath-id="29" data-magicpath-path="HeroSection.tsx">
                 Built With
               </motion.p>
-              <SortableContainer dndKitId="299f6c0b-7174-4dcf-950b-cf8948903f8a" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="30" data-magicpath-path="HeroSection.tsx">
+              <SortableContainer dndKitId="06533b1c-b7fa-430e-a50d-c4c47ed9a0f9" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="30" data-magicpath-path="HeroSection.tsx">
                 {TECH_STACK.map(tech => <motion.div data-magicpath-motion-tag="motion.div" key={tech} variants={itemVariants} whileHover={{
                 scale: 1.1,
                 y: -2,
@@ -175,12 +175,12 @@ export const HeroSection = ({
             </SortableContainer>
 
             {/* AI Tech Stack */}
-            <SortableContainer dndKitId="0a171bd9-94e1-4ca4-8a31-579daab429c9" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="32" data-magicpath-path="HeroSection.tsx">
+            <SortableContainer dndKitId="6367663b-97f0-4698-9918-fcb4cced2aff" containerType="regular" prevTag="div" className="space-y-4" data-magicpath-id="32" data-magicpath-path="HeroSection.tsx">
               <motion.p data-magicpath-motion-tag="motion.p" variants={itemVariants} className="text-xs text-[#c2f12d] uppercase tracking-wider font-medium flex items-center justify-center gap-2" data-magicpath-id="33" data-magicpath-path="HeroSection.tsx">
                 <Sparkles className="w-3 h-3" />
                 Supercharged with AI frameworks
               </motion.p>
-              <SortableContainer dndKitId="ee3ea2b3-133e-4113-809a-bc0c5c123d69" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="34" data-magicpath-path="HeroSection.tsx">
+              <SortableContainer dndKitId="874dc099-12b1-4e62-b9a6-233d91f735b4" containerType="collection" prevTag="div" className="flex flex-wrap items-center justify-center gap-3" data-magicpath-id="34" data-magicpath-path="HeroSection.tsx">
                 {AI_STACK.slice(0, 5).map(tech => <motion.div data-magicpath-motion-tag="motion.div" key={tech} variants={itemVariants} whileHover={{
                 scale: 1.1,
                 y: -2,
@@ -212,7 +212,7 @@ export const HeroSection = ({
       </SortableContainer>
 
       {/* Scroll Indicator */}
-      <SortableContainer dndKitId="8c66e291-02ac-42ee-87e0-1cd21a1da380" containerType="regular" prevTag="motion.div" className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
+      <SortableContainer dndKitId="8c140db0-da4f-4ad5-b5d2-f817fdfd5dcf" containerType="regular" prevTag="motion.div" className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
       y: [0, 15, 0],
       opacity: [1, 0.5, 1]
     }} transition={{
