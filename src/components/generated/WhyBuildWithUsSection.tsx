@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { WHY_BUILD_WITH_US } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const WhyBuildWithUsSection = () => {
-  return <SortableContainer dndKitId="bd8f3506-0011-462a-ad4d-36583e7ab943" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="0" data-magicpath-path="WhyBuildWithUsSection.tsx">
-      <SortableContainer dndKitId="37122825-212c-4b87-a8c8-64ed1f3a2a0e" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="WhyBuildWithUsSection.tsx">
-        <SortableContainer dndKitId="2da455a8-3e24-491b-9e3a-7bafd2a79a54" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="5dbe4806-af88-403b-952b-adacbc6b219a" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-white to-slate-50" data-magicpath-id="0" data-magicpath-path="WhyBuildWithUsSection.tsx">
+      <SortableContainer dndKitId="b61296df-2702-4e20-bb83-63813e6a2dc9" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="WhyBuildWithUsSection.tsx">
+        <SortableContainer dndKitId="d848b67a-10c9-41fd-9609-7697778b5404" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -44,7 +44,7 @@ export const WhyBuildWithUsSection = () => {
           </motion.p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="d39687a0-5a87-48cd-9844-6e595abe64d9" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="9a397b2e-08d9-467b-86f6-b3e1d435064f" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="7" data-magicpath-path="WhyBuildWithUsSection.tsx">
@@ -105,7 +105,7 @@ export const WhyBuildWithUsSection = () => {
         </SortableContainer>
 
         {/* Additional Message */}
-        <SortableContainer dndKitId="79376966-5cf8-4cb3-80b5-9abf1a80094d" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="a979bb78-7c05-4542-8c51-80216fc537ab" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 20
       }} whileInView={{

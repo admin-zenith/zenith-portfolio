@@ -6,9 +6,9 @@ import { Users } from 'lucide-react';
 import { APPROACH_STEPS } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const ApproachSection = () => {
-  return <SortableContainer dndKitId="8eaeaa25-79b9-42ad-8e85-06d3ea4d872f" containerType="regular" prevTag="section" id="how-we-work" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="0" data-magicpath-path="ApproachSection.tsx">
-      <SortableContainer dndKitId="6f5e7c6e-0f68-404f-84eb-658bb46d1541" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="ApproachSection.tsx">
-        <SortableContainer dndKitId="214343d5-18e2-4caa-9ac4-402637464c75" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="74c4477c-c4f8-45f0-99bb-5f6c157c1a8c" containerType="regular" prevTag="section" id="how-we-work" className="relative py-32 px-6 bg-[#252525]" data-magicpath-id="0" data-magicpath-path="ApproachSection.tsx">
+      <SortableContainer dndKitId="56af8b0d-3494-413f-b9d6-1e549e41a65a" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="ApproachSection.tsx">
+        <SortableContainer dndKitId="2713c949-8bdb-4a43-ae27-ff5c39719bf8" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -38,7 +38,7 @@ export const ApproachSection = () => {
           </p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="446840b3-0911-4965-9065-0089946d5bc1" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="fcdbf1fa-dd47-4891-9f96-1c4e707de785" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="6" data-magicpath-path="ApproachSection.tsx">
@@ -116,7 +116,7 @@ export const ApproachSection = () => {
         </SortableContainer>
 
         {/* Team Photo */}
-        <SortableContainer dndKitId="2789e7d3-514e-480b-8130-e1711928bd7f" containerType="regular" prevTag="motion.div" initial={{
+        <SortableContainer dndKitId="b0a6a600-921a-478c-8bdf-f95cdaa497d6" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 40
       }} whileInView={{
@@ -129,7 +129,7 @@ export const ApproachSection = () => {
         duration: 0.8,
         delay: 0.3
       }} className="mt-20" data-magicpath-id="16" data-magicpath-path="ApproachSection.tsx">
-          <SortableContainer dndKitId="9b0a48c8-651e-4868-ad16-95b2e0992c46" containerType="regular" prevTag="div" className="relative rounded-3xl overflow-hidden group" data-magicpath-id="17" data-magicpath-path="ApproachSection.tsx">
+          <SortableContainer dndKitId="5d491664-c43c-4883-a344-b9a48f8acf25" containerType="regular" prevTag="div" className="relative rounded-3xl overflow-hidden group" data-magicpath-id="17" data-magicpath-path="ApproachSection.tsx">
             {/* Gradient Overlay */}
             <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-gradient-to-t from-[#252525] via-[#252525]/40 to-transparent z-10" initial={{
             opacity: 0.7
@@ -157,7 +157,7 @@ export const ApproachSection = () => {
           }} data-magicpath-id="20" data-magicpath-path="ApproachSection.tsx" />
 
             {/* Text Overlay */}
-            <SortableContainer dndKitId="d6b507f8-19da-4e29-8cf7-00184ed14639" containerType="regular" prevTag="motion.div" className="absolute bottom-0 left-0 right-0 p-10 z-20" initial={{
+            <SortableContainer dndKitId="4006cfa2-591d-4119-94b0-05e3ad865e26" containerType="regular" prevTag="motion.div" className="absolute bottom-0 left-0 right-0 p-10 z-20" initial={{
             y: 20,
             opacity: 0
           }} whileInView={{
@@ -168,7 +168,7 @@ export const ApproachSection = () => {
           }} transition={{
             delay: 0.5
           }} data-magicpath-id="21" data-magicpath-path="ApproachSection.tsx">
-              <SortableContainer dndKitId="224687bd-3e7f-4f66-a68b-c1d15167f848" containerType="regular" prevTag="motion.div" className="flex items-center space-x-3 mb-3" initial={{
+              <SortableContainer dndKitId="77169dd1-bb48-45ef-81bc-1362ea6a45c3" containerType="regular" prevTag="motion.div" className="flex items-center space-x-3 mb-3" initial={{
               x: -20,
               opacity: 0
             }} whileInView={{
