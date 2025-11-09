@@ -56,32 +56,7 @@ export const ProjectsSection = () => {
               {/* Gradient overlay on hover */}
               <motion.div className="absolute inset-0 bg-gradient-to-br from-[#c2f12d]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* AI Badge */}
-              {project.aiEnhanced && <div className="absolute top-4 right-4 z-10">
-                  <motion.div initial={{
-              opacity: 0,
-              scale: 0.8
-            }} whileInView={{
-              opacity: 1,
-              scale: 1
-            }} viewport={{
-              once: true
-            }} transition={{
-              delay: index * 0.1 + 0.2
-            }} className="px-3 py-1.5 bg-[#c2f12d] rounded-full flex items-center gap-1.5">
-                    <motion.div animate={{
-                rotate: 360
-              }} transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: 'linear'
-              }}>
-                      <Sparkles className="w-3 h-3 text-[#252525]" />
-                    </motion.div>
-                    <span className="text-xs font-bold text-[#252525]">AI</span>
-                  </motion.div>
-                </div>}
-
+              
               {/* Content */}
               <div className="relative p-8 flex flex-col h-full">
                 {/* Project Image */}

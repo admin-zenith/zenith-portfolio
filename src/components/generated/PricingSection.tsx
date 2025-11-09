@@ -65,16 +65,16 @@ export const PricingSection = ({
           once: true
         }} transition={{
           duration: 0.5
-        }} className="inline-flex items-center space-x-2 px-6 py-2.5 bg-gradient-to-r from-[#c2f12d]/30 via-[#c2f12d]/20 to-emerald-400/20 backdrop-blur-xl border border-[#c2f12d]/40 rounded-full mb-6 shadow-lg">
-            <Zap className="w-4 h-4 text-[#c2f12d] drop-shadow-sm" />
-            <span className="text-sm font-bold text-slate-800 tracking-wide">TRANSPARENT PRICING</span>
+        }} className="inline-flex items-center space-x-2 px-6 py-2.5 bg-[#c2f12d]  backdrop-blur-xl border rounded-full mb-6 shadow-lg">
+           
+            <span className="text-sm font-bold  text-slate-800 tracking-wide">TRANSPARENT PRICING</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-7xl font-bold mb-6" style={{
           color: '#252525'
         }}>
             Fair. Transparent.{' '}
-            <span className="text-[#c2f12d]">
+            <span className="text-[#c2f12d] bg-[#252525] px-4 rounded-lg">
               Predictable.
             </span>
           </h2>
@@ -94,7 +94,7 @@ export const PricingSection = ({
         }} transition={{
           delay: 0.2
         }} className="flex items-center justify-center space-x-2 text-slate-600">
-            <Sparkles className="w-5 h-5 text-[#c2f12d]" />
+            
             <span className="text-base font-medium">
               Every project is full-stack with built-in PM, QA, and UI/UX design
             </span>
@@ -116,10 +116,7 @@ export const PricingSection = ({
               <h3 className="text-2xl font-bold text-white">
                 Interactive Estimator
               </h3>
-              <div className="flex items-center space-x-2 px-4 py-2 bg-[#c2f12d] rounded-xl">
-                <Sparkles className="w-4 h-4 text-slate-900" />
-                <span className="text-sm font-bold text-slate-900">AI-Powered</span>
-              </div>
+              
             </div>
 
             <div className="p-8 space-y-6">

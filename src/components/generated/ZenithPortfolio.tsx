@@ -12,7 +12,7 @@ import { ProjectsSection } from './ProjectsSection';
 import { PricingSection } from './PricingSection';
 import { WhyBuildWithUsSection } from './WhyBuildWithUsSection';
 import { FloatingParticles } from './FloatingParticles';
-import { Logo } from './Logo';
+import  Logo  from '../img/LOGO.svg';
 import { FAQS } from './constants';
 type ZenithPortfolioProps = Record<string, never>;
 
@@ -500,22 +500,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
           once: true
         }}>
             {/* Brand */}
-            <motion.div variants={itemVariants}>
-              <div className="flex items-center space-x-3 mb-4">
-                <Logo size={48} />
-                <div className="flex items-baseline">
-                  <span className="text-2xl font-bold text-white tracking-tight">zenith</span>
-                  <span className="text-2xl font-bold text-[#c2f12d]">.</span>
-                </div>
-              </div>
-              <p className="text-sm text-slate-400 leading-relaxed mb-3">
-                Building the future, supercharged with AI.
-              </p>
-              <div className="flex items-center space-x-1.5 text-xs text-[#c2f12d]">
-                <Sparkles className="w-3 h-3" />
-                <span className="font-semibold">Zenith Technologies</span>
-              </div>
-            </motion.div>
+            <img src={Logo} className='h-20' alt="" />
 
             {/* Links */}
             {[{

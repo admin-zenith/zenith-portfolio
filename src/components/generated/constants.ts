@@ -1,7 +1,9 @@
 // Constants and static data for the Zenith Portfolio
 import { Target, XCircle, AlertCircle, RefreshCw, Palette, Code2, TrendingUp, Sparkles, Bot, Zap } from 'lucide-react';
 import type { TeamMember, Project, FailureReason, ApproachStep, FAQ } from './types';
-
+import rada from '../img/rada.png'
+import Wis from '../img/wis.png'
+import paywave from '../img/paywave.png'
 // Enhanced tech stack with AI tools
 export const TECH_STACK = [
   'React',
@@ -114,25 +116,22 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
 export const RECENT_PROJECTS: Project[] = [
   {
-    title: 'Buy & Design AI',
-    description: 'AI-powered platform for predictive pricing and data-driven property insights.',
-    tags: ['AI/ML', 'Real Estate', 'Predictive Analytics'],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=400&fit=crop&q=80',
-    aiEnhanced: true
+    title: 'Rada',
+    description: 'designed to help car rental businesses in the Philippines manage, promote, and grow their operations online.it will allow local car owners and operators to list vehicles, receive online bookings, accept digital payments, and manage their fleet — all from one easy-to-use system.',
+    tags: ['Saas', 'Mobility Tech', 'AutoTech'],
+    image: rada,
   },
   {
-    title: 'Cart & Tell',
-    description: 'Multi-vendor eCommerce with AI-driven recommendations and live selling features.',
-    tags: ['eCommerce', 'Live Streaming', 'AI'],
-    image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=400&fit=crop&q=80',
-    aiEnhanced: true
+    title: '4SSBN Warehouse Inventory Mgmt System',
+    description: 'a comprehensive software solution designed to streamline and optimize warehouse operations. It provides real-time tracking of inventory levels, automated stock updates, and detailed reporting to enhance operational efficiency and reduce errors.',
+    tags: ['Inventory System', 'Stock Monitoring', 'Real-Time Inventory'],
+    image: Wis,
   },
   {
-    title: 'ClinicPro',
-    description: 'Smart booking with AI-powered patient scheduling and data-driven insights.',
-    tags: ['Healthcare', 'SaaS', 'AI-Enhanced'],
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=400&fit=crop&q=80',
-    aiEnhanced: true
+    title: 'PayWave',
+    description: 'a cutting-edge mobile payment application designed to offer seamless and secure transactions through Near Field Communication (NFC) technology. Our goal is to provide users with a fast, reliable, and user-friendly platform for managing their payments and financial transactions.',
+    tags: ['Fintech', 'NFC Technology'],
+    image: paywave,
   }
 ];
 
