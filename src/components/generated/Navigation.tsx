@@ -21,7 +21,7 @@ export const Navigation = ({
     type: 'spring',
     stiffness: 100,
     damping: 20
-  }} className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+  }} className="fixed top-6 w-100 md:w-[50%] left-1/2 -translate-x-1/2 z-50">
       <div className="bg-[#252525]/70 backdrop-blur-2xl border border-white/10 rounded-full shadow-2xl shadow-black/20 px-8 py-3">
         <div className="flex items-center justify-between gap-8">
           {/* Logo */}
