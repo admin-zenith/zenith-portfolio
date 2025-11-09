@@ -6,9 +6,9 @@ import { Sparkles, ArrowUpRight } from 'lucide-react';
 import { RECENT_PROJECTS } from './constants';
 import { containerVariants } from './animations';
 export const ProjectsSection = () => {
-  return <SortableContainer dndKitId="0874c973-0396-4c7a-85bd-0a6df7042f16" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-gradient-to-b from-[#252525] to-[#1a1a1a]" data-magicpath-id="0" data-magicpath-path="ProjectsSection.tsx">
-      <SortableContainer dndKitId="1e26d3be-0866-49fd-a025-5dc8fcb86883" containerType="regular" prevTag="div" className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsSection.tsx">
-        <SortableContainer dndKitId="499a6a85-a901-4e84-8094-bdb8f77fcc7e" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="8ad94b90-772e-4af2-96ae-49c1095e32f6" containerType="regular" prevTag="section" id="projects" className="relative py-32 px-6 bg-gradient-to-b from-[#252525] to-[#1a1a1a]" data-magicpath-id="0" data-magicpath-path="ProjectsSection.tsx">
+      <SortableContainer dndKitId="1c1987f1-6caa-4f23-994d-fa0279fc67e7" containerType="regular" prevTag="div" className="max-w-7xl mx-auto" data-magicpath-id="1" data-magicpath-path="ProjectsSection.tsx">
+        <SortableContainer dndKitId="f8ddf5b0-7969-45f3-bb30-aa88f80cda97" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -17,7 +17,7 @@ export const ProjectsSection = () => {
       }} viewport={{
         once: true
       }} className="text-center mb-16" data-magicpath-id="2" data-magicpath-path="ProjectsSection.tsx">
-          <SortableContainer dndKitId="93ba49b4-9ed7-4991-be4d-ea4d7162dd3f" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="e26c36b2-d109-4bfb-a1df-7952d5835cd9" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           scale: 0.9
         }} whileInView={{
@@ -37,7 +37,7 @@ export const ProjectsSection = () => {
           </p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="daf164f8-bdab-4c60-a7a0-fe6b0d93dc89" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="a410e672-9ef3-4826-9222-ce7f71f40b44" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="7" data-magicpath-path="ProjectsSection.tsx">
