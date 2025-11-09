@@ -137,7 +137,9 @@ export const ApproachSection = () => {
             opacity: 0.5
           }} transition={{
             duration: 0.4
-          }} data-magicpath-id="18" data-magicpath-path="ApproachSection.tsx" />
+          }} data-magicpath-id="18" data-magicpath-path="ApproachSection.tsx" style={{
+            display: "none"
+          }} />
 
             {/* Glow Effect */}
             <motion.div data-magicpath-motion-tag="motion.div" className="absolute inset-0 bg-[#c2f12d]/20 blur-3xl -z-10" animate={{
@@ -154,7 +156,9 @@ export const ApproachSection = () => {
             scale: 1.05
           }} transition={{
             duration: 0.6
-          }} data-magicpath-id="20" data-magicpath-path="ApproachSection.tsx" />
+          }} data-magicpath-id="20" data-magicpath-path="ApproachSection.tsx" style={{
+            display: "none"
+          }} />
 
             {/* Text Overlay */}
             <SortableContainer dndKitId="4c73f266-bcdd-4c2d-9ecc-5d5ad31faa8f" containerType="regular" prevTag="motion.div" className="absolute bottom-0 left-0 right-0 p-10 z-20" initial={{
