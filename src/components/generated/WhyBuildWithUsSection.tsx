@@ -142,7 +142,9 @@ export const WhyBuildWithUsSection = () => {
                 x: 0
               }} viewport={{
                 once: true
-              }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" data-magicpath-id="21" data-magicpath-path="WhyBuildWithUsSection.tsx">
+              }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" data-magicpath-id="21" data-magicpath-path="WhyBuildWithUsSection.tsx" style={{
+                display: "none"
+              }}>
                   <Users className="w-4 h-4 text-[#c2f12d]" data-magicpath-id="22" data-magicpath-path="WhyBuildWithUsSection.tsx" />
                   <span className="text-sm font-semibold text-[#c2f12d]" data-magicpath-id="23" data-magicpath-path="WhyBuildWithUsSection.tsx">OUR TEAM</span>
                 </SortableContainer>

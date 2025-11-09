@@ -29,7 +29,9 @@ export const TeamSection = () => {
         }} transition={{
           delay: 0.1,
           type: 'spring'
-        }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" data-magicpath-id="3" data-magicpath-path="TeamSection.tsx">
+        }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" data-magicpath-id="3" data-magicpath-path="TeamSection.tsx" style={{
+          display: "none"
+        }}>
             <SortableContainer dndKitId="c9afb611-580a-48b8-9335-61bf63b3e287" containerType="regular" prevTag="motion.div" animate={{
             rotate: [0, 360]
           }} transition={{
