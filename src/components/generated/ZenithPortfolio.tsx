@@ -309,7 +309,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       <WhyBuildWithUsSection />
 
       {/* Team */}
-      <TeamSection />
+      {/* <TeamSection /> */}
 
       {/* Projects */}
       <ProjectsSection />

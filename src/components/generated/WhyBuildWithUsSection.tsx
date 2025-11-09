@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Users } from 'lucide-react';
 import { WHY_BUILD_WITH_US } from './constants';
+import GPhoto from '../img/Zenith Image 9438.png'
 import { containerVariants, itemVariants } from './animations';
 export const WhyBuildWithUsSection = () => {
   return <section className="relative py-32 px-6 bg-slate-50">
@@ -29,7 +30,7 @@ export const WhyBuildWithUsSection = () => {
           type: 'spring'
         }}>
             <span className="text-[#252525]">Why build with </span>
-            <span className="text-[#c2f12d]">Zenith?</span>
+            <span className="text-[#c2f12d] bg-[#252525] px-4 rounded-lg">Zenith?</span>
           </motion.h2>
           <motion.p className="text-xl text-slate-600 max-w-3xl mx-auto" initial={{
           opacity: 0
@@ -121,18 +122,18 @@ export const WhyBuildWithUsSection = () => {
           y: -5
         }} transition={{
           duration: 0.3
-        }} className="relative p-8 md:p-12 bg-slate-800 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden">
+        }} className="relative p-8 md:p-12 bg-gray-900 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-5">
-              <div className="absolute inset-0" style={{
-              backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-              backgroundSize: '40px 40px'
-            }} />
+            <div className="absolute inset-0 opacity-20">
+            <div
+      className="absolute inset-0 bg-cover bg-center"
+      style={{ backgroundImage: `url(${GPhoto})` }}
+    />
             </div>
 
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
               {/* Left Side - Text Content */}
-              <div>
+              <div className='pt-24'>
                 <motion.div initial={{
                 opacity: 0,
                 x: -20
@@ -145,7 +146,7 @@ export const WhyBuildWithUsSection = () => {
                 display: "none"
               }}>
                   <Users className="w-4 h-4 text-[#c2f12d]" />
-                  <span className="text-sm font-semibold text-[#c2f12d]">OUR TEAM</span>
+                
                 </motion.div>
 
                 <motion.h3 initial={{
@@ -179,40 +180,7 @@ export const WhyBuildWithUsSection = () => {
                 </motion.p>
               </div>
 
-              {/* Right Side - Example Image */}
-              <motion.div initial={{
-              opacity: 0,
-              scale: 0.95
-            }} whileInView={{
-              opacity: 1,
-              scale: 1
-            }} viewport={{
-              once: true
-            }} transition={{
-              delay: 0.3,
-              duration: 0.5
-            }} className="relative">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&q=80" alt="Team collaboration" className="w-full h-full object-cover" />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-slate-900/60" />
-                  
-                  {/* Floating badge on image */}
-                  <motion.div initial={{
-                  opacity: 0,
-                  y: 20
-                }} whileInView={{
-                  opacity: 1,
-                  y: 0
-                }} viewport={{
-                  once: true
-                }} transition={{
-                  delay: 0.5
-                }} className="absolute bottom-4 right-4 bg-[#c2f12d] text-[#252525] px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                    ✨ Human + AI
-                  </motion.div>
-                </div>
-              </motion.div>
+             
             </div>
           </motion.div>
         </motion.div>
@@ -232,7 +200,7 @@ export const WhyBuildWithUsSection = () => {
           <motion.p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed" whileHover={{
           scale: 1.02
         }}>
-            <span className="font-semibold text-[#c2f12d]">AI is powerful</span>, but it's not a
+            <span className="font-semibold text-[#c2f12d] bg-[#252525] p-1 rounded-sm">AI is powerful</span>, but it's not a
             replacement for experience. We blend cutting-edge AI tools with human creativity,
             architecture expertise, and quality assurance to deliver products that actually work.
           </motion.p>

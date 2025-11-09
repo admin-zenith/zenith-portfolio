@@ -31,7 +31,7 @@ export const FailureSection = () => {
           type: 'spring'
         }}>
             <span className="text-[#252525]">Most MVPs </span>
-            <span className="text-[#c2f12d]">fail</span>
+            <span className="text-[#c2f12d] bg-[#252525] px-4 rounded-lg">fail</span>
           </motion.h2>
           <motion.p className="text-xl text-slate-600 max-w-2xl mx-auto" initial={{
           opacity: 0

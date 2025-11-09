@@ -72,7 +72,7 @@ export const HeroSection = ({
 
           {/* Headline */}
           <motion.h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight mb-8 leading-[0.9]" initial="hidden" animate="visible" variants={containerVariants}>
-            <motion.span variants={itemVariants} className="inline-block text-white">Ship your  MVP in</motion.span>
+            <motion.span variants={itemVariants} className="inline-block text-white my-4">Ship your  MVP in</motion.span>
             <br />
             <span className="relative inline-block">
               <motion.span className="text-[#c2f12d]" variants={itemVariants} whileHover={{
@@ -209,16 +209,6 @@ export const HeroSection = ({
         </motion.div>
       </motion.div>
 
-      {/* Scroll Indicator */}
-      <motion.div className="absolute bottom-10 left-1/2 -translate-x-1/2" animate={{
-      y: [0, 15, 0],
-      opacity: [1, 0.5, 1]
-    }} transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: 'easeInOut'
-    }}>
-        <ChevronDown className="w-6 h-6 text-[#c2f12d]" />
-      </motion.div>
+      
     </section>;
 };
