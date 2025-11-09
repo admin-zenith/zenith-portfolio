@@ -2,107 +2,90 @@
 
 import { SortableContainer } from "@/dnd-kit/SortableContainer";
 import { motion } from 'framer-motion';
-import { useMemo } from 'react';
-interface Node {
-  x: number;
-  y: number;
-  size: number;
-  mpid?: string;
-}
 export const AINetworkBackground = () => {
-  // Generate nodes for the neural network
-  const nodes = useMemo<Node[]>(() => {
-    const nodeCount = 25;
-    const generated: Node[] = [];
-    for (let i = 0; i < nodeCount; i++) {
-      generated.push({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        size: Math.random() * 4 + 2
-      });
-    }
-    return generated;
-  }, []);
+  return <SortableContainer dndKitId="6a0f9e25-001b-455c-9012-cb11d320429b" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
+      {/* Gradient Orbs */}
+      <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#c2f12d]/20 rounded-full blur-3xl" animate={{
+      x: [0, 50, 0],
+      y: [0, 30, 0],
+      scale: [1, 1.2, 1]
+    }} transition={{
+      duration: 20,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }} data-magicpath-id="1" data-magicpath-path="AINetworkBackground.tsx" />
+      
+      <motion.div data-magicpath-motion-tag="motion.div" className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl" animate={{
+      x: [0, -30, 0],
+      y: [0, 50, 0],
+      scale: [1, 1.1, 1]
+    }} transition={{
+      duration: 25,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }} data-magicpath-id="2" data-magicpath-path="AINetworkBackground.tsx" />
+      
+      <motion.div data-magicpath-motion-tag="motion.div" className="absolute bottom-1/4 left-1/2 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl" animate={{
+      x: [0, -40, 0],
+      y: [0, -20, 0],
+      scale: [1, 1.3, 1]
+    }} transition={{
+      duration: 18,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }} data-magicpath-id="3" data-magicpath-path="AINetworkBackground.tsx" />
 
-  // Generate connections between nearby nodes
-  const connections = useMemo(() => {
-    const lines: Array<{
-      x1: number;
-      y1: number;
-      x2: number;
-      y2: number;
-    }> = [];
-    const maxDistance = 20;
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const dx = nodes[i].x - nodes[j].x;
-        const dy = nodes[i].y - nodes[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < maxDistance) {
-          lines.push({
-            x1: nodes[i].x,
-            y1: nodes[i].y,
-            x2: nodes[j].x,
-            y2: nodes[j].y
-          });
-        }
-      }
-    }
-    return lines;
-  }, [nodes]);
-  return <SortableContainer dndKitId="9bdffcb9-348f-47d7-b4b3-5e7125851668" containerType="regular" prevTag="div" className="absolute inset-0 overflow-hidden pointer-events-none opacity-20" data-magicpath-id="0" data-magicpath-path="AINetworkBackground.tsx">
-      <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" data-magicpath-id="1" data-magicpath-path="AINetworkBackground.tsx">
-        <defs data-magicpath-id="2" data-magicpath-path="AINetworkBackground.tsx">
-          <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%" data-magicpath-id="3" data-magicpath-path="AINetworkBackground.tsx">
+      {/* Grid Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(194,241,45,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(194,241,45,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]" data-magicpath-id="4" data-magicpath-path="AINetworkBackground.tsx" />
+
+      {/* Animated Lines */}
+      <svg className="absolute inset-0 w-full h-full opacity-30" data-magicpath-id="5" data-magicpath-path="AINetworkBackground.tsx">
+        <defs data-magicpath-id="6" data-magicpath-path="AINetworkBackground.tsx">
+          <linearGradient id="lineGradient1" x1="0%" y1="0%" x2="100%" y2="100%" data-magicpath-id="7" data-magicpath-path="AINetworkBackground.tsx">
             <stop offset="0%" stopColor="#c2f12d" stopOpacity="0" />
             <stop offset="50%" stopColor="#c2f12d" stopOpacity="0.6" />
             <stop offset="100%" stopColor="#c2f12d" stopOpacity="0" />
           </linearGradient>
         </defs>
-
-        {/* Render connections */}
-        {connections.map((line, i) => <motion.line data-magicpath-motion-tag="motion.line" key={`line-${i}`} x1={line.x1} y1={line.y1} x2={line.x2} y2={line.y2} stroke="url(#lineGradient)" strokeWidth="0.15" initial={{
-        pathLength: 0,
-        opacity: 0
+        
+        {/* Flowing curves */}
+        <motion.path data-magicpath-motion-tag="motion.path" d="M0,100 Q250,50 500,100 T1000,100" stroke="url(#lineGradient1)" strokeWidth="2" fill="none" initial={{
+        pathLength: 0
       }} animate={{
-        pathLength: [0, 1, 0],
-        opacity: [0, 0.6, 0]
+        pathLength: [0, 1, 0]
       }} transition={{
-        duration: 3 + Math.random() * 2,
+        duration: 8,
         repeat: Infinity,
-        delay: Math.random() * 2,
-        ease: 'easeInOut'
-      }} data-magicpath-uuid={(line as any)["mpid"] ?? "unsafe"} data-magicpath-id="4" data-magicpath-path="AINetworkBackground.tsx" />)}
-
-        {/* Render nodes */}
-        {nodes.map((node, i) => <motion.circle data-magicpath-motion-tag="motion.circle" key={`node-${i}`} cx={node.x} cy={node.y} r={node.size / 10} fill="#c2f12d" initial={{
-        scale: 0,
-        opacity: 0
+        ease: "easeInOut"
+      }} data-magicpath-id="8" data-magicpath-path="AINetworkBackground.tsx" />
+        
+        <motion.path data-magicpath-motion-tag="motion.path" d="M1000,200 Q750,250 500,200 T0,200" stroke="url(#lineGradient1)" strokeWidth="2" fill="none" initial={{
+        pathLength: 0
       }} animate={{
-        scale: [1, 1.2, 1],
-        opacity: [0.4, 0.8, 0.4]
+        pathLength: [0, 1, 0]
       }} transition={{
-        duration: 2 + Math.random(),
+        duration: 10,
         repeat: Infinity,
-        delay: Math.random() * 2,
-        ease: 'easeInOut'
-      }} data-magicpath-uuid={(node as any)["mpid"] ?? "unsafe"} data-magicpath-id="5" data-magicpath-path="AINetworkBackground.tsx" />)}
-
-        {/* Data flow particles */}
-        {connections.slice(0, 8).map((line, i) => <motion.circle data-magicpath-motion-tag="motion.circle" key={`particle-${i}`} r="0.4" fill="#c2f12d" initial={{
-        cx: line.x1,
-        cy: line.y1,
-        opacity: 0
-      }} animate={{
-        cx: [line.x1, line.x2, line.x1],
-        cy: [line.y1, line.y2, line.y1],
-        opacity: [0, 1, 0]
-      }} transition={{
-        duration: 4,
-        repeat: Infinity,
-        delay: i * 0.5,
-        ease: 'linear'
-      }} data-magicpath-uuid={(line as any)["mpid"] ?? "unsafe"} data-magicpath-id="6" data-magicpath-path="AINetworkBackground.tsx" />)}
+        ease: "easeInOut",
+        delay: 2
+      }} data-magicpath-id="9" data-magicpath-path="AINetworkBackground.tsx" />
       </svg>
+
+      {/* Floating subtle particles */}
+      {Array.from({
+      length: 15
+    }).map((_, i) => <motion.div data-magicpath-motion-tag="motion.div" key={i} className="absolute w-1 h-1 bg-[#c2f12d] rounded-full opacity-40" style={{
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`
+    }} animate={{
+      y: [0, -100, 0],
+      opacity: [0, 0.6, 0],
+      scale: [0, 1, 0]
+    }} transition={{
+      duration: 8 + Math.random() * 4,
+      repeat: Infinity,
+      delay: Math.random() * 5,
+      ease: "easeInOut"
+    }} data-magicpath-id="10" data-magicpath-path="AINetworkBackground.tsx" />)}
     </SortableContainer>;
 };
