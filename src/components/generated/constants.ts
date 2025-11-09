@@ -117,21 +117,21 @@ export const RECENT_PROJECTS: Project[] = [
     title: 'Buy & Design AI',
     description: 'AI-powered platform for predictive pricing and data-driven property insights.',
     tags: ['AI/ML', 'Real Estate', 'Predictive Analytics'],
-    image: '🏡',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=400&fit=crop&q=80',
     aiEnhanced: true
   },
   {
     title: 'Cart & Tell',
     description: 'Multi-vendor eCommerce with AI-driven recommendations and live selling features.',
     tags: ['eCommerce', 'Live Streaming', 'AI'],
-    image: '🛒',
+    image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=400&fit=crop&q=80',
     aiEnhanced: true
   },
   {
     title: 'ClinicPro',
     description: 'Smart booking with AI-powered patient scheduling and data-driven insights.',
     tags: ['Healthcare', 'SaaS', 'AI-Enhanced'],
-    image: '🏥',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=400&fit=crop&q=80',
     aiEnhanced: true
   }
 ];
