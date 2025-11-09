@@ -6,9 +6,9 @@ import { Sparkles } from 'lucide-react';
 import { TEAM_MEMBERS } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const TeamSection = () => {
-  return <SortableContainer dndKitId="0903ad67-55a6-477a-b1ee-0e9352194d21" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-slate-50" data-magicpath-id="0" data-magicpath-path="TeamSection.tsx">
-      <SortableContainer dndKitId="f0a722a5-cc8f-495c-8d83-671e6ebe2ea3" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="TeamSection.tsx">
-        <SortableContainer dndKitId="75018247-8ae6-40bd-9afe-fe1b51e7c0d3" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="4b92f0dc-245c-4360-bf25-e0d23926f45f" containerType="regular" prevTag="section" id="team" className="relative py-32 px-6 bg-slate-50" data-magicpath-id="0" data-magicpath-path="TeamSection.tsx">
+      <SortableContainer dndKitId="5b0c4c98-f965-4fdc-ade8-ac2d514debb5" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="TeamSection.tsx">
+        <SortableContainer dndKitId="1e580a5b-9d06-4485-8a01-9e143af020fd" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -18,7 +18,7 @@ export const TeamSection = () => {
         once: true
       }} className="text-center mb-20" data-magicpath-id="2" data-magicpath-path="TeamSection.tsx">
           {/* AI Empowerment Badge */}
-          <SortableContainer dndKitId="6987d0b5-0d06-43e6-b0f8-51d3ea75d3f0" containerType="regular" prevTag="motion.div" initial={{
+          <SortableContainer dndKitId="9433d303-1bc4-430d-a486-55ba7ac2c8b6" containerType="regular" prevTag="motion.div" initial={{
           opacity: 0,
           scale: 0.9
         }} whileInView={{
@@ -30,7 +30,7 @@ export const TeamSection = () => {
           delay: 0.1,
           type: 'spring'
         }} className="inline-flex items-center space-x-2 px-4 py-2 bg-[#c2f12d]/10 backdrop-blur-xl border border-[#c2f12d]/30 rounded-full mb-6" data-magicpath-id="3" data-magicpath-path="TeamSection.tsx">
-            <SortableContainer dndKitId="9f046eb1-64ff-4bb1-89f1-4b614d571030" containerType="regular" prevTag="motion.div" animate={{
+            <SortableContainer dndKitId="c9afb611-580a-48b8-9335-61bf63b3e287" containerType="regular" prevTag="motion.div" animate={{
             rotate: [0, 360]
           }} transition={{
             duration: 3,
@@ -52,7 +52,7 @@ export const TeamSection = () => {
           <p className="text-xl text-slate-600" data-magicpath-id="8" data-magicpath-path="TeamSection.tsx">Experts in turning ideas into successful products</p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="73dbc221-9c31-439c-95d4-88ceef36a0dd" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="4d51ee3d-6157-4efd-bf14-bece1e878c7c" containerType="collection" prevTag="motion.div" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="9" data-magicpath-path="TeamSection.tsx">

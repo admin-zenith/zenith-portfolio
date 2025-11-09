@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import { FAILURE_REASONS } from './constants';
 import { containerVariants, itemVariants } from './animations';
 export const FailureSection = () => {
-  return <SortableContainer dndKitId="c225663e-0633-4cf8-8a79-c33188f78018" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="0" data-magicpath-path="FailureSection.tsx">
-      <SortableContainer dndKitId="2872c63a-8893-4719-a0f9-975ae12f16aa" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="FailureSection.tsx">
-        <SortableContainer dndKitId="38cdc282-c920-4e21-ad7d-3d45a666b627" containerType="regular" prevTag="motion.div" initial={{
+  return <SortableContainer dndKitId="edd16766-d62d-4906-87d8-f377d4b01f7b" containerType="regular" prevTag="section" className="relative py-32 px-6 bg-gradient-to-b from-slate-50 to-white" data-magicpath-id="0" data-magicpath-path="FailureSection.tsx">
+      <SortableContainer dndKitId="ea54ade7-76d2-4201-98b7-0b8531bb49af" containerType="regular" prevTag="div" className="max-w-6xl mx-auto" data-magicpath-id="1" data-magicpath-path="FailureSection.tsx">
+        <SortableContainer dndKitId="ddf4ef78-de3a-4c10-aef6-4abd2e96bf80" containerType="regular" prevTag="motion.div" initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -47,7 +47,7 @@ export const FailureSection = () => {
           </motion.p>
         </SortableContainer>
 
-        <SortableContainer dndKitId="abdf523a-ab12-42b7-9519-e7061ae448e7" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        <SortableContainer dndKitId="f612c310-d8ab-49c8-890e-49d1e586c974" containerType="collection" prevTag="motion.div" className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
         once: true,
         margin: '-100px'
       }} data-magicpath-id="7" data-magicpath-path="FailureSection.tsx">
