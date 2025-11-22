@@ -106,7 +106,7 @@ export const WhyBuildWithUsSection = () => {
         </motion.div>
 
         {/* Collaboration Card with Example Image */}
-        <motion.div initial={{
+        {/* <motion.div initial={{
         opacity: 0,
         y: 30
       }} whileInView={{
@@ -123,7 +123,7 @@ export const WhyBuildWithUsSection = () => {
         }} transition={{
           duration: 0.3
         }} className="relative p-8 md:p-12 bg-gray-900 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden">
-            {/* Background Pattern */}
+            
             <div className="absolute inset-0 opacity-20">
             <div
       className="absolute inset-0 bg-cover bg-center"
@@ -132,7 +132,7 @@ export const WhyBuildWithUsSection = () => {
             </div>
 
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
-              {/* Left Side - Text Content */}
+            
               <div className='pt-24'>
                 <motion.div initial={{
                 opacity: 0,
@@ -183,7 +183,7 @@ export const WhyBuildWithUsSection = () => {
              
             </div>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Additional Message */}
         <motion.div initial={{
