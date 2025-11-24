@@ -207,6 +207,7 @@ const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
                     <MessageSquare className="text-slate-400" size={18} />
                   </div>
                   <textarea
+                    // @ts-ignore
                     rows="4"
                     className="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white resize-none"
                     placeholder=""

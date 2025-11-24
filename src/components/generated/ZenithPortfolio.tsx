@@ -271,7 +271,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
   }
 
   // Handle Get Quote - scroll to pricing section
-  const handleGetQuote = (data: object) => {
+  const handleGetQuote = () => {
     scrollToSection('pricing');
   };
 
