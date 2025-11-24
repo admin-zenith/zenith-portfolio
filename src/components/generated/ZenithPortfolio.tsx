@@ -233,6 +233,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [teamSize, setTeamSize] = useState(2);
   const [sprints, setSprints] = useState(2);
+  const [quotation, setQuotation] = useState({})
   const { scrollYProgress } = useScroll();
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -264,10 +265,14 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
     }
   };
 
-  // Handle Get Quote - scroll to pricing section
-  const handleGetQuote = () => {
+  const handleQuote = (data) => {
+    setQuotation(() => data)
     setToggleGetQuoteModal(true)
-    // scrollToSection('pricing');
+  }
+
+  // Handle Get Quote - scroll to pricing section
+  const handleGetQuote = (data: object) => {
+    scrollToSection('pricing');
   };
 
   // Handle Book Call - scroll to CTA section or open calendar
@@ -395,8 +400,12 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
 
       {/* Pricing */}
 
-      <GetAQuoteModal isOpen={toggleGetQuoteModal} onClose={() => setToggleGetQuoteModal(false)} />
-      <PricingSection onGetQuote={handleGetQuote} onBookCall={handleBookCall} />
+      <GetAQuoteModal
+        isOpen={toggleGetQuoteModal}
+        onClose={() => setToggleGetQuoteModal(false)}
+        quotation={quotation}
+      />
+      <PricingSection onGetQuote={handleQuote} onBookCall={handleBookCall} />
 
       {/* FAQs - Dark Section with Accordion Animation */}
       <section id="faqs" className="relative py-32 px-6 bg-[#252525]">

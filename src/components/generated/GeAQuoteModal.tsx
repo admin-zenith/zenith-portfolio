@@ -11,8 +11,26 @@ import {
   ArrowRight,
   Sparkles
 } from 'lucide-react';
+import Yup from '@/lib/Yup';
+import { useFormik } from 'formik'
 
-const GetAQuoteModal = ({ isOpen, onClose }) => {
+const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
+  const form = useFormik({
+    initialValues: {
+      fullname: '',
+      email: '',
+      projectName: '',
+      projectDescription: ''
+    },
+    validationSchema: Yup.object({
+      fullname: Yup.string().required('Full name is required.'),
+      email: Yup.string().required('Email is required.').email('Invalid email address'),
+      projectName: Yup.string().required('Project name is required.')
+    }),
+    onSubmit(values) {
+      console.log(values)
+    }
+  })
   if (!isOpen) return null;
 
   return (
@@ -58,7 +76,7 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <span className="text-xs font-medium text-slate-500">Team Size</span>
                 </div>
-                <p className="text-sm font-bold text-slate-900 pl-1">2 devs</p>
+                <p className="text-sm font-bold text-slate-900 pl-1">{quotation.teamSize} devs</p>
               </div>
 
               {/* Duration */}
@@ -69,7 +87,7 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <span className="text-xs font-medium text-slate-500">Duration</span>
                 </div>
-                <p className="text-sm font-bold text-slate-900 pl-1">4 weeks</p>
+                <p className="text-sm font-bold text-slate-900 pl-1">{quotation.sprints} weeks</p>
               </div>
 
               {/* Cost */}
@@ -80,15 +98,14 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <span className="text-xs font-medium text-slate-500">Est. Cost</span>
                 </div>
-                <p className="text-sm font-bold text-slate-900 pl-1">₱480,000</p>
+                <p className="text-sm font-bold text-slate-900 pl-1">₱{quotation.calculatePrice}</p>
               </div>
-
             </div>
           </div>
 
           {/* Form Section */}
           <div className="p-6 bg-white">
-            <form className="space-y-4">
+            <div className="space-y-4">
 
               {/* Full Name */}
               <div>
@@ -99,10 +116,21 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <input
                     type="text"
-                    className="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white"
+                    name={'fullname'}
+                    className={[
+                      "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white",
+                      form.errors.fullname ? 'border-red-400' : 'border-slate-200'
+                    ].join(' ')}
                     placeholder=""
+                    value={form.values.fullname}
+                    onChange={form.handleChange}
                   />
                 </div>
+                {
+                  form.errors.fullname && (
+                    <p className='text-red-400 text-sm'>{form.errors.fullname}</p>
+                  )
+                }
               </div>
 
               {/* Email Address */}
@@ -114,10 +142,21 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <input
                     type="email"
-                    className="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white"
+                    className={[
+                      "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white",
+                      form.errors.email ? 'border-red-400' : 'border-slate-200'
+                    ].join(' ')}
                     placeholder=""
+                    name={'email'}
+                    value={form.values.email}
+                    onChange={form.handleChange}
                   />
                 </div>
+                {
+                  form.errors.email && (
+                    <p className='text-red-400 text-sm'>{form.errors.email}</p>
+                  )
+                }
               </div>
 
               {/* Project Name */}
@@ -129,10 +168,21 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
                   </div>
                   <input
                     type="text"
-                    className="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white"
+                    className={[
+                      "w-full pl-10 pr-4 py-3 border rounded-xl focus:ring-2 focus:ring-lime-400 focus:border-transparent outline-none transition-all text-slate-700 placeholder-slate-400 bg-white",
+                      form.errors.projectName ? 'border-red-400' : 'border-slate-200'
+                    ].join(' ')}
                     placeholder=""
+                    name={'projectName'}
+                    value={form.values.projectName}
+                    onChange={form.handleChange}
                   />
                 </div>
+                {
+                  form.errors.projectName && (
+                    <p className='text-red-400 text-sm'>{form.errors.projectName}</p>
+                  )
+                }
               </div>
 
               {/* Project Description */}
@@ -153,6 +203,8 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
               {/* Submit Button */}
               <button
                 type="button"
+                // @ts-ignore
+                onClick={form.handleSubmit}
                 className="w-full bg-[#d2f45d] hover:bg-[#c2e44d] text-slate-900 font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors mt-6 shadow-sm hover:shadow-md"
               >
                 Get My Quote
@@ -163,7 +215,7 @@ const GetAQuoteModal = ({ isOpen, onClose }) => {
               <p className="text-center text-xs text-slate-500 mt-4">
                 We'll email you a detailed quote summary. Your information is secure and never shared.
               </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
