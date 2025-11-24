@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import Yup from '@/lib/Yup';
 import { useFormik } from 'formik'
+import Sendmail from '@/lib/Sendmail';
 
 const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
   const form = useFormik({
@@ -28,7 +29,20 @@ const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
       projectName: Yup.string().required('Project name is required.')
     }),
     onSubmit(values) {
-      console.log(values)
+      Sendmail({
+        fullName: values.fullname,
+        email: values.email,
+        projectName: values.projectName,
+        projectDescription: values.projectDescription,
+        teamSize: quotation.teamSize,
+        duration: quotation.duration,
+        estimatedCost: quotation.estimatedCost
+      }).then(() => {
+
+      }).finally(() => {
+        form.resetForm()
+        onClose()
+      })
     }
   })
   if (!isOpen) return null;
