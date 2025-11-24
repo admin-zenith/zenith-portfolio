@@ -1,0 +1,23 @@
+parameters: {}
+environment: {}
+packages:
+    - name: zenith
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: sendmail
+          binary: false
+          main: main
+          runtime: nodejs:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment:
+            MAILTRAP_USER: ""
+            MAILTRAP_PASS: ""
+          annotations: {}
+          limits:
+            timeout: 5000
+            memory: 256
