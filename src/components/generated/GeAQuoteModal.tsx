@@ -16,6 +16,7 @@ import { useFormik } from 'formik'
 import Sendmail from '@/lib/Sendmail';
 
 const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
+  const [isSending, setIsSending] = useState(false)
   const form = useFormik({
     initialValues: {
       fullname: '',
@@ -29,6 +30,7 @@ const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
       projectName: Yup.string().required('Project name is required.')
     }),
     onSubmit(values) {
+      setIsSending(true)
       Sendmail({
         fullName: values.fullname,
         email: values.email,
@@ -40,6 +42,7 @@ const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
       }).then(() => {
 
       }).finally(() => {
+        setIsSending(false)
         form.resetForm()
         onClose()
       })
@@ -222,7 +225,9 @@ const GetAQuoteModal = ({ quotation, isOpen, onClose }) => {
                 onClick={form.handleSubmit}
                 className="w-full bg-[#d2f45d] hover:bg-[#c2e44d] text-slate-900 font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors mt-6 shadow-sm hover:shadow-md"
               >
-                Get My Quote
+                {
+                  isSending ? 'Sending Quotation' : 'Get My Quote'
+                }
                 <ArrowRight size={20} />
               </button>
 
