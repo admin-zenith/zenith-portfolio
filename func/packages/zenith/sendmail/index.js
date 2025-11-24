@@ -5,7 +5,7 @@ exports.main = async (args) => {
   // DigitalOcean Functions often require explicit CORS headers in the response
   const headers = {
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*', // Change this to your specific domain in production
+    // 'Access-Control-Allow-Origin': '*', // Change this to your specific domain in production
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With, Accept'
   };
@@ -95,7 +95,7 @@ exports.main = async (args) => {
         </div>
       `,
       // Send a copy to yourself (BCC) if needed
-      bcc: 'admin@zenithportfolio.com'
+      bcc: 'admin@zenith-tech.dev'
     };
 
     // 6. Send Email
