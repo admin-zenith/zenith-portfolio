@@ -49,6 +49,7 @@ import { WhyBuildWithUsSection } from './WhyBuildWithUsSection';
 import { FloatingParticles } from './FloatingParticles';
 import Logo from '../img/LOGO.svg';
 import { FAQS } from './constants';
+import GetAQuoteModal from './GeAQuoteModal';
 type ZenithPortfolioProps = Record<string, never>;
 
 // Tech Stack
@@ -250,6 +251,7 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
   };
+  const [toggleGetQuoteModal, setToggleGetQuoteModal] = useState(false)
 
   // Scroll to pricing/contact section
   const scrollToSection = (sectionId: string) => {
@@ -264,7 +266,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
 
   // Handle Get Quote - scroll to pricing section
   const handleGetQuote = () => {
-    scrollToSection('pricing');
+    setToggleGetQuoteModal(true)
+    // scrollToSection('pricing');
   };
 
   // Handle Book Call - scroll to CTA section or open calendar
@@ -391,6 +394,8 @@ export const ZenithPortfolio = (props: ZenithPortfolioProps) => {
       <ProjectsSection />
 
       {/* Pricing */}
+
+      <GetAQuoteModal isOpen={toggleGetQuoteModal} onClose={() => setToggleGetQuoteModal(false)} />
       <PricingSection onGetQuote={handleGetQuote} onBookCall={handleBookCall} />
 
       {/* FAQs - Dark Section with Accordion Animation */}
