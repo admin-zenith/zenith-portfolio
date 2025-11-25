@@ -4,6 +4,7 @@ import type { TeamMember, Project, FailureReason, ApproachStep, FAQ } from './ty
 import rada from '../img/rada.png'
 import Wis from '../img/wis.png'
 import paywave from '../img/paywave.png'
+import bilangSiklista from '../img/bilang-siklista.png'
 // Enhanced tech stack with AI tools
 export const TECH_STACK = [
   'React',
@@ -126,6 +127,14 @@ export const RECENT_PROJECTS: Project[] = [
     description: 'a comprehensive software solution designed to streamline and optimize warehouse operations. It provides real-time tracking of inventory levels, automated stock updates, and detailed reporting to enhance operational efficiency and reduce errors.',
     tags: ['Inventory System', 'Stock Monitoring', 'Real-Time Inventory'],
     image: Wis,
+  },
+  {
+    title: 'Bilang Siklista',
+    description: 'Bilang Siklista is a data collection and analysis initiative designed to monitor and evaluate cyclist traffic at key urban intersections. The project aims to gather granular data on biker behavior and demographics to support better urban planning, traffic management, and safety policy implementation for the cycling community.',
+    tags: ['Counting', 'Community'],
+    image: bilangSiklista,
+    // @ts-ignore
+    link: 'https://bilang-siklista-ydwr6.ondigitalocean.app'
   },
   {
     title: 'PayWave',
