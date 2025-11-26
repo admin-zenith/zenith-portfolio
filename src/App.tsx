@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 import { Container, Theme } from './settings/types';
 import { ZenithPortfolio } from './components/generated/ZenithPortfolio';
 
-let theme: Theme = 'dark';
+const theme: Theme = 'dark';
 // only use 'centered' container for standalone components, never for full page apps or websites.
-let container: Container = 'none';
+const container: Container = 'none';
 
 function App() {
   function setTheme(theme: Theme) {
@@ -14,6 +14,7 @@ function App() {
       document.documentElement.classList.remove('dark');
     }
   }
+
 
   setTheme(theme);
 
