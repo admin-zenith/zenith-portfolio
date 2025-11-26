@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, Users, Clock, Sparkles, ArrowRight, Calendar, Zap, TrendingUp } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
 import { PRICING_CONFIG } from './constants';
-import { containerVariants, itemVariants } from './animations';
 interface PricingSectionProps {
   onGetQuote: (onject) => void;
   onBookCall: () => void;
@@ -26,7 +25,7 @@ export const PricingSection = ({
   const handleGetQoute = () => {
     onGetQuote({
       teamSize,
-      sprints,
+      sprints: getDuration(),
       calculatePrice: calculatePrice()
     })
   }
