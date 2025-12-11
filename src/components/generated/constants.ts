@@ -5,6 +5,7 @@ import rada from '../img/rada.png'
 import Wis from '../img/wis.png'
 import paywave from '../img/paywave.png'
 import bilangSiklista from '../img/bilang-siklista.png'
+import StreamlineImg from '../img/streamline.png'
 // Enhanced tech stack with AI tools
 export const TECH_STACK = [
   'React',
@@ -135,6 +136,14 @@ export const RECENT_PROJECTS: Project[] = [
     image: bilangSiklista,
     // @ts-ignore
     link: 'https://bilang-siklista-ydwr6.ondigitalocean.app'
+  },
+  {
+    title: 'Streamline',
+    description: 'Streamline is a B2B2C SaaS platform designed to digitize subscription management for small businesses (like gyms, studios, and clubs) that currently rely on manual methods like paper records or spreadsheets.',
+    tags: ['SaaS', 'B2B2C', 'MembershipPlatform', 'SubscriptionManagement', 'SmallBusinessTools'],
+    image: StreamlineImg,
+    // @ts-ignore
+    link: 'https://steamline-app-ip9sy.ondigitalocean.app/'
   },
   {
     title: 'PayWave',
